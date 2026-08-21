@@ -16,10 +16,22 @@ logística, catering y servicios conexos, y seguirles el rastro de modificacione
 | Con adición en valor | 33 |
 | Suma de las adiciones | $9.431 millones |
 
+## Actualización
+
+El tablero consulta la API de datos.gov.co cada vez que se abre: refresca valores, fechas,
+modificaciones y trae contratos nuevos que el filtro automático identifique. Primero pinta la
+instantánea revisada (carga instantánea) y luego la reemplaza con los datos vivos.
+
+Lo que no se recalcula solo es el trabajo humano: la revisión caso por caso de los 66 dudosos y
+los montos de adición leídos en los expedientes. Esos veredictos van asociados al `id_contrato`,
+así que sobreviven a la actualización. Los contratos que aparezcan después del corte se marcan
+**«sin revisar»** y su adición es solo un piso calculado por diferencia entre registros.
+Si la API falla, se muestra la instantánea y el indicador de estado lo advierte.
+
 ## Contenido
 
 - `index.html` — portada
-- `tablero/` — tablero interactivo con los 191 contratos
+- `tablero/` — tablero interactivo, con actualización en vivo
 - `informe/` — informe metodológico y hallazgos
 - `datos/` — los dos CSV
 

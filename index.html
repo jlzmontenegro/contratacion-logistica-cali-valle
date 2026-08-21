@@ -83,7 +83,7 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12px}
 <div class="cards">
   <a class="card" href="tablero/">
     <h3>Tablero interactivo</h3>
-    <p>Los 191 contratos con búsqueda, filtros por dependencia, categoría y estado, columnas ordenables y el detalle de cada uno: objeto completo, valores, y todas sus modificaciones con la justificación íntegra.</p>
+    <p>Los contratos con búsqueda, filtros por dependencia, categoría y estado, columnas ordenables y el detalle de cada uno: objeto completo, valores, y todas sus modificaciones con la justificación íntegra. <strong>Se actualiza contra datos.gov.co cada vez que se abre.</strong></p>
     <span class="go">Abrir el tablero →</span>
   </a>
   <a class="card" href="informe/">
@@ -107,6 +107,10 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12px}
 </div>
 
 <div class="note">
+  <strong>Qué se actualiza solo y qué no.</strong> El tablero consulta la API de datos.gov.co al abrirse y refresca valores, fechas, modificaciones y contratos nuevos. Lo que <em>no</em> puede recalcularse solo es el trabajo humano: la revisión caso por caso de los dudosos y los montos de adición leídos en los expedientes. Esos veredictos viajan asociados al identificador de cada contrato; los que aparezcan después del corte se marcan <strong>«sin revisar»</strong> y su adición es apenas un piso calculado por diferencia. Si la API no responde, el tablero muestra la instantánea revisada del 20 de agosto y lo dice en el indicador de estado.
+</div>
+
+<div class="note">
   <strong>Cómo leer esto.</strong> La clasificación en categorías es propia, no viene en la fuente: se construyó leyendo los objetos contractuales porque el código UNSPSC del dataset resultó poco confiable. Los 22 contratos descartados en la revisión manual siguen en el CSV con <code>incluido = NO</code> y el motivo escrito, para que cualquiera pueda revisar el criterio. Las cifras de adición señaladas como «piso» solo captan el salto entre registros del dataset; las demás salen del documento del expediente.
 </div>
 
@@ -114,7 +118,7 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12px}
   Fuente: <a href="https://www.datos.gov.co/" target="_blank" rel="noopener">datos.gov.co</a> —
   conjuntos <code>jbjy-vk9h</code> (contratos electrónicos), <code>u8cx-r425</code> (modificaciones),
   <code>cb9c-h8sn</code> (adiciones) y <code>dmgg-8hin</code> (archivos del expediente).
-  Datos con corte al 20 de agosto de 2026.
+  El tablero consulta la API en vivo; el informe y los CSV corresponden a la revisión con corte al 20 de agosto de 2026.
 </footer>
 </div>
 </body>
