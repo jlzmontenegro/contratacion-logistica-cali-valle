@@ -28,12 +28,31 @@ así que sobreviven a la actualización. Los contratos que aparezcan después de
 **«sin revisar»** y su adición es solo un piso calculado por diferencia entre registros.
 Si la API falla, se muestra la instantánea y el indicador de estado lo advierte.
 
+## Regeneración automática
+
+Una GitHub Action (`.github/workflows/actualizar.yml`) corre los lunes a las 5:00 a. m. de Colombia
+y ejecuta `scripts/actualizar.py`, que reconsulta la API, vuelve a clasificar, reaplica los
+veredictos de `datos/veredictos.json` y reescribe el tablero, los CSV y los indicadores de la
+portada. Sólo hace commit si algo cambió. También se puede lanzar a mano desde la pestaña Actions.
+
+El script usa únicamente la biblioteca estándar de Python, así que no hay dependencias que instalar.
+
+### Archivos que sostienen la revisión manual
+
+- `datos/veredictos.json` — un registro por `id_contrato` con el veredicto, el motivo, y la adición
+  verificada en el expediente cuando la hay. **Este es el archivo a editar si quieres corregir una
+  clasificación**; sobrevive a todas las actualizaciones.
+- `datos/dependencias.json` — nombres cortos de las 44 dependencias.
+- `plantillas/tablero.tpl.html` — el tablero sin datos; el script le inyecta la instantánea.
+
 ## Contenido
 
 - `index.html` — portada
 - `tablero/` — tablero interactivo, con actualización en vivo
 - `informe/` — informe metodológico y hallazgos
-- `datos/` — los dos CSV
+- `datos/` — los dos CSV, los veredictos y el mapa de dependencias
+- `scripts/` — el regenerador
+- `plantillas/` — la plantilla del tablero
 
 ## Método, en corto
 

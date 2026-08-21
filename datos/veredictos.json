@@ -1,0 +1,950 @@
+{
+ "CO1.PCCNTR.8740908": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8770572": {
+  "adicion": 7102000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 14204000
+ },
+ "CO1.PCCNTR.8774223": {
+  "adicion": 9610000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 19220000
+ },
+ "CO1.PCCNTR.8776478": {
+  "adicion": 7102000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 14204000
+ },
+ "CO1.PCCNTR.8779050": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779099": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779164": {
+  "adicion": 5584000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779213": {
+  "adicion": 5584000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779253": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779330": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779369": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8779386": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8780464": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8780636": {
+  "adicion": 7102000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 14204000
+ },
+ "CO1.PCCNTR.8780641": {
+  "adicion": 5584000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8780656": {
+  "adicion": 5584000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8796027": {
+  "adicion": 5584000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8823414": {
+  "adicion": 7102000,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 14204000
+ },
+ "CO1.PCCNTR.8823637": {
+  "adicion": 5584000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8841335": {
+  "incluido": 0,
+  "motivo": "CPS de apoyo en bibliotecas; UNSPSC 78111501 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.8849869": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8850153": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8850155": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8850314": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8869878": {
+  "incluido": 0,
+  "motivo": "CPS profesional en gestión administrativa; UNSPSC 78111600 (transporte) mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.8870077": {
+  "incluido": 0,
+  "motivo": "CPS profesional en gestión administrativa; UNSPSC 78111600 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.8881601": {
+  "adicion": 5584000,
+  "fuente_adicion": "Documento de modificación: adición de 2 cuotas sobre un CPS de 6 cuotas (validado contra el otrosí de CO1.PCCNTR.8779050)",
+  "valor_inicial": 11168000
+ },
+ "CO1.PCCNTR.8890283": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8907626": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8913646": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8927617": {
+  "incluido": 0,
+  "motivo": "CPS profesional en procesos de paz; UNSPSC 78111600 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.8929017": {
+  "incluido": 0,
+  "motivo": "CPS profesional en ruta de atencion a VBG; UNSPSC 78111600 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.8937837": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8956646": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8957097": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8957121": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8957582": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.8958041": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9130417": {
+  "incluido": 0,
+  "motivo": "CPS profesional, objeto genérico; UNSPSC 81141500 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9130630": {
+  "incluido": 0,
+  "motivo": "CPS profesional, objeto genérico; UNSPSC 81141500 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9146867": {
+  "adicion": 120000000,
+  "cats": [
+   "Alimentación y catering"
+  ],
+  "fuente_adicion": "Monto declarado en el texto de la modificación en SECOP II",
+  "motivo": "Jornadas de oferta institucional en 42 entes territoriales; UNSPSC de catering; tuvo adición",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 250000000
+ },
+ "CO1.PCCNTR.9158251": {
+  "cats": [
+   "Transporte y viajes"
+  ],
+  "motivo": "Provisión y recarga de tarjetas del MIO: transporte escolar contratado",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9184332": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9188973": {
+  "adicion": 400000000,
+  "cats": [
+   "Logística y eventos",
+   "Transporte y viajes"
+  ],
+  "fuente_adicion": "Diferencia entre valores registrados en el dataset de modificaciones",
+  "motivo": "'Participación en ferias y eventos turísticos' y 'captación de eventos'",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 1000000000
+ },
+ "CO1.PCCNTR.9206190": {
+  "incluido": 0,
+  "motivo": "Objeto genérico de apoyo a la gestión; es agencia de comunicaciones",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9210734": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9211326": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9211730": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9213441": {
+  "cats": [
+   "Transporte y viajes"
+  ],
+  "motivo": "'Prestar servicios de apoyo LOGISTICO' — el texto viene sin espacios y por eso falló el filtro",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9221069": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Feria Internacional de Aves Birdfair 2026",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9226014": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9227904": {
+  "adicion": 2789936490,
+  "cats": [
+   "Alimentación y catering",
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Diferencia entre valores registrados en el dataset de modificaciones",
+  "motivo": "Las modificaciones citan textualmente 'componente de suministro de alimentación' y 'apoyo logístico durante la jornada electoral'",
+  "revision_texto": "Confirmado en revisión manual",
+  "valor_inicial": 5580141970
+ },
+ "CO1.PCCNTR.9228582": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9232131": {
+  "adicion": 0,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "SIN ADICIÓN EN VALOR — verificado en el documento del expediente",
+  "motivo": "'Planeación, alistamiento y ejecución de cinco (5) FERIAS'",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9233408": {
+  "incluido": 0,
+  "motivo": "Asistencia técnica y formación a mipymes; UNSPSC de eventos mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9234024": {
+  "incluido": 0,
+  "motivo": "Alianzas de cooperación internacional; UNSPSC de eventos mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9236145": {
+  "incluido": 0,
+  "motivo": "Atracción de inversión; UNSPSC de eventos mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9239235": {
+  "adicion": 70000000,
+  "fuente_adicion": "Monto declarado en el texto de la modificación en SECOP II",
+  "valor_inicial": 150000000
+ },
+ "CO1.PCCNTR.9250975": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9256549": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9258943": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9265668": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9266584": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Servicios 'artísticos, técnicos, profesionales y LOGÍSTICOS' para producción de intervenciones culturales",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9268342": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "'Producción técnica, LOGÍSTICA de actividades culturales' y eventos de ciudad",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9269942": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Circulación y exhibición artística en espacios públicos: montaje de eventos",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9278135": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9278535": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9281970": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "'Servicios técnicos, operativos y LOGÍSTICOS' para respuesta ante emergencias",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9282433": {
+  "adicion": 106200000,
+  "fuente_adicion": "Diferencia entre valores registrados en el dataset de modificaciones",
+  "valor_inicial": 265500000
+ },
+ "CO1.PCCNTR.9288431": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9295677": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9306293": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Eventos del Festival de la Familia; el objeto dice 'logísticos'",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9306661": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "New Balance Media Maratón de Cali 2026: evento masivo",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9318614": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9321421": {
+  "adicion": 87545250,
+  "fuente_adicion": "Monto declarado en el texto de la modificación en SECOP II",
+  "valor_inicial": 175090500
+ },
+ "CO1.PCCNTR.9321670": {
+  "adicion": 30000000,
+  "fuente_adicion": "Monto declarado en el texto de la modificación en SECOP II",
+  "valor_inicial": 60000000
+ },
+ "CO1.PCCNTR.9325971": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9325977": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9335055": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9335336": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9344352": {
+  "adicion": 74793000,
+  "fuente_adicion": "Monto declarado en el texto de la modificación en SECOP II",
+  "valor_inicial": 149710000
+ },
+ "CO1.PCCNTR.9344397": {
+  "adicion": 1000000000,
+  "fuente_adicion": "Monto leído en el documento del expediente (RPC/CDP/ficha técnica del otrosí)",
+  "valor_inicial": 2000000000
+ },
+ "CO1.PCCNTR.9348067": {
+  "adicion": 21880000,
+  "fuente_adicion": "Monto leído en el documento del expediente (RPC/CDP/ficha técnica del otrosí)",
+  "valor_inicial": 43766607
+ },
+ "CO1.PCCNTR.9355515": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9361574": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9364087": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9369002": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9375961": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9376167": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9378512": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9381050": {
+  "incluido": 0,
+  "motivo": "Proyectos pedagógicos y convivencia escolar; UNSPSC 90101600 (catering) mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9391127": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9394556": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9397230": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9401706": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9403390": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9404204": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9404830": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9405503": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9405539": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9405854": {
+  "incluido": 0,
+  "motivo": "Formulación del Plan Decenal de Educación; UNSPSC de eventos mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9428024": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9435716": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9441375": {
+  "adicion": 0,
+  "fuente_adicion": "SIN ADICIÓN EN VALOR — verificado en el documento del expediente"
+ },
+ "CO1.PCCNTR.9441414": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9441607": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9443123": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9453073": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9465966": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9466910": {
+  "adicion": 5954430,
+  "fuente_adicion": "Diferencia entre valores registrados en el dataset de modificaciones",
+  "valor_inicial": 11909770
+ },
+ "CO1.PCCNTR.9467028": {
+  "incluido": 0,
+  "motivo": "Innovacion pedagogica y curricular; UNSPSC de eventos mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9467849": {
+  "incluido": 0,
+  "motivo": "Formación en competencias laborales; UNSPSC de eventos mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9468780": {
+  "adicion": 89442857,
+  "cats": [
+   "Logística y eventos"
+  ],
+  "fuente_adicion": "Monto leído en el documento del expediente (RPC/CDP/ficha técnica del otrosí)",
+  "motivo": "CONFIRMADO con el formato de oferta economica del proceso: la Secretaría aporta $760M para 'REALIZAR SEMANA DEL PATRIMONIO', 'APOYAR ACTOS FESTIVOS Y LUDICOS' y talleres, y el aporte de la ESAL incluye 'Productor para el desarrollo de eventos', 'Apoyo para logística de invitados a semana del Patrimonio', 'Transporte para movilizar portadores a eventos culturales', 'Transporte aereo y logística de delegados' y 'Apoyo de refrigerios para el desarrollo del festival' (400 x $10.000). Es logística de eventos; los componentes de alimentación y transporte son menores ($25,5M).",
+  "revision_texto": "Confirmado en los documentos del proceso",
+  "valor_inicial": 1085648429
+ },
+ "CO1.PCCNTR.9474103": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9493589": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9493805": {
+  "cats": [
+   "Alimentación y catering",
+   "Transporte y viajes"
+  ],
+  "motivo": "CONFIRMADO con el analisis de precios del proceso: el presupuesto se compone de 'kit de viaje que contiene alimentos' (atún, salchichas, galletas, jamoneta, pan, jugos, agua), 'alojamiento temporal por días (incluye alimentación)' $50M, 'apoyo alimentario - entrega de mercado por grupo familiar' (arroz, harina, lenteja, fríjol, espaguetis, avena), 'apoyo para transporte' $45M y servicio de higiene. El UNSPSC 90101600 estaba bien asignado.",
+  "revision_texto": "Confirmado en los documentos del proceso"
+ },
+ "CO1.PCCNTR.9494410": {
+  "adicion": 3950000000,
+  "fuente_adicion": "Monto leído en el documento del expediente (RPC/CDP/ficha técnica del otrosí)",
+  "valor_inicial": 7900000000
+ },
+ "CO1.PCCNTR.9498345": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9499657": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9499762": {
+  "incluido": 0,
+  "motivo": "Formación en competencias laborales; UNSPSC 81141601 (logística) mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9501608": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Ejecución integral de los Juegos Intercolegiados: evento deportivo masivo",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9501967": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9508005": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9508319": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9513636": {
+  "incluido": 0,
+  "motivo": "Fortalecimiento empresarial de emprendedores; sin componente logístico",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9514979": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9515625": {
+  "incluido": 0,
+  "motivo": "Fortalecimiento empresarial de emprendedores; sin componente logístico",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9516202": {
+  "incluido": 0,
+  "motivo": "Fortalecimiento empresarial de emprendedores; sin componente logístico",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9516307": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9518524": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9520766": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9525486": {
+  "incluido": 0,
+  "motivo": "Fortalecimiento empresarial de emprendedores; sin componente logístico",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9527778": {
+  "cats": [
+   "Alimentación y catering",
+   "Transporte y viajes"
+  ],
+  "motivo": "CONFIRMADO con el formato de especificaciones técnicas del proceso: canasta de 24 items que incluye 'Apoyo en Alimentacion: desayuno, almuerzo y cena (10 días)', 'Desayuno, Almuerzo y Cena hasta por 5/10 días', 'apoyo en alimentación tipo mercados' quincenal, 'Alojamiento en habitación sencilla', 'albergue o casa de paso hasta por tres meses', 'Transporte: tiquetes aéreos', 'tiquetes terrestre intermunicipal', 'transporte urbano' y 'Apoyo logístico' para pago de renta. El UNSPSC 90101600 estaba bien asignado.",
+  "revision_texto": "Confirmado en los documentos del proceso"
+ },
+ "CO1.PCCNTR.9536848": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9537628": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9544909": {
+  "adicion": 0,
+  "fuente_adicion": "SIN ADICIÓN EN VALOR — verificado en el documento del expediente"
+ },
+ "CO1.PCCNTR.9547963": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9574600": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Marco: proyecto BP-26005287 'desarrollo de EVENTOS como dinamizador del turismo'; el objeto dice 'logísticos'",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9577520": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Festival de Macetas de Alfeñique; el objeto dice 'logísticos'",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9577732": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9588612": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9590824": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9595525": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice 'procesos administrativos y LOGÍSTICOS' y 'actividades LOGÍSTICAS y operativas'",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9596313": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Campeonato Mundial Sub-17 de Levantamiento de Pesas: evento internacional",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9598258": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9605386": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9605762": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9621716": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9628064": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9630786": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9631152": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9631313": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9632775": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9632785": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9633052": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9633063": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9633117": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9638654": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9647682": {
+  "incluido": 0,
+  "motivo": "CPS asistencial en asuntos étnicos; UNSPSC 78111701 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9650201": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9662210": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9662860": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9663162": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9663404": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9663528": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9663543": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9665267": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9667634": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9671842": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9676127": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9678479": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Ejecución de carreras atléticas y circuitos deportivos: evento masivo",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9678802": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "El objeto dice literalmente 'soporte logístico' (cafetería o transporte) en el Dpto. Adm. de Hacienda",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9682964": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9683605": {
+  "cats": [
+   "Logística y eventos"
+  ],
+  "motivo": "Festival Petronio Álvarez XXX; operador de eventos del Distrito",
+  "revision_texto": "Confirmado en revisión manual"
+ },
+ "CO1.PCCNTR.9684917": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9685490": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9686136": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9686531": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9686672": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9686831": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9686895": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9686957": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9687061": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9687135": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9687218": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9687219": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9687307": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9687427": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9688178": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9688487": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9688491": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9688493": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9688496": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9689796": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9689891": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9689893": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9689899": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690170": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690177": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690266": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690339": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690502": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690602": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690824": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9690833": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9698760": {
+  "incluido": 0,
+  "motivo": "Asistencia técnica a proyectos de infraestructura; UNSPSC 81141601 mal asignado",
+  "revision_texto": "Descartado en revisión manual"
+ },
+ "CO1.PCCNTR.9702039": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9704141": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9714423": {
+  "adicion": 568854544,
+  "fuente_adicion": "Monto leído en el documento del expediente (RPC/CDP/ficha técnica del otrosí)",
+  "valor_inicial": 3101810000
+ },
+ "CO1.PCCNTR.9725495": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9745029": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9765920": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ },
+ "CO1.PCCNTR.9774151": {
+  "revision_texto": "Evidencia alta, no requirió revisión"
+ }
+}
