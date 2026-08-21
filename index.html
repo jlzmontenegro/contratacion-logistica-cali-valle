@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contratación logística y catering · Cali y Valle del Cauca 2026</title>
+<meta name="description" content="Barrido de 34.888 contratos de Cali y el Valle del Cauca firmados en 2026 para identificar los de logística, catering y servicios conexos, con sus modificaciones y adiciones cuantificadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F5F7F6;--surface:#FFFFFF;--surface-2:#EDF1F0;--ink:#131C1B;--ink-2:#33423F;--muted:#5A6A68;
+  --hair:#DCE3E1;--hair-strong:#C3CFCC;--accent:#0E5C58;--accent-soft:#DCEBE8;--amber:#8E5407;
+  --shadow:0 1px 2px rgba(19,28,27,.05),0 8px 24px -16px rgba(19,28,27,.28);--pad:clamp(16px,4vw,32px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#0E1413;--surface:#161E1D;--surface-2:#1D2725;--ink:#E3EAE8;--ink-2:#C2CFCC;--muted:#8FA3A0;
+  --hair:#26312F;--hair-strong:#3A4A46;--accent:#5AB9B1;--accent-soft:#17302E;--amber:#D69A4C;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);}}
+:root[data-theme="dark"]{
+  --ground:#0E1413;--surface:#161E1D;--surface-2:#1D2725;--ink:#E3EAE8;--ink-2:#C2CFCC;--muted:#8FA3A0;
+  --hair:#26312F;--hair-strong:#3A4A46;--accent:#5AB9B1;--accent-soft:#17302E;--amber:#D69A4C;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);margin:0;font-family:"Public Sans",system-ui,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:920px;margin:0 auto;padding:0 var(--pad) 80px}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;margin:0;text-wrap:balance}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+header{padding:clamp(40px,8vw,76px) 0 22px;border-bottom:2px solid var(--ink)}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);font-weight:500;display:block;margin-bottom:10px}
+h1{font-size:clamp(1.8rem,5vw,2.9rem);font-weight:600;line-height:1.08;letter-spacing:-.015em}
+.dek{font-size:clamp(1rem,2vw,1.14rem);color:var(--ink-2);margin:16px 0 0;max-width:62ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));border-bottom:1px solid var(--hair)}
+.kpi{padding:20px 16px;border-right:1px solid var(--hair)}
+.kpi:last-child{border-right:0}
+.kpi b{font-family:"Zilla Slab",serif;font-size:clamp(1.4rem,3vw,1.9rem);font-weight:600;line-height:1;
+  display:block;letter-spacing:-.02em;white-space:nowrap}
+.kpi span{font-size:12px;color:var(--muted);display:block;margin-top:7px;line-height:1.35}
+.kpi.hi b{color:var(--accent)}.kpi.warn b{color:var(--amber)}
+h2{font-size:1.25rem;font-weight:600;margin:44px 0 4px}
+.lead{color:var(--muted);font-size:13.5px;margin:0 0 18px}
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{display:block;background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:22px;
+  text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card h3{font-size:1.05rem;font-weight:600;margin-bottom:7px}
+.card p{font-size:13.5px;color:var(--muted);margin:0}
+.card .go{display:inline-block;margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent);font-weight:500}
+.files{display:flex;flex-direction:column;gap:9px}
+.file{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;background:var(--surface);
+  border:1px solid var(--hair);border-radius:3px;padding:13px 16px;text-decoration:none;color:inherit}
+.file:hover{border-color:var(--accent)}
+.file b{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:500;color:var(--accent)}
+.file span{font-size:12.5px;color:var(--muted)}
+.note{border-left:3px solid var(--amber);background:var(--surface);padding:15px 18px;margin:34px 0 0;
+  font-size:13.5px;line-height:1.6;box-shadow:var(--shadow)}
+footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--hair);font-size:12.5px;color:var(--muted)}
+footer code{font-family:"IBM Plex Mono",monospace;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="kicker">SECOP II · datos abiertos de Colombia</span>
+  <h1>Contratación de logística y catering<br>Cali y Valle del Cauca, 2026</h1>
+  <p class="dek">Barrido de los 34.888 contratos firmados por el Distrito de Santiago de Cali y la Gobernación del Valle entre el 1 de enero y el 20 de agosto de 2026, para identificar los de logística, catering y servicios conexos y seguirles el rastro de modificaciones y adiciones.</p>
+</header>
+
+<div class="kpis">
+  <div class="kpi hi"><b>191</b><span>contratos identificados</span></div>
+  <div class="kpi"><b>$302.696 M</b><span>valor contratado</span></div>
+  <div class="kpi"><b>66</b><span>con modificación publicada</span></div>
+  <div class="kpi warn"><b>33</b><span>con adición en valor</span></div>
+  <div class="kpi warn"><b>$9.431 M</b><span>sumaron esas adiciones</span></div>
+</div>
+
+<h2>Consultar</h2>
+<p class="lead">Dos formas de entrar a lo mismo: la herramienta para buscar y la explicación de cómo se hizo.</p>
+<div class="cards">
+  <a class="card" href="tablero/">
+    <h3>Tablero interactivo</h3>
+    <p>Los 191 contratos con búsqueda, filtros por dependencia, categoría y estado, columnas ordenables y el detalle de cada uno: objeto completo, valores, y todas sus modificaciones con la justificación íntegra.</p>
+    <span class="go">Abrir el tablero →</span>
+  </a>
+  <a class="card" href="informe/">
+    <h3>Informe metodológico</h3>
+    <p>Cómo se identificaron los contratos cuando la palabra «catering» aparece una sola vez en toda la base, qué se descartó y por qué, y cómo se cuantificaron las adiciones leyendo los expedientes.</p>
+    <span class="go">Leer el informe →</span>
+  </a>
+</div>
+
+<h2>Datos</h2>
+<p class="lead">Separador punto y coma, UTF-8 con BOM. Abren directo en Excel.</p>
+<div class="files">
+  <a class="file" href="datos/01_contratos_logistica.csv" download>
+    <b>01_contratos_logistica.csv</b>
+    <span>213 filas · un contrato por fila, con el veredicto de la revisión y la adición cuantificada</span>
+  </a>
+  <a class="file" href="datos/02_modificaciones_detalle.csv" download>
+    <b>02_modificaciones_detalle.csv</b>
+    <span>145 filas · una modificación por fila, con su tipo, estado y justificación completa</span>
+  </a>
+</div>
+
+<div class="note">
+  <strong>Cómo leer esto.</strong> La clasificación en categorías es propia, no viene en la fuente: se construyó leyendo los objetos contractuales porque el código UNSPSC del dataset resultó poco confiable. Los 22 contratos descartados en la revisión manual siguen en el CSV con <code>incluido = NO</code> y el motivo escrito, para que cualquiera pueda revisar el criterio. Las cifras de adición señaladas como «piso» solo captan el salto entre registros del dataset; las demás salen del documento del expediente.
+</div>
+
+<footer>
+  Fuente: <a href="https://www.datos.gov.co/" target="_blank" rel="noopener">datos.gov.co</a> —
+  conjuntos <code>jbjy-vk9h</code> (contratos electrónicos), <code>u8cx-r425</code> (modificaciones),
+  <code>cb9c-h8sn</code> (adiciones) y <code>dmgg-8hin</code> (archivos del expediente).
+  Datos con corte al 20 de agosto de 2026.
+</footer>
+</div>
+</body>
+</html>

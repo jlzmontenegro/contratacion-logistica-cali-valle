@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logística y Catering Cali–Valle 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Public+Sans:ital,wght@0,300..700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --ground:#F5F7F6; --surface:#FFFFFF; --surface-2:#EDF1F0;
+  --ink:#131C1B; --ink-2:#33423F; --muted:#5A6A68; --hair:#DCE3E1; --hair-strong:#C3CFCC;
+  --accent:#0E5C58; --accent-soft:#DCEBE8; --accent-ink:#0A403D;
+  --amber:#8E5407; --amber-soft:#F6EBD8;
+  --rust:#8F3324; --rust-soft:#F6E3DF;
+  --shadow:0 1px 2px rgba(19,28,27,.05), 0 8px 24px -16px rgba(19,28,27,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0E1413; --surface:#161E1D; --surface-2:#1D2725;
+    --ink:#E3EAE8; --ink-2:#C2CFCC; --muted:#8FA3A0;
+    --hair:#26312F; --hair-strong:#36443F;
+    --accent:#5AB9B1; --accent-soft:#17302E; --accent-ink:#8FD6CF;
+    --amber:#D69A4C; --amber-soft:#2C2417;
+    --rust:#D9806E; --rust-soft:#2E1C18;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0E1413; --surface:#161E1D; --surface-2:#1D2725;
+  --ink:#E3EAE8; --ink-2:#C2CFCC; --muted:#8FA3A0;
+  --hair:#26312F; --hair-strong:#36443F;
+  --accent:#5AB9B1; --accent-soft:#17302E; --accent-ink:#8FD6CF;
+  --amber:#D69A4C; --amber-soft:#2C2417;
+  --rust:#D9806E; --rust-soft:#2E1C18;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16.5px; line-height:1.62; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1140px; margin:0 auto; padding:0 clamp(18px,4vw,44px) 96px;}
+.prose{max-width:70ch}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif; text-wrap:balance; margin:0}
+a{color:var(--accent); text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:2px solid var(--ink); padding:clamp(40px,7vw,76px) 0 22px; display:flex; flex-direction:column; gap:18px}
+.kicker{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:500}
+h1{font-size:clamp(2.1rem,5.2vw,3.4rem); font-weight:600; line-height:1.06; letter-spacing:-.015em}
+.dek{font-size:clamp(1.02rem,1.9vw,1.18rem); color:var(--ink-2); max-width:60ch; margin:0}
+.meta{display:flex; flex-wrap:wrap; gap:6px 26px; font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted); padding-top:4px}
+.meta b{color:var(--ink-2); font-weight:500}
+
+/* ---------- stat rail ---------- */
+.rail{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); border-bottom:1px solid var(--hair)}
+.stat{padding:26px 22px 24px; border-right:1px solid var(--hair)}
+.stat:last-child{border-right:0}
+.stat .n{font-family:"Zilla Slab",serif; font-size:clamp(1.9rem,4vw,2.6rem); font-weight:600; line-height:1; letter-spacing:-.02em; font-variant-numeric:tabular-nums; display:block}
+.stat .l{font-size:12.5px; color:var(--muted); margin-top:9px; display:block; line-height:1.4}
+.stat.hi .n{color:var(--accent)}
+.stat.warn .n{color:var(--amber)}
+
+/* ---------- sections ---------- */
+section{padding-top:clamp(44px,6vw,72px)}
+.sechead{display:flex; align-items:baseline; gap:14px; border-bottom:1px solid var(--hair-strong); padding-bottom:10px; margin-bottom:26px}
+.sechead .tag{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); white-space:nowrap; padding-top:4px}
+h2{font-size:clamp(1.35rem,2.8vw,1.72rem); font-weight:600; letter-spacing:-.01em; flex:1}
+h3{font-size:1.03rem; font-weight:600; margin:30px 0 10px; letter-spacing:-.005em}
+p{margin:0 0 15px}
+.lead{font-size:1.06rem; color:var(--ink-2)}
+
+/* ---------- tables ---------- */
+.tablebox{overflow-x:auto; border:1px solid var(--hair); border-radius:2px; background:var(--surface); box-shadow:var(--shadow); margin:20px 0 8px}
+table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:640px}
+th{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); font-weight:500;
+   text-align:left; padding:12px 14px; border-bottom:1px solid var(--hair-strong); background:var(--surface-2); white-space:nowrap; position:sticky; top:0}
+td{padding:11px 14px; border-bottom:1px solid var(--hair); vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--surface-2)}
+.num{text-align:right; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap}
+.ent{color:var(--muted); font-size:12.5px}
+.who{font-weight:600}
+caption{caption-side:bottom; text-align:left; font-size:12px; color:var(--muted); padding:10px 14px; border-top:1px solid var(--hair)}
+
+/* ---------- chips ---------- */
+.chip{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.05em; padding:2px 7px; border-radius:2px;
+      background:var(--surface-2); color:var(--ink-2); white-space:nowrap; border:1px solid var(--hair)}
+.chip.a{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
+.chip.w{background:var(--amber-soft); color:var(--amber); border-color:transparent}
+.chip.r{background:var(--rust-soft); color:var(--rust); border-color:transparent}
+.chip.z{opacity:.5}
+
+/* ---------- category bars ---------- */
+.cats{display:flex; flex-direction:column; gap:2px; margin:22px 0 10px}
+.cat{display:grid; grid-template-columns:minmax(150px,1.1fr) minmax(120px,3fr) auto; gap:16px; align-items:center;
+     padding:13px 16px; background:var(--surface); border:1px solid var(--hair); border-radius:2px}
+.cat .name{font-weight:600; font-size:14px; line-height:1.25}
+.cat .name small{display:block; font-weight:400; color:var(--muted); font-size:11.5px; font-family:"IBM Plex Mono",monospace; margin-top:3px}
+.bar{height:9px; background:var(--surface-2); border-radius:1px; overflow:hidden; min-width:70px}
+.bar i{display:block; height:100%; background:var(--accent); border-radius:1px}
+.cat .v{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-size:13px; text-align:right; white-space:nowrap; font-weight:500}
+.cat .v small{display:block; color:var(--muted); font-size:11px; font-weight:400; margin-top:2px}
+
+/* ---------- lexicon ---------- */
+.lex{display:grid; grid-template-columns:repeat(auto-fit,minmax(248px,1fr)); gap:1px; background:var(--hair); border:1px solid var(--hair); margin:22px 0 6px}
+.lexcell{background:var(--surface); padding:16px 18px 18px}
+.lexcell h4{margin:0 0 10px; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:500}
+.terms{display:flex; flex-wrap:wrap; gap:5px}
+.terms span{font-size:12.5px; padding:2px 8px; background:var(--surface-2); border-radius:2px; color:var(--ink-2)}
+
+/* ---------- callout ---------- */
+.note{border-left:3px solid var(--accent); background:var(--surface); padding:16px 20px; margin:24px 0; box-shadow:var(--shadow)}
+.note.warn{border-left-color:var(--amber)}
+.note p:last-child{margin-bottom:0}
+.note strong{font-weight:600}
+
+/* ---------- files ---------- */
+.files{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:20px}
+.file{background:var(--surface); border:1px solid var(--hair); border-radius:2px; padding:16px 18px; box-shadow:var(--shadow)}
+.file .fn{font-family:"IBM Plex Mono",monospace; font-size:12.5px; font-weight:500; color:var(--accent); word-break:break-all}
+.file p{font-size:13px; color:var(--muted); margin:8px 0 0}
+
+ul{margin:0 0 15px; padding-left:1.15em}
+li{margin-bottom:7px}
+li::marker{color:var(--accent)}
+hr{border:0; border-top:1px solid var(--hair); margin:34px 0}
+/* ---------- responsive ---------- */
+@media (max-width:700px){
+  body{font-size:16px}
+  .rail{grid-template-columns:repeat(2,1fr)}
+  .stat{border-right:1px solid var(--hair); border-bottom:1px solid var(--hair); padding:18px 14px}
+  .stat:nth-child(2n){border-right:0}
+  .stat .n{font-size:1.6rem}
+  .sechead{flex-wrap:wrap; gap:4px 12px}
+  .sechead .tag{padding-top:0}
+  .cat{grid-template-columns:1fr auto; gap:6px 12px}
+  .cat .bar{grid-column:1 / -1; order:3}
+  .cat .v{text-align:right}
+  .cat .v small{display:inline; margin-left:6px}
+  .note{padding:14px 16px}
+  .lex{grid-template-columns:1fr}
+  .meta{gap:4px 16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+</head>
+<body>
+<nav class="sitenav">
+  <a href="../index.html">← Inicio</a>
+  <span>Contratación logística · Cali y Valle 2026</span>
+</nav>
+<style>
+.sitenav{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  padding:10px clamp(14px,2.5vw,32px);font:500 12.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;
+  background:var(--surface-2,#EDF1F0);border-bottom:1px solid var(--hair,#DCE3E1);color:var(--muted,#5A6A68)}
+.sitenav a{color:var(--accent,#0E5C58);text-decoration:none;font-weight:600}
+.sitenav a:hover{text-decoration:underline}
+</style>
+
+
+<div class="wrap">
+
+<header class="mast">
+  <span class="kicker">SECOP II · Contratos electrónicos · jbjy-vk9h</span>
+  <h1>Logística, catering y servicios conexos en Cali y Valle del Cauca</h1>
+  <p class="dek">Barrido de los 34.888 contratos firmados por el Distrito de Santiago de Cali y la Gobernación del Valle entre el 1 de enero y el 20 de agosto de 2026, con el rastro completo de modificaciones y adiciones de cada contrato identificado y la revisión manual, uno a uno, de los 66 casos dudosos —los tres últimos resueltos en los documentos del proceso.</p>
+  <div class="meta">
+    <span><b>Fuente</b> datos.gov.co · API v3</span>
+    <span><b>Periodo</b> 2026-01-01 → 2026-08-20</span>
+    <span><b>NIT</b> 890399011 · 8903990113 · 890399029 · 8903990291 · 8903990295</span>
+    <span><b>Corte</b> 20 ago 2026</span>
+  </div>
+</header>
+
+<div class="rail">
+  <div class="stat"><span class="n">34.888</span><span class="l">contratos en el universo revisado</span></div>
+  <div class="stat hi"><span class="n">191</span><span class="l">confirmados como logística, catering o conexos</span></div>
+  <div class="stat"><span class="n">$302,7</span><span class="l">mil millones contratados en ese grupo</span></div>
+  <div class="stat warn"><span class="n">67</span><span class="l">tienen modificaciones registradas</span></div>
+  <div class="stat warn"><span class="n">33</span><span class="l">tienen adición en valor, ya cuantificada</span></div>
+  <div class="stat warn"><span class="n">$9.431</span><span class="l">millones sumaron esas adiciones</span></div>
+</div>
+
+<!-- ==================== METODOLOGÍA ==================== -->
+<section>
+  <div class="sechead"><span class="tag">Cómo se identificaron</span><h2>La palabra «catering» aparece una sola vez en 34.888 contratos</h2></div>
+  <div class="prose">
+    <p class="lead">Buscar por las palabras obvias no funciona en esta base. «Catering» aparece literalmente en un contrato; «banquete», en ninguno. Por eso el primer paso fue leer los objetos contractuales reales y construir el vocabulario a partir de ellos, no al revés.</p>
+    <p>El otro problema es el ruido. El 96,8 % de los contratos del periodo son prestación de servicios con personas naturales, y en sus objetos abundan frases como «soporte logístico en las actividades de cafetería» o «programa de seguridad alimentaria». Una búsqueda simple por «logística» devuelve 201 contratos, casi todos contratos de personal. Para separarlos revisé los 767 objetos distintos de contratos con proveedor empresarial y de ahí salió el léxico que sí distingue.</p>
+  </div>
+
+  <div class="lex">
+    <div class="lexcell"><h4>Operación logística</h4><div class="terms">
+      <span>operador logístico</span><span>operación logística</span><span>apoyo logístico</span><span>servicios logísticos</span><span>gestión logística</span><span>logística integral</span><span>servicio logístico integral</span><span>actividades operativas y logísticas</span></div></div>
+    <div class="lexcell"><h4>Eventos</h4><div class="terms">
+      <span>montaje y desmontaje</span><span>tarima</span><span>escenografía</span><span>planeación, organización, producción</span><span>producción, promoción, ejecución</span><span>eventos y jornadas</span></div></div>
+    <div class="lexcell"><h4>Alimentación / catering</h4><div class="terms">
+      <span>complemento alimentario</span><span>PAE</span><span>programa de alimentación escolar</span><span>suministro de alimentación</span><span>alimentación preparada y empacada</span><span>raciones</span><span>refrigerio</span><span>bonos canjeables de alimentación</span><span>kits de alimentos</span><span>kits de mercado</span><span>minuta patrón</span><span>logística alimentaria</span><span>catering</span></div></div>
+    <div class="lexcell"><h4>Transporte y viajes</h4><div class="terms">
+      <span>tiquetes aéreos</span><span>agencia de viajes</span><span>transporte especial de pasajeros</span><span>transporte marítimo y fluvial</span><span>transporte de carga</span><span>transporte de muestras</span><span>arriería</span><span>vehículos tipo grúa</span><span>servicios turísticos</span><span>alojamiento</span></div></div>
+    <div class="lexcell"><h4>Mensajería y correo</h4><div class="terms">
+      <span>mensajería expresa</span><span>mensajería certificada</span><span>mensajería motorizada</span><span>distribución de correspondencia</span></div></div>
+    <div class="lexcell"><h4>Almacenamiento y cafetería</h4><div class="terms">
+      <span>bodegaje</span><span>almacenamiento y custodia</span><span>guarda y custodia</span><span>inmueble tipo bodega</span><span>elementos de cafetería</span><span>limpieza integral y cafetería</span><span>servicio de cafetería</span></div></div>
+  </div>
+
+  <div class="prose">
+    <h3>Segundo filtro: el código UNSPSC</h3>
+    <p>Varios contratos describen el servicio sin usar ninguna palabra del léxico, pero lo clasifican correctamente en el catálogo. Se incluyeron por código las familias <span class="chip">9010xx</span> banquetes y catering, <span class="chip">90121500 · 78111502</span> tiquetes, <span class="chip">80141600</span> eventos, <span class="chip">81141601</span> logística, <span class="chip">78102200 · 82121500</span> mensajería y <span class="chip">78101800 · 78111800</span> transporte. Este criterio es el que más ruido introdujo: la revisión manual mostró que el código está mal asignado con frecuencia, así que ninguno de los contratos capturados solo por UNSPSC entró sin lectura del objeto.</p>
+
+    <h3>Se excluyó a propósito</h3>
+    <p>Los contratos de préstamo de uso y aprovechamiento económico de escenarios deportivos (estadio Pascual Guerrero, coliseos, pistas) llevan códigos de la familia 9014 «recreación y entretenimiento», pero no son contratos logísticos: son cesiones de uso de infraestructura. Son 69 registros que quedan fuera.</p>
+  </div>
+
+  <div class="note warn">
+    <p><strong>Tercer paso: revisión manual de los dudosos.</strong> El filtro automático dejó 213 candidatos, de los cuales 147 tenían evidencia clara y 66 quedaron en duda — convenios que usan «logístico» como un adjetivo más en la fórmula «aunar esfuerzos técnicos, administrativos, financieros y logísticos», y contratos arrastrados por su código UNSPSC. Leí esos 66 uno por uno, y para los tres que el objeto no alcanzaba a decidir bajé los documentos del expediente. El resultado está en la sección siguiente: no queda ningún caso abierto.</p>
+  </div>
+</section>
+
+<!-- ==================== REVISIÓN DE LOS 66 ==================== -->
+<section>
+  <div class="sechead"><span class="tag">Revisión caso por caso</span><h2>De los 66 dudosos, 44 son reales y 22 no</h2></div>
+  <div class="prose">
+    <p class="lead">Leí los 66 objetos completos. La conclusión práctica: <b>el código UNSPSC de esta base no es confiable como criterio único</b> — es la causa de 17 de los 22 falsos positivos. Hay contratos de formación laboral clasificados en la familia 811416 «servicios de logística», y contratos de asesoría jurídica en 781116 «transporte de pasajeros». Tres casos no se podían decidir con el objeto publicado; esos se resolvieron descargando los documentos del proceso, y los tres resultaron ser reales.</p>
+  </div>
+
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Veredicto</th><th class="num">Contratos</th><th class="num">Valor</th><th>Criterio aplicado</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip a">Confirmado por el objeto</span></td><td class="num">41</td><td class="num">$53.688 M</td><td>El objeto describe un evento, feria, festival o jornada concreta, o dice «logístico» sobre una actividad real y no como adjetivo de relleno</td></tr>
+        <tr><td><span class="chip r">Descartado</span></td><td class="num">22</td><td class="num">$27.977 M</td><td>El objeto es formación, asesoría, fortalecimiento empresarial o CPS genérico; el vínculo venía solo del código UNSPSC</td></tr>
+        <tr><td><span class="chip a">Confirmado en los documentos</span></td><td class="num">3</td><td class="num">$1.940 M</td><td>El objeto no bastaba; el presupuesto y las especificaciones técnicas del proceso muestran los ítems de alimentación, alojamiento y transporte</td></tr>
+      </tbody>
+      <caption>Los 66 dudosos sumaban $83.604 M — el 25 % del valor de todos los candidatos, así que la revisión no era un detalle menor.</caption>
+    </table>
+  </div>
+
+  <h3>Los 22 que salieron, y por qué</h3>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Proveedor</th><th class="num">Valor</th><th>Motivo del descarte</th></tr></thead>
+      <tbody>
+        <tr><td class="who">Fundación Ave Fénix</td><td class="num">$10.582 M</td><td>Alianza familia-escuela y convivencia escolar. Lleva UNSPSC 90101600 «banquetes y catering», pero el objeto no menciona alimentación.</td></tr>
+        <tr><td class="who">Semilla País <span class="chip">×2</span></td><td class="num">$4.221 M</td><td rowspan="3">Fortalecimiento de capacidades empresariales de emprendedores y micronegocios por comunas. Cuatro convenios con el mismo texto, ninguno con componente logístico descrito.</td></tr>
+        <tr><td class="who">Asociación Hábitat Humano</td><td class="num">$2.136 M</td></tr>
+        <tr><td class="who">UT Fundesarrollo</td><td class="num">$1.618 M</td></tr>
+        <tr><td class="who">Empresa de Recursos Tecnológicos</td><td class="num">$1.698 M</td><td>Asistencia técnica y formación a mipymes. UNSPSC 80141607 «gestión de eventos» mal asignado.</td></tr>
+        <tr><td class="who">Corpoeducación</td><td class="num">$1.673 M</td><td>Innovación pedagógica y curricular.</td></tr>
+        <tr><td class="who">Asociación Antonio Maceo y Grajales <span class="chip">×2</span></td><td class="num">$2.667 M</td><td>Formación en competencias laborales. Uno de los dos lleva UNSPSC 81141601 «servicios de logística».</td></tr>
+        <tr><td class="who">Innovatech E.I.C.E.</td><td class="num">$1.250 M</td><td>Asistencia técnica a proyectos de infraestructura del Valle. UNSPSC 81141601 mal asignado. Los otros dos contratos de Innovatech sí quedaron confirmados.</td></tr>
+        <tr><td class="who">Prensa y Entretenimiento Agencia de Comunicaciones</td><td class="num">$1.000 M</td><td>Objeto genérico de apoyo a la gestión del Concejo. Es una agencia de comunicaciones.</td></tr>
+        <tr><td class="who">Fundación para el Desarrollo Integral</td><td class="num">$572 M</td><td>Formulación del Plan Decenal de Educación.</td></tr>
+        <tr><td class="who">Fondo Mixto Cartago</td><td class="num">$200 M</td><td>Alianzas de cooperación internacional. Su otro contrato, el de las cinco ferias, sí quedó confirmado.</td></tr>
+        <tr><td class="who">Invest Pacific</td><td class="num">$150 M</td><td>Atracción y promoción de inversión.</td></tr>
+        <tr><td class="who">8 personas naturales (CPS)</td><td class="num">$211 M</td><td>Servicios profesionales en educación, paz, bibliotecas, asuntos étnicos y violencias basadas en género. Todos arrastrados por códigos UNSPSC de transporte o logística evidentemente mal digitados.</td></tr>
+      </tbody>
+      <caption>Quedan en el CSV con <code>incluido = NO</code> y el motivo en la columna <code>motivo_revision</code>, para que puedas revertir cualquier decisión.</caption>
+    </table>
+  </div>
+
+<h3>Los tres que hubo que resolver en los documentos</h3>
+  <div class="prose">
+    <p>SECOP II bloquea la navegación con un reCaptcha, pero el conjunto <code>dmgg-8hin</code> de datos.gov.co publica las URL de descarga directa de cada archivo del expediente. Por ahí bajé el presupuesto, las especificaciones técnicas y los estudios previos de los tres procesos. Los formatos de oferta económica resultaron ser la prueba: traen el desglose ítem por ítem.</p>
+  </div>
+
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Contrato</th><th>Documento revisado</th><th>Lo que dice el desglose</th><th>Fallo</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="who">International ESD Foundation<br><span class="ent">Sec. Cultura · $1.175 M</span></td>
+          <td class="ent">Formato de oferta económica</td>
+          <td>La Secretaría aporta $760 M para «realizar Semana del Patrimonio», «apoyar actos festivos y lúdicos de la Inmaculada Concepción» y talleres. El aporte de la ESAL incluye «productor para el desarrollo de eventos», «apoyo para logística de invitados», «transporte para movilizar portadores a eventos culturales», «transporte aéreo y logística de delegados» y «apoyo de refrigerios para el desarrollo del festival» (400 × $10.000).</td>
+          <td><span class="chip a">Logística de eventos</span><br><span class="ent">Los componentes de alimentación y transporte son menores: $25,5 M</span></td>
+        </tr>
+        <tr>
+          <td class="who">Fundación Brigada 152<br><span class="ent">Bienestar Social · $590 M</span></td>
+          <td class="ent">Análisis de precios · Cotización</td>
+          <td>Todo el presupuesto son ayudas materiales: «kit de viaje que contiene alimentos» (atún, salchichas, galletas, jamoneta, pan, jugos, agua), «alojamiento temporal por días — incluye alimentación» $50 M, «apoyo alimentario: entrega de mercado por grupo familiar» (arroz, harina, lenteja, fríjol, espaguetis, avena), «apoyo para transporte» $45 M y servicio de higiene.</td>
+          <td><span class="chip a">Alimentación</span> <span class="chip a">Transporte</span><br><span class="ent">El UNSPSC de catering estaba bien puesto</span></td>
+        </tr>
+        <tr>
+          <td class="who">Imperium Company S.A.S.<br><span class="ent">Paz y Cultura Ciudadana · $175 M</span></td>
+          <td class="ent">Formato de especificaciones técnicas</td>
+          <td>Canasta de 24 ítems para las rutas de atención a víctimas de trata y a líderes sociales: «apoyo en alimentación: desayuno, almuerzo y cena (10 días)», «desayuno, almuerzo y cena hasta por 5/10 días», «apoyo en alimentación tipo mercados» quincenal, «alojamiento en habitación sencilla», «albergue o casa de paso hasta por tres meses», «transporte: tiquetes aéreos», «tiquetes terrestre intermunicipal», «transporte urbano» y «apoyo logístico» para pago de renta.</td>
+          <td><span class="chip a">Alimentación</span> <span class="chip a">Transporte</span><br><span class="ent">El UNSPSC de catering estaba bien puesto</span></td>
+        </tr>
+      </tbody>
+      <caption>Los tres son contratos de asistencia social cuyo objeto publicado describe la finalidad —atender migrantes, víctimas de trata, salvaguardar el patrimonio— y no el servicio comprado. Es el patrón que más se le escapa a cualquier búsqueda por texto del objeto.</caption>
+    </table>
+  </div>
+
+  <h3>Los rescates que más pesan</h3>
+  <div class="prose">
+  <ul>
+    <li><b>Festival Petronio Álvarez XXX — $20.645 M.</b> El objeto dice «aunar esfuerzos técnicos, logísticos, humanos...», la fórmula que había marcado como sospechosa. Pero el contratista es la Corporación de Eventos, Ferias y Espectáculos de Cali —el operador de eventos del Distrito— y el objeto es realizar el festival. Es logística de eventos sin ambigüedad.</li>
+    <li><b>Innovatech, apoyo electoral — $8.370 M.</b> El objeto solo dice «apoyar el proceso de elecciones». Lo que lo confirma está en el texto de sus propias modificaciones, que hablan del «componente de suministro de alimentación» y del «apoyo logístico durante la jornada electoral». Reclasificado a alimentación <em>y</em> logística.</li>
+    <li><b>GESPRODE, Concejo Distrital — $440 M.</b> El objeto es «prestar servicios de apoyo logístico para la ejecución del Plan de Bienestar e Incentivos», evidencia de primer nivel. Se había escapado del filtro porque el texto viene publicado sin espacios entre palabras.</li>
+    <li><b>El bloque de Hacienda de Cali — 21 contratos.</b> Objetos que dicen literalmente «soporte logístico en las actividades de cafetería» o «soporte logístico de transporte». Son personas naturales, así que van al Grupo B, pero son contratos de apoyo logístico genuinos. De estos 21, los 19 firmados en el primer semestre son el bloque prorrogado 122 días que se describe más adelante.</li>
+  </ul>
+  </div>
+</section>
+
+<!-- ==================== QUÉ HAY ==================== -->
+<section>
+  <div class="sechead"><span class="tag">Qué se encontró</span><h2>191 contratos por $302.696 millones</h2></div>
+  <div class="prose">
+    <p class="lead">Se separan en dos grupos que conviene no mezclar. <b>Grupo A — operadores y proveedores del servicio:</b> 108 contratos por $295.926 millones, donde el objeto contratado es el servicio mismo. <b>Grupo B — apoyo profesional:</b> 83 contratos por $6.770 millones con personas naturales cuyo objeto es apoyar la gestión logística, la cafetería o el PAE, no prestarlo. Las cifras ya excluyen los 22 descartados en la revisión.</p>
+    <p>Las categorías siguientes corresponden al Grupo A. Un contrato puede pertenecer a más de una — el servicio logístico integral de alimentación a la Policía Metropolitana, por ejemplo, cuenta en logística y en alimentación.</p>
+  </div>
+
+  <div class="cats">
+    <div class="cat"><div class="name">Alimentación y catering<small>22 contratos · 14 modificados</small></div><div class="bar"><i style="width:100%"></i></div><div class="v">$200.711 M<small>67,8 %</small></div></div>
+    <div class="cat"><div class="name">Logística y eventos<small>54 contratos · 24 modificados</small></div><div class="bar"><i style="width:50.9%"></i></div><div class="v">$102.229 M<small>34,5 %</small></div></div>
+    <div class="cat"><div class="name">Transporte y viajes<small>28 contratos · 7 modificados</small></div><div class="bar"><i style="width:7.5%"></i></div><div class="v">$15.149 M<small>5,1 %</small></div></div>
+    <div class="cat"><div class="name">Mensajería y correo<small>4 contratos · 1 modificado</small></div><div class="bar"><i style="width:1.9%"></i></div><div class="v">$3.787 M<small>1,3 %</small></div></div>
+    <div class="cat"><div class="name">Almacenamiento y bodegaje<small>7 contratos · 1 modificado</small></div><div class="bar"><i style="width:1.1%"></i></div><div class="v">$2.193 M<small>0,7 %</small></div></div>
+    <div class="cat"><div class="name">Cafetería y suministros<small>7 contratos · 2 modificados</small></div><div class="bar"><i style="width:0.3%"></i></div><div class="v">$639 M<small>0,2 %</small></div></div>
+  </div>
+
+  <h3>Los 14 contratos más grandes</h3>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Proveedor</th><th>Entidad</th><th>Objeto</th><th class="num">Valor</th><th class="num">Modif.</th></tr></thead>
+      <tbody>
+        <tr><td class="who">UNION TEMPORAL NUTRIENDO CALI 2026</td><td class="ent">Sec. Educación Cali</td><td><span class="chip a">PAE</span></td><td class="num">$37.795 M</td><td class="num">3</td></tr>
+        <tr><td class="who">ORGANIZACIÓN EMPRESARIAL NRC S.A.</td><td class="ent">Sec. Educación Cali</td><td><span class="chip a">PAE</span></td><td class="num">$37.208 M</td><td class="num">3</td></tr>
+        <tr><td class="who">Fundación Prodesarrollo Comunitario Acción por Colombia</td><td class="ent">Sec. Educación Cali</td><td><span class="chip a">PAE</span></td><td class="num">$36.838 M</td><td class="num">2</td></tr>
+        <tr><td class="who">(CON) ALIMENTANDO CALI 2026</td><td class="ent">Sec. Educación Cali</td><td><span class="chip a">PAE</span></td><td class="num">$34.684 M</td><td class="num">2</td></tr>
+        <tr><td class="who">Corporación de Eventos, Ferias y Espectáculos de Cali</td><td class="ent">Sec. Cultura Cali</td><td><span class="chip">Logística de eventos</span></td><td class="num">$20.645 M</td><td class="num">1</td></tr>
+        <tr><td class="who">Fundación para la Capacitación, Desarrollo y Bienestar Humano</td><td class="ent">Sec. Educación Valle</td><td><span class="chip a">Alimentación</span></td><td class="num">$15.714 M</td><td class="num">0</td></tr>
+        <tr><td class="who">UT ALIMENTACIÓN INTEGRAL CALI 2026</td><td class="ent">Sec. Seguridad y Justicia Cali</td><td><span class="chip a">Alimentación</span></td><td class="num">$11.850 M</td><td class="num">2</td></tr>
+        <tr><td class="who">INNOVATECH E.I.C.E.</td><td class="ent">Sec. Desarrollo Territorial Cali</td><td><span class="chip a">Alimentación</span> <span class="chip">Logística electoral</span></td><td class="num">$8.370 M</td><td class="num">3</td></tr>
+        <tr><td class="who">LIVATRI</td><td class="ent">Sec. Deporte y Recreación Cali</td><td><span class="chip">Logística de eventos</span></td><td class="num">$5.503 M</td><td class="num">1</td></tr>
+        <tr><td class="who">Arrendamiento de Equipos y Construcciones SAS</td><td class="ent">Gestión del Riesgo Valle</td><td><span class="chip">Logística operativa</span></td><td class="num">$3.999 M</td><td class="num">0</td></tr>
+        <tr><td class="who">INNOVATECH E.I.C.E.</td><td class="ent">Sec. Deporte y Recreación Cali</td><td><span class="chip">Festival · eventos</span></td><td class="num">$3.899 M</td><td class="num">2</td></tr>
+        <tr><td class="who">Corporación de Eventos, Ferias y Espectáculos de Cali</td><td class="ent">Sec. Desarrollo Territorial Cali</td><td><span class="chip">Apoyo logístico</span></td><td class="num">$3.671 M</td><td class="num">1</td></tr>
+        <tr><td class="who">Fondo Mixto de Cultura y las Artes del Valle</td><td class="ent">Sec. Cultura Cali</td><td><span class="chip">Logística cultural</span></td><td class="num">$3.475 M</td><td class="num">2</td></tr>
+        <tr><td class="who">Fondo Mixto de Cultura y las Artes del Valle</td><td class="ent">Sec. Bienestar Social Cali</td><td><span class="chip">Apoyo logístico</span></td><td class="num">$3.300 M</td><td class="num">1</td></tr>
+      </tbody>
+      <caption>Modif. = modificaciones publicadas en SECOP II. Valores en millones de pesos, al corte del 20 de agosto de 2026.</caption>
+    </table>
+  </div>
+
+  <h3>Proveedores que se repiten</h3>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Proveedor</th><th class="num">Contratos</th><th class="num">Valor acumulado</th></tr></thead>
+      <tbody>
+        <tr><td class="who">Corporación de Eventos, Ferias y Espectáculos de Cali</td><td class="num">10</td><td class="num">$34.366 M</td></tr>
+        <tr><td class="who">INNOVATECH E.I.C.E.</td><td class="num">2</td><td class="num">$12.269 M</td></tr>
+        <tr><td class="who">Fondo Mixto de Cultura y las Artes del Valle</td><td class="num">5</td><td class="num">$12.819 M</td></tr>
+        <tr><td class="who">Quack de Colombia SAS</td><td class="num">6</td><td class="num">$3.295 M</td></tr>
+        <tr><td class="who">Asociación Río Cali</td><td class="num">2</td><td class="num">$3.323 M</td></tr>
+        <tr><td class="who">E S M Logística SAS</td><td class="num">2</td><td class="num">$3.174 M</td></tr>
+        <tr><td class="who">International ESD Foundation</td><td class="num">2</td><td class="num">$2.921 M</td></tr>
+        <tr><td class="who">Agencia de Viajes y Turismo AVIATUR S.A.S.</td><td class="num">4</td><td class="num">$209 M</td></tr>
+        <tr><td class="who">Comercializadora RUESAA S.A.S.</td><td class="num">5</td><td class="num">$170 M</td></tr>
+      </tbody>
+      <caption>Solo Grupo A. Lista completa en el CSV de contratos.</caption>
+    </table>
+  </div>
+</section>
+
+<!-- ==================== MODIFICACIONES ==================== -->
+<section>
+  <div class="sechead"><span class="tag">Modificaciones y adiciones</span><h2>67 contratos modificados, 134 modificaciones, 24 que nunca se firmaron</h2></div>
+  <div class="prose">
+    <p class="lead">El cruce se hizo contra dos conjuntos de datos adicionales de SECOP II: <b>Modificaciones a contratos</b> (u8cx-r425) y <b>Adiciones</b> (cb9c-h8sn), unidos por <code>id_contrato</code>. Cada modificación viene en varias versiones de flujo de trabajo; aquí se consolidó una fila por modificación, con su última versión y su estado final.</p>
+    <p>De las 134 modificaciones registradas sobre contratos confirmados, <b>110 quedaron publicadas</b>. Las 24 restantes no surtieron efecto: 11 fueron rechazadas por el proveedor, 11 canceladas y 2 siguen en edición. Es la distinción más importante del ejercicio — contar las 134 sobrestima lo que realmente cambió.</p>
+  </div>
+
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Tipo de modificación publicada</th><th class="num">Modificaciones</th><th class="num">Contratos</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip w">Adición en valor</span></td><td class="num">38</td><td class="num">36</td></tr>
+        <tr><td><span class="chip">Aclaración o corrección</span></td><td class="num">32</td><td class="num">31</td></tr>
+        <tr><td><span class="chip">Prórroga de plazo</span></td><td class="num">27</td><td class="num">27</td></tr>
+        <tr><td><span class="chip">Ajuste presupuestal</span></td><td class="num">4</td><td class="num">4</td></tr>
+        <tr><td><span class="chip z">Sin clasificar</span></td><td class="num">36</td><td class="num">25</td></tr>
+      </tbody>
+      <caption>Tipo inferido del texto de <code>proposito_modificacion</code>; una modificación puede ser de varios tipos a la vez (adición + prórroga es la combinación más común). El campo <code>tipo</code> del dataset de Adiciones marca «ADICIÓN EN EL VALOR» en solo 2 de 145 registros, por lo que no es confiable.</caption>
+    </table>
+  </div>
+
+  <h3>Adiciones en valor, ordenadas por tamaño del contrato</h3>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Contrato</th><th>Entidad</th><th class="num">Valor actual</th><th class="num">Días</th><th>Qué cambió</th></tr></thead>
+      <tbody>
+        <tr><td class="who">UT ALIMENTACIÓN INTEGRAL CALI 2026</td><td class="ent">Sec. Seguridad y Justicia Cali</td><td class="num">$11.850 M</td><td class="num">22</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+        <tr><td class="who">INNOVATECH E.I.C.E.</td><td class="ent">Sec. Desarrollo Territorial Cali</td><td class="num">$8.370 M</td><td class="num">0</td><td><span class="chip w">Adición ×2</span></td></tr>
+        <tr><td class="who">Corporación de Eventos, Ferias y Espectáculos</td><td class="ent">Sec. Desarrollo Territorial Cali</td><td class="num">$3.671 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">E S M Logística SAS</td><td class="ent">Dpto. Adm. de Hacienda Cali</td><td class="num">$3.000 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">Cali–Valle del Cauca Convention Bureau</td><td class="ent">Sec. Turismo Valle</td><td class="num">$1.400 M</td><td class="num">123</td><td><span class="chip w">Adición</span> · 5 modificaciones</td></tr>
+        <tr><td class="who">International ESD Foundation</td><td class="ent">Sec. Cultura Cali</td><td class="num">$1.175 M</td><td class="num">30</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+        <tr><td class="who">U.T. CorpoQ</td><td class="ent">Sec. Turismo Cali</td><td class="num">$1.153 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">CDER</td><td class="ent">Sec. Seguridad y Justicia Cali</td><td class="num">$800 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">AGPHSAS</td><td class="ent">Planeación Municipal Cali</td><td class="num">$372 M</td><td class="num">62</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+        <tr><td class="who">Fundación Recurso Humano Positivo</td><td class="ent">Sec. General Valle</td><td class="num">$370 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">Fondo Mixto Cartago</td><td class="ent">Desarrollo Económico Valle</td><td class="num">$300 M</td><td class="num">46</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+        <tr><td class="who">Turismo del Morrosquillo Ltda.</td><td class="ent">Desarrollo e Innovación Cali</td><td class="num">$263 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">K.L.T.</td><td class="ent">Planeación Municipal Cali</td><td class="num">$225 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">Quack de Colombia SAS</td><td class="ent">Sec. General Valle</td><td class="num">$220 M</td><td class="num">92</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+        <tr><td class="who">Aviatur S.A.S.</td><td class="ent">Sec. General Valle</td><td class="num">$90 M</td><td class="num">0</td><td><span class="chip w">Adición</span></td></tr>
+        <tr><td class="who">CYC Superservicios Integrales SAS</td><td class="ent">Concejo Distrital de Cali</td><td class="num">$66 M</td><td class="num">40</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+        <tr><td class="who">Comercializadora RUESAA S.A.S.</td><td class="ent">Desarrollo Económico Valle</td><td class="num">$18 M</td><td class="num">0</td><td><span class="chip w">Adición</span> <span class="chip">Prórroga</span></td></tr>
+      </tbody>
+      <caption>Los 17 contratos del Grupo A con adición publicada. Los 19 restantes de los 36 son del Grupo B — contratos de apoyo profesional a personas naturales, en su mayoría del Departamento Administrativo de Hacienda de Cali.</caption>
+    </table>
+  </div>
+
+  <h3>Las tres señales que más piden revisión</h3>
+  <div class="prose">
+  <ul>
+    <li><b>INNOVATECH E.I.C.E. — apoyo logístico electoral, $8.370 M.</b> Es el contrato más modificado del grupo: 6 modificaciones registradas, 3 publicadas, y el valor pasó de $5.580 M a $8.370 M — un incremento del 50 % sobre el registro inicial. Las justificaciones citan el aumento del pie de fuerza de la Policía Metropolitana y requerimientos sobrevinientes de la Registraduría.</li>
+    <li><b>Cali–Valle del Cauca Convention Bureau — $1.400 M.</b> Cinco modificaciones, 123 días de prórroga acumulados y una adición del 40 % sobre el valor registrado inicialmente. Es el contrato con más prórroga del Grupo A.</li>
+    <li><b>El bloque de Hacienda de Cali.</b> Diecinueve contratos de apoyo logístico, mensajería y cafetería del Departamento Administrativo de Hacienda, todos prorrogados exactamente 122 días —dos modificaciones de 61 días cada una— y todos con adición en valor. Se aprobaron en dos tandas, abril y mayo–junio. No es irregular por sí mismo, pero el patrón idéntico apunta a una decisión administrativa única que conviene revisar como un solo acto y no como 19 casos separados.</li>
+  </ul>
+  </div>
+
+  <div class="note">
+    <p><strong>Sobre cuánto creció el gasto.</strong> El dataset no publica el valor original del contrato: <code>valor_del_contrato</code> ya viene con las adiciones incorporadas, y <code>valor_modificacion</code> registra el valor <em>resultante</em> tras cada modificación. Con solo esos campos se podían medir apenas <b>$3.344 millones en 4 contratos</b>. Las 32 adiciones restantes se cuantificaron una por una leyendo el expediente; el detalle está en la sección siguiente.</p>
+  </div>
+</section>
+
+<!-- ==================== CUANTIFICACIÓN DE ADICIONES ==================== -->
+<section>
+  <div class="sechead"><span class="tag">Cuánto creció el gasto</span><h2>Las adiciones suman $9.431 millones, casi el triple de lo que el dataset dejaba ver</h2></div>
+  <div class="prose">
+    <p class="lead">Ninguna de las tres bases de SECOP II publica el valor inicial del contrato, así que el aumento no se puede leer directamente. Cuantifiqué las 36 adiciones por cuatro vías, de la más débil a la más firme: la diferencia entre valores registrados, el monto declarado en el texto de la modificación, la aritmética de cuotas de los CPS, y el documento del expediente —RPC de adición, CDP, ficha técnica del otrosí—.</p>
+    <p><b>Tres de las 36 no eran adiciones en valor.</b> El clasificador las marcó porque el texto decía «adicionar», pero el documento muestra otra cosa. Quedan 33 adiciones reales por $9.431 millones.</p>
+  </div>
+
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Cómo se cuantificó</th><th class="num">Contratos</th><th class="num">Adiciones</th><th>Fiabilidad</th></tr></thead>
+      <tbody>
+        <tr><td>Documento del expediente (RPC, CDP, otrosí)</td><td class="num">5</td><td class="num">$5.630 M</td><td><span class="chip a">Exacta</span></td></tr>
+        <tr><td>Monto declarado en el texto de la modificación</td><td class="num">5</td><td class="num">$382 M</td><td><span class="chip a">Exacta</span></td></tr>
+        <tr><td>Aritmética de cuotas del CPS (bloque Hacienda)</td><td class="num">19</td><td class="num">$116 M</td><td><span class="chip a">Exacta</span></td></tr>
+        <tr><td>Diferencia entre valores del dataset</td><td class="num">4</td><td class="num">$3.302 M</td><td><span class="chip w">Piso</span></td></tr>
+      </tbody>
+      <caption>Las cuatro del último grupo son las únicas que ya se podían medir sin salir del dataset; su cifra sigue siendo un piso porque solo capta el salto entre dos registros.</caption>
+    </table>
+  </div>
+
+  <h3>Las adiciones, una por una</h3>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Contrato</th><th class="num">Valor inicial</th><th class="num">Adición</th><th class="num">%</th><th>Prueba</th></tr></thead>
+      <tbody>
+        <tr><td class="who">UT Alimentación Integral Cali 2026<br><span class="ent">Alimentación PPL · Seguridad y Justicia</span></td><td class="num">$7.900 M</td><td class="num">$3.950 M</td><td class="num">50,0%</td><td class="ent">Modificación No. 1: «valor inicial $7.900.000.000… se adiciona $3.950.000.000»</td></tr>
+        <tr><td class="who">Innovatech E.I.C.E.<br><span class="ent">Apoyo logístico electoral</span></td><td class="num">$5.580 M</td><td class="num">$2.790 M</td><td class="num">50,0%</td><td class="ent">Salto entre valores registrados en el dataset</td></tr>
+        <tr><td class="who">E S M Logística SAS<br><span class="ent">Mensajería · Hacienda</span></td><td class="num">$2.000 M</td><td class="num">$1.000 M</td><td class="num">50,0%</td><td class="ent">CDP 3700029749 y RPC «Adición contrato 4131.010.26.1.0725»</td></tr>
+        <tr><td class="who">Corporación de Eventos, Ferias y Espectáculos<br><span class="ent">Apoyo logístico · Desarrollo Territorial</span></td><td class="num">$3.102 M</td><td class="num">$569 M</td><td class="num">18,3%</td><td class="ent">RPC 4500436807 «ADICIÓN CONTRATO 4173.010.26.1.0835-2026»</td></tr>
+        <tr><td class="who">Cali–Valle Convention Bureau<br><span class="ent">Ferias y eventos turísticos · Valle</span></td><td class="num">$1.000 M</td><td class="num">$400 M</td><td class="num">40,0%</td><td class="ent">Salto entre valores registrados en el dataset</td></tr>
+        <tr><td class="who">Fundación Recurso Humano Positivo<br><span class="ent">Jornadas institucionales · Valle</span></td><td class="num">$250 M</td><td class="num">$120 M</td><td class="num">48,0%</td><td class="ent">Texto: «adicionar al valor la suma de $120.000.000»</td></tr>
+        <tr><td class="who">AGPHSAS<br><span class="ent">Bodegaje · Planeación Municipal</span></td><td class="num">$266 M</td><td class="num">$106 M</td><td class="num">40,0%</td><td class="ent">Salto entre valores registrados en el dataset</td></tr>
+        <tr><td class="who">International ESD Foundation<br><span class="ent">Patrimonio inmaterial · Cultura</span></td><td class="num">$1.086 M</td><td class="num">$89 M</td><td class="num">8,2%</td><td class="ent">Ficha técnica del otrosí: «ADICIÓN: Secretaría Cultura $62.610.000 y aporte del asociado $26.832.857»</td></tr>
+        <tr><td class="who">Turismo del Morrosquillo Ltda.<br><span class="ent">Viajes · Desarrollo e Innovación</span></td><td class="num">$175 M</td><td class="num">$88 M</td><td class="num">50,0%</td><td class="ent">Texto: «adicionar… la suma de $87.545.250»</td></tr>
+        <tr><td class="who">K.L.T.<br><span class="ent">Transporte · Planeación Municipal</span></td><td class="num">$150 M</td><td class="num">$75 M</td><td class="num">50,0%</td><td class="ent">Texto: «se adiciona la suma de $74.793.000»</td></tr>
+        <tr><td class="who">Quack de Colombia SAS<br><span class="ent">Apoyo logístico · Secretaría General Valle</span></td><td class="num">$150 M</td><td class="num">$70 M</td><td class="num">46,7%</td><td class="ent">Texto: «adicionar al valor la suma de $70.000.000»</td></tr>
+        <tr><td class="who">Aviatur S.A.S.<br><span class="ent">Tiquetes aéreos · Secretaría General Valle</span></td><td class="num">$60 M</td><td class="num">$30 M</td><td class="num">50,0%</td><td class="ent">Texto: «adicionar al valor la suma de $30.000.000»</td></tr>
+        <tr><td class="who">CYC Superservicios Integrales SAS<br><span class="ent">Cafetería · Concejo Distrital</span></td><td class="num">$44 M</td><td class="num">$22 M</td><td class="num">50,0%</td><td class="ent">Ficha técnica CT_419: «Otro Sí – adición $21.880.000»</td></tr>
+        <tr><td class="who">19 CPS del Dpto. Adm. de Hacienda<br><span class="ent">Apoyo logístico, mensajería y cafetería</span></td><td class="num">$232 M</td><td class="num">$116 M</td><td class="num">50,0%</td><td class="ent">Otrosí tipo: 2 cuotas añadidas sobre un contrato de 4, quedando en 6</td></tr>
+        <tr><td class="who">Comercializadora RUESAA S.A.S.<br><span class="ent">Cafetería · Desarrollo Económico Valle</span></td><td class="num">$12 M</td><td class="num">$6 M</td><td class="num">50,0%</td><td class="ent">Salto entre valores registrados en el dataset</td></tr>
+      </tbody>
+      <caption>33 contratos agrupados en 15 filas. Todos los porcentajes son sobre el valor inicial, que es como lo mide el artículo 40 de la Ley 80 de 1993.</caption>
+    </table>
+  </div>
+
+  <div class="note warn">
+    <p><strong>El patrón del 50 % exacto.</strong> Nueve de las trece adiciones individuales caen justo en el 50,0 % del valor inicial, y el bloque de Hacienda entero también. No es casualidad: el artículo 40 de la Ley 80 de 1993 prohíbe adicionar un contrato en más del 50 % de su valor inicial, y los propios documentos lo citan textualmente para justificar la operación. Es decir, estos contratos se adicionaron <em>hasta el tope legal</em>. Eso es legal, pero significa que el contrato se ejecutó por el doble de lo que se adjudicó, y en el caso de UT Alimentación la justificación admite que el saldo se habría agotado el 21 de junio con un contrato que debía llegar a julio — es decir, el presupuesto inicial estaba subestimado desde el principio.</p>
+  </div>
+
+  <h3>Las tres que no eran adiciones</h3>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Contrato</th><th class="num">Valor</th><th>Qué dice el documento</th></tr></thead>
+      <tbody>
+        <tr><td class="who">U.T. CorpoQ<br><span class="ent">Sec. Turismo Cali</span></td><td class="num">$1.153 M</td><td>La modificación adiciona una <em>obligación</em> a cargo del contratista, no valor. No existe RPC ni CDP de adición en el expediente.</td></tr>
+        <tr><td class="who">CDER<br><span class="ent">Sec. Seguridad y Justicia</span></td><td class="num">$800 M</td><td>Modificación No. 01 marcada «Aclaración/otra»: reestructura el valor base y el IVA sin variación del valor total, y agrega un ítem de alojamiento.</td></tr>
+        <tr><td class="who">Fondo Mixto Cartago<br><span class="ent">Desarrollo Económico Valle</span></td><td class="num">$300 M</td><td>Otrosí No. 1: solo prórroga. El valor sigue en $300.000.000, respaldado por el CDP y el RPC originales de enero.</td></tr>
+      </tbody>
+      <caption>Los tres decían «adicionar» en el texto de la modificación. Es el límite de clasificar por palabra clave: en contratación pública «adicionar» se usa igual para plata, plazo, obligaciones e ítems.</caption>
+    </table>
+  </div>
+
+  <div class="prose">
+    <h3>Cómo se llegó a los documentos</h3>
+    <p>SECOP II bloquea la navegación con un reCaptcha, pero el conjunto <code>dmgg-8hin</code> («SECOP II – Archivos Descarga Desde 2025») publica la URL de descarga directa de cada archivo del expediente, indexada por contrato y por proceso. De ahí salieron los RPC de adición, que son la prueba más limpia: un registro presupuestal de adición dice el monto exacto y nada más. El bloque de Hacienda se resolvió distinto: los 19 otrosíes son idénticos, así que basta leer uno —el de CO1.PCCNTR.8779050— para deducir la regla (2 cuotas añadidas sobre 4, quedando 6) y aplicarla al resto, comprobando que el valor final de cada contrato sea divisible en 6 cuotas exactas. Lo es en los 19.</p>
+  </div>
+</section>
+
+<!-- ==================== ENTREGABLES ==================== -->
+<section>
+  <div class="sechead"><span class="tag">Archivos</span><h2>Qué hay en cada CSV</h2></div>
+  <div class="files">
+    <div class="file">
+      <div class="fn">01_contratos_logistica.csv</div>
+      <p>213 filas, una por contrato candidato. Las tres primeras columnas traen el resultado de la revisión: <code>incluido</code> (SI/NO), <code>revision</code> y <code>motivo_revision</code> — los 22 descartados siguen ahí con el motivo escrito, para que puedas revertir cualquier decisión, y los tres resueltos en el expediente citan el documento que los confirma. Siguen grupo, confianza, categorías, entidad, proveedor y —para los 33 con adición— <code>valor_inicial</code>, <code>adicion_cuantificada</code>, <code>pct_adicion_sobre_inicial</code> y <code>fuente_adicion</code>, que dice de dónde salió cada cifra. Luego fechas, conteo de modificaciones publicadas, días extendidos, objeto completo y URL del proceso. Separador <code>;</code>, UTF-8 con BOM — abre directo en Excel.</p>
+    </div>
+    <div class="file">
+      <div class="fn">02_modificaciones_detalle.csv</div>
+      <p>145 filas, una por modificación, con la misma columna <code>incluido</code> para filtrar las de contratos descartados. Incluye tipo inferido, estado (Publicado / Rechazado / Cancelado / En edición), fecha de aprobación, valor resultante, días extendidos, nuevas fechas de inicio y fin, y el texto íntegro de la justificación.</p>
+    </div>
+  </div>
+  <div class="prose" style="margin-top:26px">
+    <h3>Para reproducir o ampliar</h3>
+    <p>El barrido usa tres conjuntos de datos de datos.gov.co unidos por <code>id_contrato</code>: <b>jbjy-vk9h</b> (contratos electrónicos), <b>u8cx-r425</b> (modificaciones) y <b>cb9c-h8sn</b> (adiciones). Si quieres extender el periodo o agregar entidades, basta cambiar el filtro de <code>nit_entidad</code> y <code>fecha_de_firma</code> — el léxico y las reglas de clasificación siguen siendo válidos para cualquier entidad territorial colombiana.</p>
+  </div>
+</section>
+
+</div>
+
+</body>
+</html>
