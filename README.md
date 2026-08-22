@@ -28,10 +28,28 @@ así que sobreviven a la actualización. Los contratos que aparezcan después de
 **«sin revisar»** y su adición es solo un piso calculado por diferencia entre registros.
 Si la API falla, se muestra la instantánea y el indicador de estado lo advierte.
 
+## Rastreador del sismo del 10 de agosto de 2026
+
+`scripts/sismo.py` busca sobre **toda** la contratación de las cinco entidades —sin filtro de
+categoría— los contratos que responden al sismo y los que quedaron alterados por él. Se publica
+en `sismo/`.
+
+El detalle que hace falta conocer: **la palabra «sismo» no aparece ni una vez en los más de
+35.000 objetos contractuales de 2026.** La contratación nombra el evento como «los hechos
+acaecidos el 10 de agosto de 2026» o «la emergencia ocurrida». Sólo en el texto de las
+*modificaciones* se lee directamente, y ahí consta que fue un sismo de magnitud 7,4. Por eso la
+búsqueda combina varias frases con el mecanismo jurídico: urgencia manifiesta y calamidad pública.
+
+Un contrato entra como **respuesta** si su objeto, la descripción del proceso o la justificación de
+la modalidad aluden al evento, o si se suscribió por urgencia manifiesta o calamidad después del
+10 de agosto. Entra como **afectado** si una modificación posterior invoca el sismo.
+
+El límite es el rezago de publicación de SECOP II: lo que se ve es un piso, no el total.
+
 ## Regeneración automática
 
 Una GitHub Action (`.github/workflows/actualizar.yml`) corre los lunes a las 5:00 a. m. de Colombia
-y ejecuta `scripts/actualizar.py`, que reconsulta la API, vuelve a clasificar, reaplica los
+y ejecuta `scripts/actualizar.py` y `scripts/sismo.py`, que reconsultan la API, vuelve a clasificar, reaplica los
 veredictos de `datos/veredictos.json` y reescribe el tablero, los CSV y los indicadores de la
 portada. Sólo hace commit si algo cambió. También se puede lanzar a mano desde la pestaña Actions.
 
@@ -49,6 +67,7 @@ El script usa únicamente la biblioteca estándar de Python, así que no hay dep
 
 - `index.html` — portada
 - `tablero/` — tablero interactivo, con actualización en vivo
+- `sismo/` — rastreador del sismo del 10 de agosto
 - `informe/` — informe metodológico y hallazgos
 - `datos/` — los dos CSV, los veredictos y el mapa de dependencias
 - `scripts/` — el regenerador

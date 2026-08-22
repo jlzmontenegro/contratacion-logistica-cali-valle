@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Construye sismo/index.html inyectando datos/sismo.json en plantillas/sismo.tpl.html.
+
+Se ejecuta después de scripts/sismo.py. Sólo biblioteca estándar.
+"""
+import json, os, sys
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+NAV = ('<nav class="sitenav"><a href="../index.html">← Inicio</a>'
+       '<span>Contratación logística · Cali y Valle 2026</span></nav>\n'
+       '<style>.sitenav{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;'
+       'padding:10px clamp(14px,2.5vw,32px);font:500 12.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;'
+       'background:var(--surface-2,#EDF1F0);border-bottom:1px solid var(--hair,#DCE3E1);color:var(--muted,#5A6A68)}'
+       '.sitenav a{color:var(--accent,#0E5C58);text-decoration:none;font-weight:600}'
+       '.sitenav a:hover{text-decoration:underline}</style>')
+
+
+def main():
+    p_datos = os.path.join(RAIZ, "datos", "sismo.json")
+    p_tpl = os.path.join(RAIZ, "plantillas", "sismo.tpl.html")
+    if not os.path.isfile(p_datos):
+        print("no existe datos/sismo.json; corre antes scripts/sismo.py", file=sys.stderr)
+        return 1
+
+    datos = json.load(open(p_datos, encoding="utf-8"))
+    tpl = open(p_tpl, encoding="utf-8").read()
+    if "__SISMO__" not in tpl:
+        print("la plantilla no tiene el marcador __SISMO__", file=sys.stderr)
+        return 1
+
+    crudo = json.dumps(datos, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+    cuerpo = tpl.replace("__SISMO__", crudo)
+
+    i = cuerpo.index("</style>") + len("</style>")
+    cab, cpo = cuerpo[:i], cuerpo[i:]
+    if "<meta charset" not in cab:
+        cab = '<meta charset="utf-8">\n' + cab
+
+    doc = ('<!doctype html>\n<html lang="es">\n<head>\n' + cab +
+           "\n</head>\n<body>\n" + NAV + "\n" + cpo + "\n</body>\n</html>\n")
+
+    destino = os.path.join(RAIZ, "sismo")
+    os.makedirs(destino, exist_ok=True)
+    salida = os.path.join(destino, "index.html")
+    open(salida, "w", encoding="utf-8").write(doc)
+
+    r = datos.get("resumen", {})
+    print(f"sismo/index.html escrito ({round(len(doc)/1024)} KB) · "
+          f"{r.get('respuesta', 0)} de respuesta, {r.get('afectados', 0)} afectados · "
+          f"cobertura hasta {datos.get('cobertura_hasta', '?')}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

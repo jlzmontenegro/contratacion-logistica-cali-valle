@@ -30,6 +30,12 @@ jobs:
       - name: Regenerar desde la API
         run: python scripts/actualizar.py
 
+      - name: Rastrear el sismo del 10 de agosto
+        run: python scripts/sismo.py
+
+      - name: Construir la pagina del sismo
+        run: python scripts/construir_sismo.py
+
       - name: Resumen
         run: |
           echo "### Instantánea regenerada" >> $GITHUB_STEP_SUMMARY

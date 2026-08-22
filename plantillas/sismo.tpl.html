@@ -1,0 +1,284 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rastreador del sismo · 10 de agosto de 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F5F7F6; --surface:#FFFFFF; --surface-2:#EDF1F0; --surface-3:#E3E9E7;
+  --ink:#131C1B; --ink-2:#33423F; --muted:#5A6A68; --hair:#DCE3E1; --hair-strong:#C3CFCC;
+  --accent:#0E5C58; --accent-soft:#DCEBE8; --accent-ink:#0A403D;
+  --amber:#8E5407; --amber-soft:#F6EBD8;
+  --rust:#8F3324; --rust-soft:#F6E3DF;
+  --shadow:0 1px 2px rgba(19,28,27,.05), 0 8px 24px -16px rgba(19,28,27,.28);
+  --pad:clamp(16px,4vw,32px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#0E1413; --surface:#161E1D; --surface-2:#1D2725; --surface-3:#24302D;
+  --ink:#E3EAE8; --ink-2:#C2CFCC; --muted:#8FA3A0; --hair:#26312F; --hair-strong:#3A4A46;
+  --accent:#5AB9B1; --accent-soft:#17302E; --accent-ink:#8FD6CF;
+  --amber:#D69A4C; --amber-soft:#2C2417; --rust:#D9806E; --rust-soft:#2E1C18;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);}}
+:root[data-theme="dark"]{
+  --ground:#0E1413; --surface:#161E1D; --surface-2:#1D2725; --surface-3:#24302D;
+  --ink:#E3EAE8; --ink-2:#C2CFCC; --muted:#8FA3A0; --hair:#26312F; --hair-strong:#3A4A46;
+  --accent:#5AB9B1; --accent-soft:#17302E; --accent-ink:#8FD6CF;
+  --amber:#D69A4C; --amber-soft:#2C2417; --rust:#D9806E; --rust-soft:#2E1C18;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);}
+*{box-sizing:border-box}
+body{background:var(--ground); color:var(--ink); margin:0; font-size:16px; line-height:1.6;
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px; margin:0 auto; padding:0 var(--pad) 80px}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif; margin:0; text-wrap:balance}
+a{color:var(--accent); text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+header.top{padding:clamp(34px,6vw,64px) 0 20px; border-bottom:2px solid var(--ink)}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--rust); font-weight:500; display:block; margin-bottom:10px}
+h1{font-size:clamp(1.7rem,4.6vw,2.7rem); font-weight:600; line-height:1.08; letter-spacing:-.015em}
+.dek{font-size:clamp(1rem,2vw,1.12rem); color:var(--ink-2); margin:15px 0 0; max-width:66ch}
+.estado{display:inline-flex; align-items:center; gap:7px; font-family:"IBM Plex Mono",monospace; font-size:11px;
+  padding:5px 11px; border-radius:14px; border:1px solid var(--hair-strong); background:var(--surface);
+  color:var(--muted); margin-top:14px; max-width:100%; flex-wrap:wrap; line-height:1.5}
+.estado .dot{width:7px;height:7px;border-radius:99px;background:var(--muted);flex:none}
+.estado.cargando .dot{background:var(--amber); animation:latir 1.1s ease-in-out infinite}
+.estado.vivo{border-color:var(--accent); color:var(--accent-ink); background:var(--accent-soft)}
+.estado.vivo .dot{background:var(--accent)}
+.estado.falla{border-color:var(--rust); color:var(--rust)} .estado.falla .dot{background:var(--rust)}
+@keyframes latir{0%,100%{opacity:1}50%{opacity:.25}}
+.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); border-bottom:1px solid var(--hair)}
+.kpi{padding:20px 16px; border-right:1px solid var(--hair)}
+.kpi:last-child{border-right:0}
+.kpi b{font-family:"Zilla Slab",serif; font-size:clamp(1.4rem,3vw,1.95rem); font-weight:600; line-height:1;
+  display:block; letter-spacing:-.02em; white-space:nowrap; font-variant-numeric:tabular-nums}
+.kpi span{font-size:12px; color:var(--muted); display:block; margin-top:7px; line-height:1.35}
+.kpi.r b{color:var(--rust)} .kpi.w b{color:var(--amber)} .kpi.hi b{color:var(--accent)}
+section{padding-top:clamp(38px,5vw,58px)}
+.sechead{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; border-bottom:1px solid var(--hair-strong);
+  padding-bottom:9px; margin-bottom:22px}
+.sechead .tag{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap}
+h2{font-size:clamp(1.25rem,2.6vw,1.6rem); font-weight:600; letter-spacing:-.01em; flex:1; min-width:220px}
+p{margin:0 0 14px} .prose{max-width:70ch}
+.lead{font-size:1.04rem; color:var(--ink-2)}
+.note{border-left:3px solid var(--amber); background:var(--surface); padding:15px 18px; margin:22px 0;
+  box-shadow:var(--shadow); font-size:14px; line-height:1.6}
+.note.r{border-left-color:var(--rust)} .note strong{font-weight:600}
+.item{background:var(--surface); border:1px solid var(--hair); border-radius:3px; padding:18px 20px;
+  margin-bottom:12px; box-shadow:var(--shadow)}
+.item.resp{border-left:3px solid var(--rust)}
+.item.afec{border-left:3px solid var(--amber)}
+.ihead{display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; margin-bottom:4px}
+.ihead .val{font-family:"IBM Plex Mono",monospace; font-size:1.05rem; font-weight:600; white-space:nowrap;
+  margin-left:auto; font-variant-numeric:tabular-nums}
+.ihead h3{font-size:1rem; font-weight:600; line-height:1.3}
+.meta{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted); margin:2px 0 10px; line-height:1.6}
+.obj{font-size:13.7px; line-height:1.6; color:var(--ink-2); margin:0 0 12px}
+.chips{display:flex; flex-wrap:wrap; gap:5px; margin-bottom:10px}
+.chip{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.04em; padding:2px 7px; border-radius:2px;
+  background:var(--surface-2); color:var(--ink-2); border:1px solid var(--hair); white-space:nowrap}
+.chip.r{background:var(--rust-soft); color:var(--rust); border-color:transparent}
+.chip.w{background:var(--amber-soft); color:var(--amber); border-color:transparent}
+.chip.a{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
+.ev{font-size:12.5px; color:var(--muted); font-style:italic; margin-bottom:10px}
+.mod{background:var(--surface-2); border-radius:2px; padding:11px 13px; margin-top:8px; font-size:12.8px; line-height:1.55}
+.mod .mh{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); margin-bottom:5px;
+  display:flex; gap:8px; flex-wrap:wrap}
+.mod q{color:var(--ink-2); quotes:"«" "»"}
+a.secop{font-size:12.5px; font-family:"IBM Plex Mono",monospace}
+.ritmo{display:flex; align-items:flex-end; gap:2px; height:130px; padding:14px 0 0; overflow-x:auto}
+.bar{flex:1 0 9px; min-width:9px; display:flex; flex-direction:column; justify-content:flex-end; height:100%; position:relative}
+.bar i{display:block; background:var(--accent); border-radius:1px 1px 0 0; min-height:1px}
+.bar.post i{background:var(--rust)}
+.bar:hover::after{content:attr(data-t); position:absolute; bottom:100%; left:50%; transform:translateX(-50%);
+  background:var(--ink); color:var(--ground); font:500 10.5px/1.4 "IBM Plex Mono",monospace; padding:5px 8px;
+  border-radius:3px; white-space:nowrap; z-index:5; margin-bottom:4px}
+.eje{display:flex; justify-content:space-between; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
+  color:var(--muted); border-top:1px solid var(--hair); padding-top:6px; margin-top:2px}
+.vacio{color:var(--muted); font-style:italic; padding:20px 0}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--hair); font-size:12.5px; color:var(--muted)}
+footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
+@media (max-width:640px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi{border-bottom:1px solid var(--hair)} .kpi:nth-child(2n){border-right:0}
+  .ihead .val{margin-left:0; width:100%}
+  .item{padding:15px 15px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <span class="kicker">Rastreador · sismo del 10 de agosto de 2026</span>
+  <h1>¿Qué se está contratando<br>después del sismo?</h1>
+  <p class="dek">Barrido de <strong>toda</strong> la contratación del Distrito de Santiago de Cali y la Gobernación del Valle del Cauca —sin filtro de categoría— en busca de los contratos que responden al sismo y de los que quedaron afectados por él.</p>
+  <span class="estado" id="estado"><span class="dot"></span><span id="estadoTxt">Cargando…</span></span>
+</header>
+
+<div class="kpis" id="kpis"></div>
+
+<div class="note r">
+  <strong>La palabra «sismo» casi no existe en los contratos.</strong> En los más de 35.000 objetos contractuales de 2026 no aparece ni una vez. La contratación nombra el evento como <q>los hechos acaecidos el 10 de agosto de 2026</q> o <q>la emergencia ocurrida</q>. Sólo en el texto de las <em>modificaciones</em> se lee la palabra directamente — ahí es donde consta que fue un sismo de magnitud 7,4. Por eso esta búsqueda usa varias frases y también el mecanismo jurídico: urgencia manifiesta y calamidad pública.
+</div>
+
+<section>
+  <div class="sechead"><span class="tag">Respuesta</span><h2>Contratos suscritos para atender la emergencia</h2></div>
+  <div id="respuesta"></div>
+</section>
+
+<section>
+  <div class="sechead"><span class="tag">Impacto</span><h2>Contratos existentes que el sismo alteró</h2></div>
+  <p class="prose lead">Contratos ya en ejecución cuya modificación posterior invoca el sismo: suspensiones por fuerza mayor, prórrogas por reprogramación o cambios de alcance.</p>
+  <div id="afectados"></div>
+</section>
+
+<section>
+  <div class="sechead"><span class="tag">Contexto</span><h2>Ritmo de contratación alrededor del evento</h2></div>
+  <p class="prose lead">Contratos firmados por día. En rojo, desde el 10 de agosto. Sirve para dimensionar cuánto de la respuesta ya está publicada — y cuánto falta.</p>
+  <div class="ritmo" id="ritmo"></div>
+  <div class="eje"><span id="ejeIni"></span><span id="ejeFin"></span></div>
+  <div class="note" id="avisoCobertura"></div>
+</section>
+
+<section>
+  <div class="sechead"><span class="tag">Cómo se buscó</span><h2>Método y límites</h2></div>
+  <div class="prose">
+    <p>La búsqueda corre sobre el conjunto <code>jbjy-vk9h</code> (contratos electrónicos de SECOP II) para los cinco NIT de Cali y el Valle, sin restringir categoría, y sobre <code>u8cx-r425</code> (modificaciones) a nivel nacional, filtrando después por entidad.</p>
+    <p>Un contrato entra como <strong>respuesta</strong> si su objeto, la descripción del proceso o la justificación de la modalidad aluden a los hechos del 10 de agosto, o si se suscribió por urgencia manifiesta o calamidad pública después de esa fecha. Entra como <strong>afectado</strong> si una modificación aprobada después invoca el sismo.</p>
+    <p><strong>El límite principal es el rezago de publicación.</strong> SECOP II no publica en tiempo real: contratos firmados hace semanas siguen apareciendo. Lo que se ve aquí es un piso, no el total. Esta página se regenera cada semana y consulta la API al abrirse.</p>
+    <p>Esta búsqueda es independiente del <a href="../tablero/">tablero de logística y catering</a>: aquel se limita a esas categorías y por eso deja por fuera cosas como la remoción de escombros.</p>
+  </div>
+</section>
+
+<footer>
+  Fuente: <a href="https://www.datos.gov.co/" target="_blank" rel="noopener">datos.gov.co</a> —
+  <code>jbjy-vk9h</code> y <code>u8cx-r425</code>. ·
+  <a href="../index.html">Inicio</a> · <a href="../tablero/">Tablero</a> · <a href="../informe/">Informe</a>
+</footer>
+</div>
+
+<script>
+const SNAP = __SISMO__;
+let D = SNAP;
+const nf=new Intl.NumberFormat('es-CO');
+const $=id=>document.getElementById(id);
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const mil=n=> n>=1e6 ? '$'+nf.format(Math.round(n/1e6))+' M' : '$'+nf.format(n);
+const fecha=s=>{ if(!s) return '—'; const [a,m,d]=s.split('-');
+  return d+' '+['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+m-1]+' '+a; };
+
+function estado(cls,txt){ $('estado').className='estado '+cls; $('estadoTxt').textContent=txt; }
+
+function pintarKpis(){
+  const r=D.resumen;
+  $('kpis').innerHTML=[
+    ['r',nf.format(r.respuesta),'contratos de respuesta'],
+    ['r',mil(r.valor_respuesta),'comprometidos en la respuesta'],
+    ['w',nf.format(r.afectados),'contratos alterados por el sismo'],
+    ['w',mil(r.valor_afectados),'valor de los contratos alterados'],
+    ['hi',fecha(D.cobertura_hasta),'último contrato publicado'],
+  ].map(([c,n,l])=>`<div class="kpi ${c}"><b>${n}</b><span>${l}</span></div>`).join('');
+}
+function tarjeta(c,clase){
+  const chips=[`<span class="chip ${c.motivo==='respuesta'?'r':c.motivo==='afectado'?'w':''}">${
+      c.motivo==='respuesta'?'respuesta directa':c.motivo==='mecanismo'?'urgencia manifiesta':
+      c.motivo==='afectado'?'alterado':'previo al evento'}</span>`];
+  if(c.mod) chips.push(`<span class="chip">${esc(c.mod)}</span>`);
+  if(c.tc) chips.push(`<span class="chip">${esc(c.tc)}</span>`);
+  if(c.un) chips.push(`<span class="chip a">${esc(c.un)}</span>`);
+  const mods=(c.mods||[]).map(m=>`<div class="mod">
+      <div class="mh"><span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span>${m.d?`<span>+${m.d} días</span>`:''}</div>
+      <q>${esc(m.p)}</q></div>`).join('');
+  return `<div class="item ${clase}">
+    <div class="ihead"><h3>${esc(c.prov)||'—'}</h3><span class="val">${mil(c.v)}</span></div>
+    <div class="meta">${esc(c.ciu)} · ${esc(c.ent)}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
+    <div class="chips">${chips.join('')}</div>
+    <p class="ev">${esc(c.evidencia)}</p>
+    <p class="obj">${esc(c.obj)}</p>
+    ${mods}
+    ${c.url?`<a class="secop" href="${esc(c.url)}" target="_blank" rel="noopener">Ver el proceso en SECOP II ↗</a>`:''}
+  </div>`;
+}
+function pintar(){
+  pintarKpis();
+  const resp=D.contratos.filter(c=>c.motivo==='respuesta'||c.motivo==='mecanismo');
+  $('respuesta').innerHTML = resp.length? resp.map(c=>tarjeta(c,'resp')).join('')
+    : '<p class="vacio">Todavía no hay contratos publicados que aludan al evento.</p>';
+  $('afectados').innerHTML = D.afectados.length? D.afectados.map(c=>tarjeta(c,'afec')).join('')
+    : '<p class="vacio">Ninguna modificación publicada invoca el sismo.</p>';
+  // ritmo
+  const dias=D.dias||[]; const max=Math.max(1,...dias.map(d=>d.n));
+  $('ritmo').innerHTML=dias.map(d=>{
+    const post=d.dia>=D.evento;
+    return `<span class="bar ${post?'post':''}" data-t="${d.dia}: ${nf.format(d.n)} contratos · ${mil(d.val)}">
+      <i style="height:${Math.max(1,d.n/max*100)}%"></i></span>`;}).join('');
+  if(dias.length){ $('ejeIni').textContent=fecha(dias[0].dia); $('ejeFin').textContent=fecha(dias[dias.length-1].dia); }
+  const post=dias.filter(d=>d.dia>=D.evento), prev=dias.filter(d=>d.dia<D.evento);
+  const prom=a=>a.length? a.reduce((s,d)=>s+d.n,0)/a.length : 0;
+  const a=Math.round(prom(prev)), d=Math.round(prom(post));
+  const cierre = d < a
+    ? `La caída no significa que se dejó de contratar: significa que lo reciente <em>aún no está publicado</em>.
+       SECOP II publica con rezago, así que estas cifras son un piso.`
+    : `Aun así, conviene leerlo con cautela: SECOP II publica con rezago y los días más recientes
+       siempre están incompletos.`;
+  $('avisoCobertura').innerHTML = `<strong>Lectura del gráfico.</strong> Antes del sismo se firmaban
+    ${nf.format(a)} contratos diarios en promedio; después, ${nf.format(d)}. ${cierre}
+    Conviene volver a mirar esta página en unas semanas.`;
+}
+pintar();
+estado('', 'Instantánea del ' + fecha((SNAP.generado||'').slice(0,10)));
+
+/* ---------- refresco en vivo de la parte de contratos ---------- */
+const API="https://www.datos.gov.co";
+const NITS="'890399011','8903990113','890399029','8903990291','8903990295'";
+const FRASES=["ACAECID","10 DE AGOSTO DE 2026","EMERGENCIA OCURRIDA","SISMO","TERREMOTO","TEMBLOR"];
+const MECAN=["URGENCIA MANIFIESTA","CALAMIDAD P"];
+async function refrescar(){
+  estado('cargando','Consultando datos.gov.co…');
+  try{
+    const campos=["objeto_del_contrato","descripcion_del_proceso","justificacion_modalidad_de"];
+    const cond=[].concat(...FRASES.concat(MECAN).map(f=>campos.map(c=>`upper(\`${c}\`) like '%${f}%'`))).join(' OR ');
+    const cols="`id_contrato`,`referencia_del_contrato`,`nit_entidad`,`nombre_entidad`,`objeto_del_contrato`,`valor_del_contrato`,`fecha_de_firma`,`fecha_de_inicio_del_contrato`,`fecha_de_fin_del_contrato`,`proveedor_adjudicado`,`tipodocproveedor`,`codigo_de_categoria_principal`,`modalidad_de_contratacion`,`justificacion_modalidad_de`,`tipo_de_contrato`,`urlproceso`";
+    const q=`SELECT ${cols} WHERE \`nit_entidad\` IN (${NITS}) AND \`fecha_de_firma\` >= '2026-01-01T00:00:00'::floating_timestamp AND ( ${cond} ) ORDER BY \`fecha_de_firma\` DESC LIMIT 1000`;
+    const r=await fetch(`${API}/api/v3/views/jbjy-vk9h/query.json?query=`+encodeURIComponent(q));
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const filas=await r.json();
+    const out=[];
+    for(const x of filas){
+      const txt=((x.objeto_del_contrato||'')+' '+(x.justificacion_modalidad_de||'')).toUpperCase();
+      const expl=FRASES.some(f=>txt.includes(f));
+      const post=(x.fecha_de_firma||'').slice(0,10) >= D.evento;
+      let motivo=null, ev='';
+      if(expl&&post){ motivo='respuesta'; ev='El objeto alude expresamente a los hechos del 10 de agosto'; }
+      else if(post&&MECAN.some(m=>txt.includes(m))){ motivo='mecanismo'; ev='Suscrito por urgencia manifiesta o calamidad pública tras el evento'; }
+      else if(expl){ motivo='previo'; ev='Menciona sismo o calamidad, pero se firmó antes del 10 de agosto'; }
+      if(!motivo) continue;
+      const u=x.urlproceso&&typeof x.urlproceso==='object'?x.urlproceso.url:x.urlproceso;
+      out.push({id:x.id_contrato, ref:(x.referencia_del_contrato||'').trim(),
+        ciu:(x.nit_entidad==='890399011'||x.nit_entidad==='8903990113')?'Cali':'Valle',
+        ent:(x.nombre_entidad||'').replace(/\s+/g,' ').trim(), prov:(x.proveedor_adjudicado||'').trim(),
+        v:Math.round(+(x.valor_del_contrato||0)), ff:(x.fecha_de_firma||'').slice(0,10),
+        fi:(x.fecha_de_inicio_del_contrato||'').slice(0,10), fn:(x.fecha_de_fin_del_contrato||'').slice(0,10),
+        mod:(x.modalidad_de_contratacion||'').trim(), tc:(x.tipo_de_contrato||'').trim(),
+        un:(x.codigo_de_categoria_principal||'').trim(),
+        obj:(x.objeto_del_contrato||'').replace(/\s+/g,' ').trim().slice(0,900), url:u,
+        motivo, evidencia:ev});
+    }
+    out.sort((a,b)=>b.v-a.v);
+    const resp=out.filter(c=>c.motivo==='respuesta'||c.motivo==='mecanismo');
+    const ids=new Set(out.map(c=>c.id));
+    D={...D, contratos:out, afectados:D.afectados.filter(a=>!ids.has(a.id)),
+       resumen:{...D.resumen, respuesta:resp.length, valor_respuesta:resp.reduce((s,c)=>s+c.v,0),
+                afectados:D.afectados.filter(a=>!ids.has(a.id)).length,
+                valor_afectados:D.afectados.filter(a=>!ids.has(a.id)).reduce((s,c)=>s+c.v,0)}};
+    pintar();
+    const h=new Date().toLocaleString('es-CO',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+    estado('vivo','En vivo · '+h);
+  }catch(e){
+    estado('falla','Sin conexión · instantánea del '+fecha((SNAP.generado||'').slice(0,10)));
+    console.warn('refresco falló:',e);
+  }
+}
+refrescar();
+</script>
