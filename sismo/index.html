@@ -386,7 +386,7 @@ async function refrescar(){
         mod:(x.modalidad_de_contratacion||'').trim(), tc:(x.tipo_de_contrato||'').trim(),
         un:(x.codigo_de_categoria_principal||'').trim(),
         entl:ORG.get((x.nombre_entidad||'').replace(/\s+/g,' ').trim())||'',
-        obj:(x.objeto_del_contrato||'').replace(/\s+/g,' ').trim().slice(0,900), url:u,
+        obj:(x.objeto_del_contrato||'').replace(/\s+/g,' ').trim(), url:u,
         motivo, evidencia:ev});
     }
     out.sort((a,b)=>b.v-a.v);

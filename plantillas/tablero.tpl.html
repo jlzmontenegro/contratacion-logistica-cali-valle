@@ -757,7 +757,7 @@ async function traerMods(ids){
   for(const m of Object.values(best)) (por[m.id_contrato]=por[m.id_contrato]||[]).push({
     t:tipoDe(m.proposito_modificacion), e:(m.estado_modificacion||'').trim(),
     f:(m.fecha_de_aprobacion||'').slice(0,10), d:+(m.dias_extendidos||0),
-    vr:Math.round(+(m.valor_modificacion||0)), p:(m.proposito_modificacion||'').replace(/\s+/g,' ').trim().slice(0,800)});
+    vr:Math.round(+(m.valor_modificacion||0)), p:(m.proposito_modificacion||'').replace(/\s+/g,' ').trim()});
   for(const k in por) por[k].sort((a,b)=>(a.f||'').localeCompare(b.f||''));
   return por;
 }
@@ -790,7 +790,7 @@ function fusionar(vivos,mods){
       ff:(r.fecha_de_firma||'').slice(0,10), fi:(r.fecha_de_inicio_del_contrato||'').slice(0,10),
       fn:(r.fecha_de_fin_del_contrato||'').slice(0,10),
       mod:(r.modalidad_de_contratacion||'').trim(), tc:(r.tipo_de_contrato||'').trim(),
-      un:cod0(r), obj:(r.objeto_del_contrato||'').replace(/\s+/g,' ').trim().slice(0,700), url:u,
+      un:cod0(r), obj:(r.objeto_del_contrato||'').replace(/\s+/g,' ').trim(), url:u,
       ms, dx:ms.filter(m=>m.e==='Publicado').reduce((a,m)=>a+m.d,0)
     };
     if(b){ // conserva el veredicto humano y la adición verificada

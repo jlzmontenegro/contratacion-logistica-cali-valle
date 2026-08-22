@@ -91,7 +91,7 @@ def ficha(r, motivo, evidencia):
             "fn": (r.get("fecha_de_fin_del_contrato") or "")[:10],
             "mod": cl(r.get("modalidad_de_contratacion")), "just": cl(r.get("justificacion_modalidad_de")),
             "tc": cl(r.get("tipo_de_contrato")), "un": cl(r.get("codigo_de_categoria_principal")),
-            "obj": cl(r.get("objeto_del_contrato"))[:900], "url": url_de(r),
+            "obj": cl(r.get("objeto_del_contrato")), "url": url_de(r),
             "motivo": motivo, "evidencia": evidencia}
 
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
@@ -247,7 +247,7 @@ def buscar_modificaciones():
                               "vr": int(num(m.get("valor_modificacion"))),
                               "fin": (m.get("fecha_fin_contrato") or "")[:10],
                               "tipo": res["tipo"], "titulo": res["titulo"], "puntos": res["puntos"],
-                              "p": cl(m.get("proposito_modificacion"))[:900]})
+                              "p": cl(m.get("proposito_modificacion"))})
         out.append(d)
     return out
 

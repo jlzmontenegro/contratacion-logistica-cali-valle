@@ -148,6 +148,11 @@ documento del expediente (RPC de adición, CDP, ficha técnica del otrosí), 5 c
 en el texto de la modificación, 19 por aritmética de cuotas del CPS, y 4 por diferencia entre
 valores registrados.
 
+**Los textos van completos y literales.** El objeto del contrato y el texto de cada modificación
+se guardan tal como los publica SECOP II: no se resumen, no se reescriben y no se recortan. Lo
+único que se les hace es colapsar los espacios en blanco. Si un objeto aparece todo en
+mayúsculas, así lo publicó la entidad.
+
 ## Fuentes
 
 Todas de [datos.gov.co](https://www.datos.gov.co/), unidas por `id_contrato`:

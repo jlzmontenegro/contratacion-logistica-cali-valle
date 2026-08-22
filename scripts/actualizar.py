@@ -117,7 +117,7 @@ def traer_mods(ids):
             "f": (m.get("fecha_de_aprobacion") or "")[:10],
             "d": int(num(m.get("dias_extendidos"))),
             "vr": int(num(m.get("valor_modificacion"))),
-            "p": cl(m.get("proposito_modificacion"))[:800]})
+            "p": cl(m.get("proposito_modificacion"))})
     for v in por.values():
         v.sort(key=lambda x: x["f"] or "")
     return por
@@ -163,7 +163,7 @@ def construir(vivos, mods, veredictos, entmap, orgmap):
             "fn": (r.get("fecha_de_fin_del_contrato") or "")[:10],
             "mod": cl(r.get("modalidad_de_contratacion")), "tc": cl(r.get("tipo_de_contrato")),
             "un": cl(r.get("codigo_de_categoria_principal")),
-            "obj": cl(r.get("objeto_del_contrato"))[:700], "url": u,
+            "obj": cl(r.get("objeto_del_contrato")), "url": u,
             "cats": cats, "g": "B" if cl(r.get("tipodocproveedor")) in CED else "A",
             "inc": 1, "rev": "Evidencia alta, no requirió revisión", "mot": "",
             "vi": None, "ad": None, "fad": "", "nuevo": False,
