@@ -204,7 +204,7 @@ a.secop{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--acc
   .kpi span{font-size:11.5px}
   .bar{position:static; padding:10px var(--pad); gap:7px}
   input[type=search]{flex:1 1 100%; min-width:0}
-  select{flex:1 1 calc(50% - 4px); max-width:none}
+  select{flex:1 1 calc(50% - 4px); min-width:0; max-width:100%; text-overflow:ellipsis}
   .tog{flex:1 1 calc(50% - 4px); text-align:center}
   .cats{grid-template-columns:repeat(2,1fr); gap:6px}
   .catbtn{padding:10px 11px}
@@ -254,7 +254,7 @@ a.secop{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--acc
 <div class="bar">
   <input type="search" id="q" placeholder="Buscar proveedor, objeto, entidad, ID o referencia…" aria-label="Buscar">
   <select id="ciu" aria-label="Filtrar por territorio"><option value="">Cali y Valle</option><option>Cali</option><option>Valle</option></select>
-  <select id="ent" aria-label="Filtrar por dependencia"></select>
+  <select id="ent" aria-label="Filtrar por organismo"></select>
   <select id="grp" aria-label="Filtrar por grupo">
     <option value="">Los dos grupos</option>
     <option value="A">A · Operadores del servicio</option>
@@ -295,11 +295,14 @@ let DATA = BASE;
 const CATS = ["Alimentación y catering","Logística y eventos","Transporte y viajes","Mensajería y correo","Almacenamiento y bodegaje","Cafetería y suministros"];
 const nf = new Intl.NumberFormat('es-CO');
 const norm = s => (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+// clave e identidad del organismo (dependencia + territorio)
+const claveGrupo = d => d.ciu+' · '+d.ent;
+const nombreOrg  = d => d.entl || d.entf || (d.ciu+' · '+d.ent);
 function preparar(arr){
   arr.forEach(d=>{
     d.nm = d.ms.filter(m=>m.e==='Publicado').length;
     d.pro = d.ms.some(m=>m.e==='Publicado' && m.t.includes('Prórroga de plazo'));
-    d._s = norm([d.prov,d.obj,d.entf,d.ent,d.id,d.ref,d.cats.join(' ')].join(' '));
+    d._s = norm([d.prov,d.obj,d.entf,d.entl||'',d.ent,d.id,d.ref,d.cats.join(' ')].join(' '));
   });
   return arr;
 }
@@ -315,9 +318,12 @@ const $ = id => document.getElementById(id);
 // dependencias
 function llenarDeps(){
   const prev=$('ent').value;
-  const deps=[...new Set(DATA.filter(d=>d.inc).map(d=>d.ciu+' · '+d.ent))].sort((a,b)=>a.localeCompare(b,'es'));
-  $('ent').innerHTML='<option value="">Todas las dependencias</option>'+deps.map(d=>`<option>${d}</option>`).join('');
-  if(deps.includes(prev)) $('ent').value=prev; else S.ent='';
+  const m=new Map();
+  DATA.filter(d=>d.inc).forEach(d=>{ const k=claveGrupo(d); if(!m.has(k)) m.set(k,nombreOrg(d)); });
+  const deps=[...m].sort((a,b)=>a[1].localeCompare(b[1],'es'));
+  $('ent').innerHTML='<option value="">Todos los organismos</option>'
+    +deps.map(([k,n])=>`<option value="${k}">${n}</option>`).join('');
+  if(m.has(prev)) $('ent').value=prev; else S.ent='';
 }
 llenarDeps();
 
@@ -326,7 +332,7 @@ function filtered(){
     if(!S.des && !d.inc) return false;
     if(S.des && d.inc) return false;
     if(S.ciu && d.ciu!==S.ciu) return false;
-    if(S.ent && (d.ciu+' · '+d.ent)!==S.ent) return false;
+    if(S.ent && claveGrupo(d)!==S.ent) return false;
     if(S.grp && d.g!==S.grp) return false;
     if(S.cats.size && !d.cats.some(c=>S.cats.has(c))) return false;
     if(S.mod && !d.nm) return false;
@@ -386,7 +392,7 @@ function tagsFor(d){
 function filaHTML(d){
   const pct = (d.ad&&d.vi) ? (d.ad/d.vi*100) : null;
   const pctTxt = pct!==null ? `<span class="pct${pct>=49.5?' max':''}">${pct.toFixed(1)}% del inicial</span>` : '';
-  const sub = S.agr ? (d.ref||d.id) : `${d.ciu} · ${d.ent} — ${d.ref||d.id}`;
+  const sub = S.agr ? (d.ref||d.id) : `${nombreOrg(d)} — ${d.ref||d.id}`;
   return `<tr class="row${d.inc?'':' out'}" data-id="${d.id}" tabindex="0" role="button" aria-expanded="false">
     <td><span class="prov">${d.prov||'—'}</span><span class="sub">${sub}</span>${tagsFor(d)}</td>
     <td class="r mono">${mill(d.v)}</td>
@@ -396,13 +402,12 @@ function filaHTML(d){
     <td class="r mono c-ff">${d.ff||'—'}</td>
   </tr>`;
 }
-/* ---- agrupación por organismo (dependencia + territorio) ---- */
-const claveGrupo = d => d.ciu+' · '+d.ent;
+/* ---- agrupación por organismo ---- */
 function agrupar(rows){
   const m=new Map();
   rows.forEach(d=>{ const k=claveGrupo(d); if(!m.has(k)) m.set(k,[]); m.get(k).push(d); });
   const gs=[...m].map(([k,rs])=>({
-    k, rs, ciu:rs[0].ciu, ent:rs[0].ent,
+    k, rs, ciu:rs[0].ciu, ent:rs[0].ent, entf:rs[0].entf, nom:nombreOrg(rs[0]),
     n:rs.length,
     v:rs.reduce((s,d)=>s+d.v,0),
     ad:rs.reduce((s,d)=>s+(d.ad||0),0),
@@ -412,7 +417,7 @@ function agrupar(rows){
   }));
   const sign = S.dir==='asc'?1:-1;
   gs.sort((a,b)=>{
-    if(S.k==='prov') return a.k.localeCompare(b.k,'es')*sign;
+    if(S.k==='prov') return a.nom.localeCompare(b.nom,'es')*sign;
     if(S.k==='ff')   return (a.ff<b.ff?-sign:a.ff>b.ff?sign:0) || b.v-a.v;
     return ((a[S.k]||0)-(b[S.k]||0))*sign || b.v-a.v;
   });
@@ -420,9 +425,10 @@ function agrupar(rows){
 }
 function cabeceraGrupo(g){
   const cerr = S.cerr.has(g.k);
-  return `<tr class="grp${cerr?' cerrado':''}" data-g="${g.k}" tabindex="0" role="button" aria-expanded="${!cerr}">
+  return `<tr class="grp${cerr?' cerrado':''}" data-g="${g.k}" tabindex="0" role="button" aria-expanded="${!cerr}"
+      title="Nombre en SECOP II: ${g.entf}">
     <td colspan="6"><div class="ghead">
-      <span class="gname"><span class="chev"></span><b>${g.ent}</b><span class="gciu">${g.ciu}</span></span>
+      <span class="gname"><span class="chev"></span><b>${g.nom}</b><span class="gciu">${g.ciu}</span></span>
       <span class="gnums">
         <span><em>${nf.format(g.n)}</em> contrato${g.n===1?'':'s'}</span>
         <span><em>${mill(g.v)}</em> contratado</span>
@@ -585,6 +591,7 @@ const TIPOS=[["Adición en valor",/(adicion|adcion|mayor valor|cuotas al valor)/
 const tipoDe=t=>{const n=norm(t); const o=TIPOS.filter(([,rx])=>rx.test(n)).map(([k])=>k);
   return o.length?o:((!n||n==='no definido'||n==='sin descripcion')?['Sin descripción']:['Otra']);};
 const ENTMAP=new Map(BASE.map(d=>[d.entf,d.ent]));
+const ORGMAP=new Map(BASE.map(d=>[d.entf,d.entl||d.entf]));
 const CED=new Set(["Cédula de Ciudadanía","Cédula de Extranjería","Tarjeta de Identidad","Pasaporte","Permiso por Protección Temporal"]);
 
 function estado(cls,txt){ const e=$('estado'); e.className='estado '+cls; $('estadoTxt').textContent=txt; }
@@ -658,13 +665,14 @@ function fusionar(vivos,mods){
       ms, dx:ms.filter(m=>m.e==='Publicado').reduce((a,m)=>a+m.d,0)
     };
     if(b){ // conserva el veredicto humano y la adición verificada
-      nuevos.push(Object.assign({},base,{ent:b.ent, cats:b.cats, g:b.g, inc:b.inc, rev:b.rev, mot:b.mot,
+      nuevos.push(Object.assign({},base,{ent:b.ent, entl:b.entl, cats:b.cats, g:b.g, inc:b.inc, rev:b.rev, mot:b.mot,
         vi:b.vi, ad:b.ad, fad:b.fad, nuevo:false}));
     }else{
       const vs=ms.map(m=>m.vr).filter(x=>x>0);
       const delta=vs.length?Math.max(...vs)-Math.min(...vs):0;
       nuevos.push(Object.assign({},base,{
-        ent:ENTMAP.get(base.entf) || base.entf.replace(/^SANTIAGO DE CALI[^-]*-\s*/i,'').replace(/^(GOBERNACI[OÓ]N|DEPARTAMENTO) DEL VALLE[^-]*-?\s*/i,'').trim(), cats, g:CED.has(base.td)?'B':'A', inc:1,
+        ent:ENTMAP.get(base.entf) || base.entf.replace(/^SANTIAGO DE CALI[^-]*-\s*/i,'').replace(/^(GOBERNACI[OÓ]N|DEPARTAMENTO) DEL VALLE[^-]*-?\s*/i,'').trim(),
+        entl:ORGMAP.get(base.entf) || base.entf, cats, g:CED.has(base.td)?'B':'A', inc:1,
         rev:'Sin revisar — apareció después del corte', mot:'Clasificado por el filtro automático; no ha pasado por revisión manual.',
         vi:delta?base.v-delta:null, ad:delta||null,
         fad:delta?'Diferencia entre valores registrados en el dataset (piso, sin verificar en el expediente)':'',

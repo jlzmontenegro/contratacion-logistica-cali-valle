@@ -143,7 +143,7 @@ def clasificar(filas):
             salida.append((r, sorted(cats)))
     return salida
 
-def construir(vivos, mods, veredictos, entmap):
+def construir(vivos, mods, veredictos, entmap, orgmap):
     out = []
     for r, cats in vivos:
         cid = r["id_contrato"]
@@ -155,6 +155,7 @@ def construir(vivos, mods, veredictos, entmap):
             "id": cid, "ref": cl(r.get("referencia_del_contrato")),
             "ciu": "Cali" if r.get("nit_entidad") in CALI else "Valle",
             "ent": entmap.get(entf, entf[:44]), "entf": entf,
+            "entl": orgmap.get(entf, entf),
             "prov": cl(r.get("proveedor_adjudicado")), "td": cl(r.get("tipodocproveedor")),
             "v": int(num(r.get("valor_del_contrato"))), "vp": int(num(r.get("valor_pagado"))),
             "ff": (r.get("fecha_de_firma") or "")[:10],
@@ -283,6 +284,8 @@ def main():
     ver_path = os.path.join(RAIZ, "datos", "veredictos.json")
     veredictos = json.load(open(ver_path, encoding="utf-8"))
     entmap = json.load(open(os.path.join(RAIZ, "datos", "dependencias.json"), encoding="utf-8"))
+    orgmap = json.load(open(os.path.join(RAIZ, "datos", "organismos.json"), encoding="utf-8"))
+    orgmap.pop("_nota", None)
     print(f"veredictos cargados: {len(veredictos)}")
 
     print("descargando contratos…")
@@ -314,7 +317,12 @@ def main():
     mods = traer_mods([r["id_contrato"] for r, _ in vivos])
     print(f"  {sum(len(v) for v in mods.values())} modificaciones en {len(mods)} contratos")
 
-    regs = construir(vivos, mods, veredictos, entmap)
+    regs = construir(vivos, mods, veredictos, entmap, orgmap)
+    sin_nombre = sorted({d["entf"] for d in regs if d["entl"] == d["entf"]})
+    if sin_nombre:
+        print(f"  aviso: {len(sin_nombre)} entidad(es) sin nombre completo en datos/organismos.json")
+        for e in sin_nombre:
+            print(f"    · {e}")
     inc = [d for d in regs if d["inc"]]
     nuevos = [d for d in regs if d["nuevo"]]
     print(f"registros: {len(regs)} | incluidos: {len(inc)} | sin revisar: {len(nuevos)}")

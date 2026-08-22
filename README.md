@@ -84,7 +84,11 @@ El script usa únicamente la biblioteca estándar de Python, así que no hay dep
 - `datos/veredictos.json` — un registro por `id_contrato` con el veredicto, el motivo, y la adición
   verificada en el expediente cuando la hay. **Este es el archivo a editar si quieres corregir una
   clasificación**; sobrevive a todas las actualizaciones.
-- `datos/dependencias.json` — nombres cortos de las 44 dependencias.
+- `datos/dependencias.json` — nombres cortos de los 44 organismos, para los filtros y los CSV.
+- `datos/organismos.json` — nombre completo de cada organismo: el mismo `nombre_entidad` de SECOP II
+  con mayúsculas, tildes y territorio corregidos. Es lo que titula cada grupo del tablero, para que
+  dos homónimos (Educación de Cali y Educación del Valle) no se confundan. Si SECOP publica una
+  entidad que no esté en el mapa, el tablero la muestra con el nombre crudo y el script lo avisa.
 - `plantillas/tablero.tpl.html` — el tablero sin datos; el script le inyecta la instantánea.
 
 ## Contenido
@@ -93,7 +97,7 @@ El script usa únicamente la biblioteca estándar de Python, así que no hay dep
 - `tablero/` — tablero interactivo, con actualización en vivo
 - `sismo/` — rastreador del sismo del 10 de agosto
 - `informe/` — informe metodológico y hallazgos
-- `datos/` — los dos CSV, los veredictos y el mapa de dependencias
+- `datos/` — los dos CSV, los veredictos y los mapas de nombres de organismos
 - `scripts/` — el regenerador
 - `plantillas/` — la plantilla del tablero
 
