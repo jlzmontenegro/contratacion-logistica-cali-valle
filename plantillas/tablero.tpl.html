@@ -139,6 +139,31 @@ tr.out td{opacity:.5}
 .pct{font-size:11px; color:var(--muted); display:block}
 .pct.max{color:var(--amber); font-weight:600}
 
+/* agrupación por organismo */
+tr.grp{cursor:pointer}
+tr.grp>td{padding:0; background:var(--surface-3); border-top:1px solid var(--hair-strong);
+  border-bottom:1px solid var(--hair-strong)}
+tr.grp:first-child>td{border-top:0}
+tr.grp:hover>td{background:var(--surface-2)}
+tr.grp:focus-visible>td{outline:2px solid var(--accent); outline-offset:-2px}
+.ghead{display:flex; flex-wrap:wrap; align-items:baseline; gap:5px 16px; padding:9px 12px}
+.gname{display:flex; align-items:baseline; gap:8px; min-width:0}
+.gname b{font-family:"Zilla Slab",serif; font-size:14.5px; font-weight:600}
+.gciu{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--accent-ink); background:var(--accent-soft); border-radius:2px; padding:2px 6px; white-space:nowrap}
+.chev{flex:none; align-self:center; width:0; height:0; color:var(--muted);
+  border-left:5px solid currentColor; border-top:4px solid transparent; border-bottom:4px solid transparent;
+  transform:rotate(90deg); transition:transform .15s ease}
+tr.grp.cerrado .chev{transform:none}
+.gnums{display:flex; flex-wrap:wrap; justify-content:flex-end; gap:3px 14px; margin-left:auto;
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+.gnums em{font-style:normal; font-weight:600; color:var(--ink)}
+.gnums .w em{color:var(--amber)}
+.plegar{display:flex; gap:10px}
+.plegar button{background:none; border:0; padding:0; cursor:pointer; font:inherit; font-size:12.5px;
+  color:var(--accent); text-decoration:underline; text-underline-offset:3px}
+.plegar button:hover{color:var(--accent-ink)}
+
 /* detail */
 tr.det>td{padding:0; background:var(--surface-2); border-bottom:2px solid var(--hair-strong)}
 .dwrap{padding:20px 22px 24px; display:grid; gap:20px; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
@@ -187,6 +212,9 @@ a.secop{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--acc
   table{min-width:0; font-size:13px}
   th,td{padding:9px 10px}
   th.c-mod,td.c-mod,th.c-ff,td.c-ff{display:none}
+  .ghead{padding:9px 10px}
+  .gnums{margin-left:0; width:100%; justify-content:flex-start}
+  .gname b{font-size:13.5px}
   .tags .tag:nth-child(n+4){display:none}
   .tag{white-space:normal}
   .sub{overflow-wrap:anywhere}
@@ -232,6 +260,7 @@ a.secop{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--acc
     <option value="A">A · Operadores del servicio</option>
     <option value="B">B · Apoyo profesional (CPS)</option>
   </select>
+  <button class="tog" id="fagr" aria-pressed="true">Agrupar por organismo</button>
   <button class="tog" id="fmod" aria-pressed="false">Con modificación</button>
   <button class="tog w" id="fad" aria-pressed="false">Con adición</button>
   <button class="tog" id="fpro" aria-pressed="false">Con prórroga</button>
@@ -279,7 +308,8 @@ const money = n => '$'+nf.format(n);
 const mill = n => n>=1e9 ? '$'+nf.format(Math.round(n/1e6))+' M' : (n>=1e6 ? '$'+nf.format(+(n/1e6).toFixed(1))+' M' : '$'+nf.format(n));
 const bill = mill;
 
-const S = {q:'',ciu:'',ent:'',grp:'',cats:new Set(),mod:false,ad:false,pro:false,des:false,nuevo:false,k:'v',dir:'desc'};
+const S = {q:'',ciu:'',ent:'',grp:'',cats:new Set(),mod:false,ad:false,pro:false,des:false,nuevo:false,
+  agr:true,cerr:new Set(),k:'v',dir:'desc'};
 const $ = id => document.getElementById(id);
 
 // dependencias
@@ -353,21 +383,59 @@ function tagsFor(d){
   if(d.nm) t.push(`<span class="tag">${d.nm} modif.</span>`);
   return `<span class="tags">${t.join('')}</span>`;
 }
-function renderRows(rows){
+function filaHTML(d){
+  const pct = (d.ad&&d.vi) ? (d.ad/d.vi*100) : null;
+  const pctTxt = pct!==null ? `<span class="pct${pct>=49.5?' max':''}">${pct.toFixed(1)}% del inicial</span>` : '';
+  const sub = S.agr ? (d.ref||d.id) : `${d.ciu} · ${d.ent} — ${d.ref||d.id}`;
+  return `<tr class="row${d.inc?'':' out'}" data-id="${d.id}" tabindex="0" role="button" aria-expanded="false">
+    <td><span class="prov">${d.prov||'—'}</span><span class="sub">${sub}</span>${tagsFor(d)}</td>
+    <td class="r mono">${mill(d.v)}</td>
+    <td class="r mono c-ad">${d.ad?mill(d.ad):'<span class="sub">—</span>'}${pctTxt}</td>
+    <td class="r mono c-mod">${d.nm||'<span class="sub">—</span>'}</td>
+    <td class="r mono c-dx">${d.dx||'<span class="sub">—</span>'}</td>
+    <td class="r mono c-ff">${d.ff||'—'}</td>
+  </tr>`;
+}
+/* ---- agrupación por organismo (dependencia + territorio) ---- */
+const claveGrupo = d => d.ciu+' · '+d.ent;
+function agrupar(rows){
+  const m=new Map();
+  rows.forEach(d=>{ const k=claveGrupo(d); if(!m.has(k)) m.set(k,[]); m.get(k).push(d); });
+  const gs=[...m].map(([k,rs])=>({
+    k, rs, ciu:rs[0].ciu, ent:rs[0].ent,
+    n:rs.length,
+    v:rs.reduce((s,d)=>s+d.v,0),
+    ad:rs.reduce((s,d)=>s+(d.ad||0),0),
+    nm:rs.filter(d=>d.nm).length,
+    dx:rs.reduce((s,d)=>s+(d.dx||0),0),
+    ff:rs.reduce((x,d)=>(d.ff||'')>x?(d.ff||''):x,'')
+  }));
+  const sign = S.dir==='asc'?1:-1;
+  gs.sort((a,b)=>{
+    if(S.k==='prov') return a.k.localeCompare(b.k,'es')*sign;
+    if(S.k==='ff')   return (a.ff<b.ff?-sign:a.ff>b.ff?sign:0) || b.v-a.v;
+    return ((a[S.k]||0)-(b[S.k]||0))*sign || b.v-a.v;
+  });
+  return gs;
+}
+function cabeceraGrupo(g){
+  const cerr = S.cerr.has(g.k);
+  return `<tr class="grp${cerr?' cerrado':''}" data-g="${g.k}" tabindex="0" role="button" aria-expanded="${!cerr}">
+    <td colspan="6"><div class="ghead">
+      <span class="gname"><span class="chev"></span><b>${g.ent}</b><span class="gciu">${g.ciu}</span></span>
+      <span class="gnums">
+        <span><em>${nf.format(g.n)}</em> contrato${g.n===1?'':'s'}</span>
+        <span><em>${mill(g.v)}</em> contratado</span>
+        ${g.ad?`<span class="w"><em>${mill(g.ad)}</em> en adiciones</span>`:''}
+        ${g.nm?`<span><em>${nf.format(g.nm)}</em> con modif.</span>`:''}
+      </span>
+    </div></td></tr>`;
+}
+function renderRows(rows,gs){
   const tb=$('tb');
   $('empty').hidden = rows.length>0;
-  tb.innerHTML = rows.map(d=>{
-    const pct = (d.ad&&d.vi) ? (d.ad/d.vi*100) : null;
-    const pctTxt = pct!==null ? `<span class="pct${pct>=49.5?' max':''}">${pct.toFixed(1)}% del inicial</span>` : '';
-    return `<tr class="row${d.inc?'':' out'}" data-id="${d.id}" tabindex="0" role="button" aria-expanded="false">
-      <td><span class="prov">${d.prov||'—'}</span><span class="sub">${d.ciu} · ${d.ent} — ${d.ref||d.id}</span>${tagsFor(d)}</td>
-      <td class="r mono">${mill(d.v)}</td>
-      <td class="r mono c-ad">${d.ad?mill(d.ad):'<span class="sub">—</span>'}${pctTxt}</td>
-      <td class="r mono c-mod">${d.nm||'<span class="sub">—</span>'}</td>
-      <td class="r mono c-dx">${d.dx||'<span class="sub">—</span>'}</td>
-      <td class="r mono c-ff">${d.ff||'—'}</td>
-    </tr>`;
-  }).join('');
+  if(!gs){ tb.innerHTML = rows.map(filaHTML).join(''); return; }
+  tb.innerHTML = gs.map(g=>cabeceraGrupo(g) + (S.cerr.has(g.k)?'':g.rs.map(filaHTML).join(''))).join('');
 }
 function detailHTML(d){
   const mods = d.ms.length ? d.ms.map(m=>{
@@ -410,9 +478,15 @@ function detailHTML(d){
 }
 function render(){
   const rows = sorted(filtered());
-  renderKpis(rows); renderCats(rows); renderRows(rows);
+  const gs = S.agr ? agrupar(rows) : null;
+  renderKpis(rows); renderCats(rows); renderRows(rows,gs);
   const tot=DATA.filter(d=>S.des? !d.inc : d.inc).length;
-  $('res').innerHTML = `<span><strong>${nf.format(rows.length)}</strong> de ${nf.format(tot)} contratos${S.des?' descartados':''}</span>
+  const org = gs ? ` en <strong>${nf.format(gs.length)}</strong> organismo${gs.length===1?'':'s'}` : '';
+  const plg = (gs && gs.length>1) ? `<span class="plegar">
+      <button type="button" data-plg="abrir">Expandir todo</button>
+      <button type="button" data-plg="cerrar">Contraer todo</button></span>` : '';
+  $('res').innerHTML = `<span><strong>${nf.format(rows.length)}</strong> de ${nf.format(tot)} contratos${S.des?' descartados':''}${org}</span>
+    ${plg}
     <span>Clic en cualquier fila para ver el objeto completo y sus modificaciones</span>`;
 }
 // eventos
@@ -420,13 +494,21 @@ $('q').addEventListener('input',e=>{S.q=norm(e.target.value.trim()); render();})
 $('ciu').addEventListener('change',e=>{S.ciu=e.target.value; render();});
 $('ent').addEventListener('change',e=>{S.ent=e.target.value; render();});
 $('grp').addEventListener('change',e=>{S.grp=e.target.value; render();});
-[['fmod','mod'],['fad','ad'],['fpro','pro'],['fdes','des'],['fnew','nuevo']].forEach(([id,key])=>{
+[['fmod','mod'],['fad','ad'],['fpro','pro'],['fdes','des'],['fnew','nuevo'],['fagr','agr']].forEach(([id,key])=>{
   $(id).addEventListener('click',e=>{ S[key]=!S[key]; e.currentTarget.setAttribute('aria-pressed',S[key]); render(); });
 });
 $('reset').addEventListener('click',()=>{
   S.q='';S.ciu='';S.ent='';S.grp='';S.cats.clear();S.mod=S.ad=S.pro=S.des=S.nuevo=false;
+  S.agr=true; S.cerr.clear();
   $('q').value='';$('ciu').value='';$('ent').value='';$('grp').value='';
   ['fmod','fad','fpro','fdes','fnew'].forEach(i=>$(i).setAttribute('aria-pressed','false'));
+  $('fagr').setAttribute('aria-pressed','true');
+  render();
+});
+$('res').addEventListener('click',e=>{
+  const b=e.target.closest('[data-plg]'); if(!b) return;
+  if(b.dataset.plg==='cerrar') agrupar(sorted(filtered())).forEach(g=>S.cerr.add(g.k));
+  else S.cerr.clear();
   render();
 });
 function toggleCat(b){ const c=b.dataset.cat; S.cats.has(c)?S.cats.delete(c):S.cats.add(c); render(); }
@@ -455,12 +537,21 @@ function toggleRow(tr){
   tr.classList.add('open'); tr.setAttribute('aria-expanded','true');
   tr.insertAdjacentHTML('afterend', detailHTML(d));
 }
+function toggleGrupo(tr){
+  const k=tr.dataset.g;
+  S.cerr.has(k) ? S.cerr.delete(k) : S.cerr.add(k);
+  render();
+  const foco=[...$('tb').querySelectorAll('tr.grp')].find(x=>x.dataset.g===k);
+  if(foco) foco.focus();
+}
 $('tb').addEventListener('click',e=>{
   if(e.target.closest('a')) return;
+  const g=e.target.closest('tr.grp'); if(g){ toggleGrupo(g); return; }
   const tr=e.target.closest('tr.row'); if(tr) toggleRow(tr);
 });
 $('tb').addEventListener('keydown',e=>{
   if(e.key!=='Enter' && e.key!==' ') return;
+  const g=e.target.closest('tr.grp'); if(g){ e.preventDefault(); toggleGrupo(g); return; }
   const tr=e.target.closest('tr.row'); if(tr){ e.preventDefault(); toggleRow(tr); }
 });
 render();
