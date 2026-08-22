@@ -107,6 +107,40 @@ select{padding:8px 10px; border:1px solid var(--hair-strong); border-radius:3px;
 .tog.nuevo[aria-pressed="true"]{background:var(--rust); border-color:var(--rust); color:#fff}
 .tag.n{background:var(--rust-soft); color:var(--rust); border-color:transparent}
 
+/* novedades: modificaciones posteriores al corte */
+.nov{border:1px solid var(--hair-strong); border-radius:3px; background:var(--surface);
+  box-shadow:var(--shadow); margin:22px 0 4px; overflow:hidden}
+.nov>summary{list-style:none; cursor:pointer; display:flex; flex-wrap:wrap; align-items:baseline;
+  gap:6px 14px; padding:13px 16px; background:var(--surface-2); border-bottom:1px solid var(--hair)}
+.nov>summary::-webkit-details-marker{display:none}
+.nov>summary::before{content:"\25b8"; color:var(--muted); transition:transform .15s ease; align-self:center}
+.nov[open]>summary::before{transform:rotate(90deg)}
+.nov:not([open])>summary{border-bottom:0}
+.novt{font-family:"Zilla Slab",serif; font-size:1.02rem; font-weight:600}
+.novn{margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+.novn em{font-style:normal; font-weight:600; color:var(--ink)}
+.novn .w em{color:var(--amber)}
+.novsub{margin:0; padding:11px 16px; font-size:12.3px; line-height:1.55; color:var(--muted);
+  border-bottom:1px solid var(--hair); background:var(--surface)}
+.novsub a{color:var(--accent); text-underline-offset:3px}
+.novlist{display:flex; flex-direction:column; max-height:440px; overflow-y:auto}
+.novit{padding:13px 16px; border-bottom:1px solid var(--hair); border-left:3px solid var(--accent)}
+.novit.ad{border-left-color:var(--amber)}
+.novit:last-child{border-bottom:0}
+.novhead{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-bottom:7px}
+.novf{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted)}
+.novorg{font-weight:600; font-size:13px; width:100%; margin-top:2px}
+.novp{margin:0 0 8px; font-size:12.6px; line-height:1.55; color:var(--ink-2)}
+.novpie{display:flex; flex-wrap:wrap; gap:5px 14px; align-items:baseline;
+  font-size:11.5px; color:var(--muted); font-family:"IBM Plex Mono",monospace}
+.novpie b{color:var(--ink)}
+.novpie .am{color:var(--amber)}
+.novacc{margin-left:auto; display:flex; gap:12px; white-space:nowrap}
+.novacc button,.novacc a{background:none; border:0; padding:0; font:inherit; cursor:pointer;
+  color:var(--accent); text-decoration:underline; text-underline-offset:3px}
+.novacc button:hover,.novacc a:hover{color:var(--accent-ink)}
+.novvacio{padding:20px 16px; font-size:12.8px; color:var(--muted); font-style:italic}
+
 /* results line */
 .resline{display:flex; flex-wrap:wrap; gap:10px 18px; align-items:baseline; margin:18px 0 8px;
   font-size:13px; color:var(--muted)}
@@ -207,6 +241,12 @@ a.secop{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--acc
   select{flex:1 1 calc(50% - 4px); min-width:0; max-width:100%; text-overflow:ellipsis}
   .tog{flex:1 1 calc(50% - 4px); text-align:center}
   .cats{grid-template-columns:repeat(2,1fr); gap:6px}
+  .novn{margin-left:0; width:100%}
+  .novacc{margin-left:0; width:100%}
+  /* el propósito es texto jurídico largo: se recorta y el texto completo
+     queda a un toque, en el detalle del contrato o en SECOP */
+  .novlist{max-height:70vh}
+  .novp{display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden}
   .catbtn{padding:10px 11px}
   .catbtn .cn{font-size:12px}
   table{min-width:0; font-size:13px}
@@ -250,6 +290,15 @@ a.secop{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--acc
 </header>
 
 <div class="kpis" id="kpis"></div>
+
+<details class="nov" id="nov" open>
+  <summary>
+    <span class="novt">Modificaciones y adiciones desde el 10 de agosto</span>
+    <span class="novn" id="novn"></span>
+  </summary>
+  <p class="novsub" id="novsub"></p>
+  <div class="novlist" id="novlist"></div>
+</details>
 
 <div class="bar">
   <input type="search" id="q" placeholder="Buscar proveedor, objeto, entidad, ID o referencia…" aria-label="Buscar">
@@ -310,6 +359,10 @@ preparar(DATA);
 const money = n => '$'+nf.format(n);
 const mill = n => n>=1e9 ? '$'+nf.format(Math.round(n/1e6))+' M' : (n>=1e6 ? '$'+nf.format(+(n/1e6).toFixed(1))+' M' : '$'+nf.format(n));
 const bill = mill;
+
+/* contratos que ya rastrea la página del sismo: se excluyen de las novedades */
+const CORTE_NOV = '2026-08-10';
+let SISMO = new Set(__SISMO__);
 
 const S = {q:'',ciu:'',ent:'',grp:'',cats:new Set(),mod:false,ad:false,pro:false,des:false,nuevo:false,
   agr:true,cerr:new Set(),k:'v',dir:'desc'};
@@ -482,6 +535,74 @@ function detailHTML(d){
     </div>
   </div></td></tr>`;
 }
+/* ============ modificaciones posteriores al 10 de agosto ============ */
+function novedades(){
+  const pub=[], otras=[];
+  DATA.forEach(d=>{
+    if(!d.inc || SISMO.has(d.id)) return;
+    d.ms.forEach(m=>{
+      if(!m.f || m.f < CORTE_NOV) return;
+      (m.e==='Publicado' ? pub : otras).push({d,m});
+    });
+  });
+  const orden=(a,b)=> b.m.f.localeCompare(a.m.f) || b.d.v-a.d.v;
+  return {pub:pub.sort(orden), otras:otras.sort(orden)};
+}
+function novHTML({d,m}){
+  const esAd = m.t.includes('Adición en valor');
+  const tags = m.t.map(t=>`<span class="tag ${t==='Adición en valor'?'w':'a'}">${t}</span>`).join('');
+  const pie = [`${d.prov||'—'}`, `${d.ref||d.id}`, `contrato de <b>${mill(d.v)}</b>`];
+  if(m.d) pie.push(`<b>+${m.d} días</b> de plazo`);
+  if(d.ad) pie.push(`<span class="am">adición verificada <b>${mill(d.ad)}</b>${d.vi?` · ${(d.ad/d.vi*100).toFixed(1)}% del inicial`:''}</span>`);
+  return `<article class="novit${esAd||d.ad?' ad':''}">
+    <div class="novhead">
+      <span class="novf">${m.f}</span>${tags}
+      <span class="novorg">${nombreOrg(d)}</span>
+    </div>
+    <p class="novp">${m.p||'Sin descripción publicada.'}</p>
+    <div class="novpie"><span>${pie.join(' · ')}</span>
+      <span class="novacc"><button type="button" data-ver="${d.id}">Ver en la tabla</button>
+      ${d.url?`<a href="${d.url}" target="_blank" rel="noopener">SECOP II ↗</a>`:''}</span>
+    </div>
+  </article>`;
+}
+function renderNovedades(){
+  const {pub,otras} = novedades();
+  const cton = new Set(pub.map(x=>x.d.id)).size;
+  const nad  = pub.filter(x=>x.m.t.includes('Adición en valor')).length;
+  $('novn').innerHTML = pub.length
+    ? `<em>${nf.format(pub.length)}</em> ${pub.length===1?'modificación':'modificaciones'} en <em>${nf.format(cton)}</em> contrato${cton===1?'':'s'}`
+      + (nad?` · <span class="w"><em>${nf.format(nad)}</em> con adición en valor</span>`:'')
+    : 'sin novedades';
+  const notas = [
+    `Modificaciones aprobadas del 10 de agosto de 2026 en adelante, sobre los contratos incluidos en el análisis.`,
+    `No aparecen aquí las que ya rastrea el <a href="../sismo/">seguimiento del sismo</a>${SISMO.size?` (${SISMO.size} contrato${SISMO.size===1?'':'s'})`:''}.`
+  ];
+  if(otras.length===1) notas.push('Hay además <b>1</b> modificación con fecha posterior al corte que no está publicada (en edición, aceptada, cancelada o rechazada) y no se lista.');
+  else if(otras.length) notas.push(`Hay además <b>${nf.format(otras.length)}</b> modificaciones con fecha posterior al corte que no están publicadas (en edición, aceptadas, canceladas o rechazadas) y no se listan.`);
+  $('novsub').innerHTML = notas.join(' ');
+  $('novlist').innerHTML = pub.length
+    ? pub.map(novHTML).join('')
+    : '<p class="novvacio">Ningún contrato del análisis registra modificaciones publicadas desde el 10 de agosto, fuera de las asociadas al sismo.</p>';
+}
+function verEnTabla(id){
+  const d = DATA.find(x=>x.id===id); if(!d) return;
+  S.q='';S.ciu='';S.ent='';S.grp='';S.cats.clear();S.mod=S.ad=S.pro=S.nuevo=false;
+  S.des = !d.inc; S.cerr.delete(claveGrupo(d));
+  $('q').value='';$('ciu').value='';$('ent').value='';$('grp').value='';
+  ['fmod','fad','fpro','fnew'].forEach(i=>$(i).setAttribute('aria-pressed','false'));
+  $('fdes').setAttribute('aria-pressed', String(S.des));
+  render();
+  const tr=[...$('tb').querySelectorAll('tr.row')].find(x=>x.dataset.id===id);
+  if(!tr) return;
+  if(!tr.classList.contains('open')) toggleRow(tr);
+  tr.scrollIntoView({block:'center', behavior:'smooth'});
+  tr.focus({preventScroll:true});
+}
+$('novlist').addEventListener('click',e=>{
+  const b=e.target.closest('[data-ver]'); if(b) verEnTabla(b.dataset.ver);
+});
+
 function render(){
   const rows = sorted(filtered());
   const gs = S.agr ? agrupar(rows) : null;
@@ -560,7 +681,7 @@ $('tb').addEventListener('keydown',e=>{
   const g=e.target.closest('tr.grp'); if(g){ e.preventDefault(); toggleGrupo(g); return; }
   const tr=e.target.closest('tr.row'); if(tr){ e.preventDefault(); toggleRow(tr); }
 });
-render();
+render(); renderNovedades();
 
 /* ==================== ACTUALIZACIÓN EN VIVO ==================== */
 const API="https://www.datos.gov.co";
@@ -605,6 +726,14 @@ async function jget(u,intentos=3){
   throw ultimo;
 }
 
+async function traerSismo(){
+  // la lista de contratos del sismo se regenera aparte; se refresca al abrir el tablero
+  try{
+    const d=await jget('../datos/sismo.json',1);
+    const ids=[...(d.contratos||[]),...(d.afectados||[])].map(c=>c.id).filter(Boolean);
+    if(ids.length) SISMO=new Set(ids);
+  }catch(e){ console.warn('no se pudo refrescar la lista del sismo:',e); }
+}
 async function traerContratos(){
   const likes=FRAG.map(f=>`upper(\`objeto_del_contrato\`) like '%${f}%'`).join(' OR ');
   const cats=FAMS.map(c=>`starts_with(\`codigo_de_categoria_principal\`,'${c}')`).join(' OR ');
@@ -687,6 +816,7 @@ function cod0(r){ return (r.codigo_de_categoria_principal||'').trim(); }
 async function actualizar(){
   estado('cargando','Consultando datos.gov.co…');
   try{
+    await traerSismo();
     const rows=await traerContratos();
     const vivos=clasificar(rows);
     estado('cargando',`${vivos.length} contratos · trayendo modificaciones…`);
@@ -696,7 +826,7 @@ async function actualizar(){
     $('fnew').hidden = n===0;
     const hora=new Date().toLocaleString('es-CO',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
     estado('vivo', n? `En vivo · ${hora} · ${n} sin revisar` : `En vivo · ${hora}`);
-    llenarDeps(); render();
+    llenarDeps(); render(); renderNovedades();
   }catch(e){
     estado('falla','Sin conexión con la API · mostrando la instantánea');
     console.warn('actualización en vivo falló:',e);

@@ -28,6 +28,26 @@ así que sobreviven a la actualización. Los contratos que aparezcan después de
 **«sin revisar»** y su adición es solo un piso calculado por diferencia entre registros.
 Si la API falla, se muestra la instantánea y el indicador de estado lo advierte.
 
+## Modificaciones desde el 10 de agosto
+
+El tablero abre con un panel que lista las modificaciones y adiciones **aprobadas del 10 de
+agosto de 2026 en adelante**, sobre los contratos incluidos en el análisis. Es la lista de lo
+que se movió después del sismo sin ser respuesta al sismo: los contratos que ya rastrea
+`sismo/` se excluyen, para no contar dos veces lo mismo.
+
+El panel no obedece a los filtros de la tabla — es un corte fijo por fecha. Cada entrada trae
+el organismo, el propósito publicado, el contratista y, si el contrato tiene adición verificada
+en el expediente, su monto y su porcentaje sobre el valor inicial. Dos advertencias sobre eso:
+
+- La adición mostrada es la **del contrato**, no la de esa modificación en particular. SECOP
+  publica en `valor_modificacion` el valor total del contrato después del cambio, no el delta,
+  así que no se puede atribuir un monto a cada otrosí por separado.
+- Solo se listan las modificaciones en estado **Publicado**. Las que están en edición, aceptadas,
+  canceladas o rechazadas se cuentan en la nota del panel pero no se detallan.
+
+La lista de contratos del sismo se inyecta al generar el tablero desde `datos/sismo.json` y se
+refresca al abrir la página, porque `scripts/sismo.py` corre después de `scripts/actualizar.py`.
+
 ## Rastreador del sismo del 10 de agosto de 2026
 
 `scripts/sismo.py` busca sobre **toda** la contratación de las cinco entidades —sin filtro de

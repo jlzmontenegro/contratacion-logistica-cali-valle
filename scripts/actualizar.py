@@ -258,12 +258,31 @@ def escribir_portada(regs):
         print("  portada actualizada")
 
 
+def ids_sismo():
+    """Contratos que ya rastrea la pagina del sismo; el tablero los excluye de sus novedades.
+
+    Se lee del sismo.json de la corrida anterior porque scripts/sismo.py corre despues
+    que este script. La lista cambia muy rara vez, y el tablero la refresca al abrirse.
+    """
+    p = os.path.join(RAIZ, "datos", "sismo.json")
+    if not os.path.exists(p):
+        return []
+    try:
+        d = json.load(open(p, encoding="utf-8"))
+    except Exception as e:                # noqa: BLE001
+        print(f"  aviso: no se pudo leer sismo.json ({e}); las novedades no excluiran nada")
+        return []
+    ids = {c.get("id") for c in d.get("contratos", []) + d.get("afectados", [])}
+    return sorted(i for i in ids if i)
+
+
 def escribir_tablero(regs):
     tpl = open(os.path.join(RAIZ, "plantillas", "tablero.tpl.html"), encoding="utf-8").read()
     assert "__DATA__" in tpl, "la plantilla no tiene el marcador __DATA__"
+    assert "__SISMO__" in tpl, "la plantilla no tiene el marcador __SISMO__"
     datos = json.dumps(regs, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     salida = os.path.join(RAIZ, "tablero", "index.html")
-    cuerpo = tpl.replace("__DATA__", datos)
+    cuerpo = tpl.replace("__DATA__", datos).replace("__SISMO__", json.dumps(ids_sismo()))
     i = cuerpo.index("</style>") + len("</style>")
     cab, cpo = cuerpo[:i], cuerpo[i:]
     nav = ('<nav class="sitenav"><a href="../index.html">← Inicio</a>'
