@@ -137,6 +137,8 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 
 <div class="kpis" id="kpis"></div>
 
+<div class="note" id="frescura"></div>
+
 <div class="note r">
   <strong>La palabra «sismo» casi no existe en los contratos.</strong> En los más de 35.000 objetos contractuales de 2026 no aparece ni una vez. La contratación nombra el evento como <q>los hechos acaecidos el 10 de agosto de 2026</q> o <q>la emergencia ocurrida</q>. Sólo en el texto de las <em>modificaciones</em> se lee la palabra directamente — ahí es donde consta que fue un sismo de magnitud 7,4. Por eso esta búsqueda usa varias frases y también el mecanismo jurídico: urgencia manifiesta y calamidad pública.
 </div>
@@ -197,7 +199,7 @@ function pintarKpis(){
     ['r',mil(r.valor_respuesta),'comprometidos en la respuesta'],
     ['w',nf.format(r.afectados),'contratos alterados por el sismo'],
     ['w',mil(r.valor_afectados),'valor de los contratos alterados'],
-    ['hi',fecha(D.cobertura_hasta),'último contrato publicado'],
+    ['hi',fecha(D.cobertura_hasta),'último contrato que SECOP ha publicado'],
   ].map(([c,n,l])=>`<div class="kpi ${c}"><b>${n}</b><span>${l}</span></div>`).join('');
 }
 function tarjeta(c,clase){
@@ -257,6 +259,16 @@ function pintar(){
   rit.addEventListener('mouseleave',()=>{
     $('lectura').innerHTML='<span>Pasa el cursor o tabula por las barras para ver cada día</span>';});
   if(dias.length){ $('ejeIni').textContent=fecha(dias[0].dia); $('ejeFin').textContent=fecha(dias[dias.length-1].dia); }
+  // frescura: distinguir cuándo se consultó de hasta dónde llegan los datos
+  const hoy=new Date(), iso=hoy.toISOString().slice(0,10);
+  const cob=D.cobertura_hasta||'';
+  const rez=cob? Math.round((Date.parse(iso)-Date.parse(cob))/86400000) : null;
+  $('frescura').innerHTML=`<strong>Esta página se consultó hoy, ${fecha(iso)}.</strong>
+    El contrato más reciente que SECOP II ha publicado es del <b>${fecha(cob)}</b>${
+      rez!==null && rez>0 ? ` — ${rez} ${rez===1?'día':'días'} de rezago` : ''}.
+    No es que falten datos por traer: la consulta no tiene tope superior y esa misma fecha es la más
+    reciente en <em>toda</em> la contratación del país. Es el ritmo al que SECOP II publica.`;
+
   const post=dias.filter(d=>d.dia>=D.evento), prev=dias.filter(d=>d.dia<D.evento);
   const prom=a=>a.length? a.reduce((s,d)=>s+d.n,0)/a.length : 0;
   const a=Math.round(prom(prev)), d=Math.round(prom(post));

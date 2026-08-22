@@ -44,7 +44,27 @@ Un contrato entra como **respuesta** si su objeto, la descripción del proceso o
 la modalidad aluden al evento, o si se suscribió por urgencia manifiesta o calamidad después del
 10 de agosto. Entra como **afectado** si una modificación posterior invoca el sismo.
 
-El límite es el rezago de publicación de SECOP II: lo que se ve es un piso, no el total.
+### Sobre la frescura de los datos
+
+Ninguna consulta de este repositorio tiene tope superior de fecha: siempre piden **todo lo que
+SECOP II tenga publicado en ese momento**. Lo que limita la cobertura es el rezago de publicación
+de SECOP, no el código.
+
+Para comprobarlo basta comparar: la fecha de firma más reciente en Cali y el Valle es la misma que
+la más reciente en *toda* la contratación del país. Ese rezago ronda 1 o 2 días.
+
+Por eso el rastreador distingue dos fechas que es fácil confundir:
+
+| | |
+|---|---|
+| **Consultado** | cuándo se pidieron los datos — hoy, al abrir la página |
+| **Cobertura** | fecha del contrato más reciente que SECOP ha publicado |
+
+La página muestra ambas y calcula el rezago en días. Que la cobertura no llegue a hoy no significa
+que la página esté desactualizada; significa que SECOP todavía no ha publicado lo de hoy.
+
+Con todo, lo que se ve es un piso, no el total: la respuesta a una emergencia tarda semanas en
+aparecer completa en SECOP.
 
 ## Regeneración automática
 
