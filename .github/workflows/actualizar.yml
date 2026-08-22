@@ -6,7 +6,7 @@ name: Actualizar instantánea
 
 on:
   schedule:
-    - cron: "0 10 * * 1"        # lunes 10:00 UTC = 5:00 a. m. en Colombia
+    - cron: "0 10,22 * * *"     # cada 12 horas: 5:00 a. m. y 5:00 p. m. en Colombia
   workflow_dispatch:            # permite ejecutarlo a mano desde la pestaña Actions
 
 permissions:

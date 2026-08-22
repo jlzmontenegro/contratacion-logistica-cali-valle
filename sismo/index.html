@@ -86,18 +86,37 @@ p{margin:0 0 14px} .prose{max-width:70ch}
 .chip.w{background:var(--amber-soft); color:var(--amber); border-color:transparent}
 .chip.a{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
 .ev{font-size:12.5px; color:var(--muted); font-style:italic; margin-bottom:10px}
-.mod{background:var(--surface-2); border-radius:2px; padding:11px 13px; margin-top:8px; font-size:12.8px; line-height:1.55}
-.mod .mh{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); margin-bottom:5px;
-  display:flex; gap:8px; flex-wrap:wrap}
-.mod q{color:var(--ink-2); quotes:"«" "»"}
+.mod{background:var(--surface-2); border-radius:3px; padding:13px 15px; margin-top:10px; font-size:12.8px; line-height:1.55}
+.mod .mh{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); margin-bottom:8px;
+  display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+.mod h4{font-family:"Zilla Slab",Georgia,serif; font-size:.98rem; font-weight:600; margin:0 0 8px; line-height:1.3}
+.mod ul{margin:0 0 10px; padding-left:1.05em; list-style:none}
+.mod li{position:relative; margin-bottom:5px; color:var(--ink-2); font-size:13px; line-height:1.5}
+.mod li::before{content:"→"; position:absolute; left:-1.05em; color:var(--accent); font-weight:600}
+.mod li b{font-weight:600; color:var(--ink)}
+.mod details{margin-top:8px; border-top:1px solid var(--hair); padding-top:8px}
+.mod summary{cursor:pointer; font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted);
+  letter-spacing:.04em; text-transform:uppercase; list-style:none}
+.mod summary::-webkit-details-marker{display:none}
+.mod summary::before{content:"▸ "; color:var(--accent)}
+.mod details[open] summary::before{content:"▾ "}
+.mod summary:hover{color:var(--ink)}
+.mod q{color:var(--muted); quotes:"«" "»"; display:block; margin-top:7px; font-size:12.3px; line-height:1.55}
 a.secop{font-size:12.5px; font-family:"IBM Plex Mono",monospace}
-.ritmo{display:flex; align-items:flex-end; gap:2px; height:130px; padding:14px 0 0; overflow-x:auto}
-.bar{flex:1 0 9px; min-width:9px; display:flex; flex-direction:column; justify-content:flex-end; height:100%; position:relative}
-.bar i{display:block; background:var(--accent); border-radius:1px 1px 0 0; min-height:1px}
+/* lectura del gráfico: en vez de un globo que se recorta, un renglón fijo encima */
+.lectura{display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline; min-height:34px;
+  background:var(--surface); border:1px solid var(--hair); border-radius:3px; padding:8px 14px;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted); margin-bottom:4px}
+.lectura b{font-size:13px; color:var(--ink); font-weight:600}
+.lectura .val{color:var(--ink-2)}
+.lectura .marca{color:var(--rust); font-weight:600}
+.ritmo{display:flex; align-items:flex-end; gap:2px; height:130px; padding:6px 0 0; overflow-x:auto; overflow-y:hidden}
+.bar{flex:1 0 10px; min-width:10px; display:flex; flex-direction:column; justify-content:flex-end;
+  height:100%; cursor:pointer; background:none; border:0; padding:0}
+.bar i{display:block; background:var(--accent); border-radius:1px 1px 0 0; min-height:2px; transition:background .12s}
 .bar.post i{background:var(--rust)}
-.bar:hover::after{content:attr(data-t); position:absolute; bottom:100%; left:50%; transform:translateX(-50%);
-  background:var(--ink); color:var(--ground); font:500 10.5px/1.4 "IBM Plex Mono",monospace; padding:5px 8px;
-  border-radius:3px; white-space:nowrap; z-index:5; margin-bottom:4px}
+.bar:hover i,.bar:focus-visible i{background:var(--ink)}
+.bar:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
 .eje{display:flex; justify-content:space-between; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
   color:var(--muted); border-top:1px solid var(--hair); padding-top:6px; margin-top:2px}
 .vacio{color:var(--muted); font-style:italic; padding:20px 0}
@@ -145,6 +164,7 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 <section>
   <div class="sechead"><span class="tag">Contexto</span><h2>Ritmo de contratación alrededor del evento</h2></div>
   <p class="prose lead">Contratos firmados por día. En rojo, desde el 10 de agosto. Sirve para dimensionar cuánto de la respuesta ya está publicada — y cuánto falta.</p>
+  <div class="lectura" id="lectura"><span>Pasa el cursor o tabula por las barras para ver cada día</span></div>
   <div class="ritmo" id="ritmo"></div>
   <div class="eje"><span id="ejeIni"></span><span id="ejeFin"></span></div>
   <div class="note" id="avisoCobertura"></div>
@@ -168,7 +188,7 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 </div>
 
 <script>
-const SNAP = {"generado":"2026-08-22T00:52:28Z","evento":"2026-08-10","cobertura_hasta":"2026-08-20","resumen":{"respuesta":1,"valor_respuesta":3759980000,"afectados":3,"valor_afectados":38640062008},"contratos":[{"id":"CO1.PCCNTR.9820439","ref":"4182.010.26.1.653-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS","prov":"EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA","td":"NIT","v":3759980000,"ff":"2026-08-17","fi":"2026-08-18","fn":"2026-10-18","mod":"Contratación directa","just":"Urgencia manifiesta","tc":"Prestación de servicios","un":"V1.25101600","obj":"REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"respuesta","evidencia":"El objeto alude expresamente a los hechos del 10 de agosto"}],"afectados":[{"id":"CO1.PCCNTR.9683605","ref":"4148.010.27.1.0016-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA","prov":"Corporación de Eventos, Ferias y Espectáculos de Cali","td":"NIT","v":20644713015,"ff":"2026-07-17","fi":"2026-07-22","fn":"2026-11-15","mod":"Contratación directa","just":"Contratos o convenios Interadministrativos (valor cero)","tc":"Otro","un":"V1.93141700","obj":"Aunar esfuerzos técnicos; logísticos; humanos; administrativos y financieros para realizar las acciones que visibilizan y fortalecen el proceso y la realización del Festival de Música del Pacífico Petronio Álvarez en su versión XXX; en el marco de los proyectos de inversión destinados para tal fin","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10536695&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-14","d":0,"vr":20644713015,"p":"Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026"}]},{"id":"CO1.PCCNTR.9263849","ref":"4151.010.26.1.0667-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA","prov":"GESTION Y SERVICIOS CORPORATIVOS E.S.T. SAS","td":"NIT","v":10847357298,"ff":"2026-01-29","fi":"2026-02-04","fn":"2026-08-16","mod":"Contratación directa","just":"Servicios profesionales y apoyo a la gestión","tc":"Prestación de servicios","un":"V1.80111615","obj":"PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN TÉCNICA; LOGÍSTICA Y OPERATIVA DE LA SECRETARÍA DE INFRAESTRUCTURA PARA PARA LA PROVISIÓN DE TALENTO HUMANO Y EQUIPOS EN DESARROLLO DEL PROYECTO BP-26005375 RECUPERACIÓN DE LA INFRAESTRUCTURA VIAL DEL DISTRITO ESPECIAL DEPORTIVO CULTURAL TURÍSTICO EMPRESARIAL Y DE SERVICIOS DE SANTIAGO DE CALI.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9895996&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-12","d":47,"vr":10847357298,"p":"Debido a emergencia ocurrida el 10 de agosto de 2026 parte de las actividades han sido reemprogramadas y el saldo pendiente de ejecución del contrato permite prorrogar la ejecución hasta el 16 de agosto de 2026"}]},{"id":"CO1.PCCNTR.7171236","ref":"1.130.17.12-13824","ciu":"Valle","ent":"GOBERNACION DEL VALLE DEL CAUCA - DADI","prov":"MEDIDAS ELÉCTRICAS INGENIERÍA S.A.S.","td":"NIT","v":7147991695,"ff":"2024-12-24","fi":"2025-06-17","fn":"2026-08-18","mod":"Licitación pública Obra Publica","just":"Article30_1993","tc":"Obra","un":"V1.81101700","obj":"REALIZAR LA MODERNIZACIÓN Y REPOTENCIACIÓN DE LA SUBESTACIÓN ELÉCTRICA DEL EDIFICIO PALACIO DE SAN FRANCISCO; DE CONFORMIDAD CON LOS REQUERIMIENTOS TÉCNICOS EXIGIDOS.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.7188566&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-19","d":19,"vr":7147991695,"p":"De conformidad con las circunstancias acaecidas el 10 de agosto de 2026 consistentes en el sismo que sacudió a Colombia y al Departamento del Valle del Cauca las cuales constituyen un evento de fuerza mayor se procede a suspender el contrato de obra. Lo anterior con el fin de realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general."}]}],"dias":[{"dia":"2026-07-20","n":326,"val":5117073060},{"dia":"2026-07-21","n":936,"val":16309215134},{"dia":"2026-07-22","n":586,"val":34172766183},{"dia":"2026-07-23","n":598,"val":13134841007},{"dia":"2026-07-24","n":508,"val":18613648495},{"dia":"2026-07-25","n":168,"val":2162977500},{"dia":"2026-07-26","n":68,"val":783918000},{"dia":"2026-07-27","n":311,"val":4832659100},{"dia":"2026-07-28","n":299,"val":13036656276},{"dia":"2026-07-29","n":430,"val":7248794299},{"dia":"2026-07-30","n":258,"val":4911277900},{"dia":"2026-07-31","n":174,"val":23838504611},{"dia":"2026-08-01","n":1,"val":18741000},{"dia":"2026-08-02","n":2,"val":22527000},{"dia":"2026-08-03","n":136,"val":4857872143},{"dia":"2026-08-04","n":117,"val":3576121095},{"dia":"2026-08-05","n":175,"val":3368108313},{"dia":"2026-08-06","n":200,"val":19711488451},{"dia":"2026-08-07","n":48,"val":582636974},{"dia":"2026-08-08","n":15,"val":203359000},{"dia":"2026-08-10","n":10,"val":220993950},{"dia":"2026-08-11","n":35,"val":980805000},{"dia":"2026-08-12","n":106,"val":4560461135},{"dia":"2026-08-13","n":109,"val":4262596563},{"dia":"2026-08-14","n":194,"val":2218356900},{"dia":"2026-08-15","n":62,"val":570259500},{"dia":"2026-08-16","n":173,"val":1324636000},{"dia":"2026-08-17","n":104,"val":5787900000},{"dia":"2026-08-18","n":550,"val":4842604435},{"dia":"2026-08-19","n":242,"val":2318931900},{"dia":"2026-08-20","n":89,"val":703835998}]};
+const SNAP = {"generado":"2026-08-22T01:14:21Z","evento":"2026-08-10","cobertura_hasta":"2026-08-20","resumen":{"respuesta":1,"valor_respuesta":3759980000,"afectados":3,"valor_afectados":38640062008},"contratos":[{"id":"CO1.PCCNTR.9820439","ref":"4182.010.26.1.653-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS","prov":"EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA","td":"NIT","v":3759980000,"ff":"2026-08-17","fi":"2026-08-18","fn":"2026-10-18","mod":"Contratación directa","just":"Urgencia manifiesta","tc":"Prestación de servicios","un":"V1.25101600","obj":"REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"respuesta","evidencia":"El objeto alude expresamente a los hechos del 10 de agosto"}],"afectados":[{"id":"CO1.PCCNTR.9683605","ref":"4148.010.27.1.0016-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA","prov":"Corporación de Eventos, Ferias y Espectáculos de Cali","td":"NIT","v":20644713015,"ff":"2026-07-17","fi":"2026-07-22","fn":"2026-11-15","mod":"Contratación directa","just":"Contratos o convenios Interadministrativos (valor cero)","tc":"Otro","un":"V1.93141700","obj":"Aunar esfuerzos técnicos; logísticos; humanos; administrativos y financieros para realizar las acciones que visibilizan y fortalecen el proceso y la realización del Festival de Música del Pacífico Petronio Álvarez en su versión XXX; en el marco de los proyectos de inversión destinados para tal fin","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10536695&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-14","d":0,"vr":20644713015,"fin":"2026-11-16","tipo":"Cambio de alcance","titulo":"Se modifica el alcance del objeto","puntos":["El plazo no cambia: sigue hasta el 16 de noviembre de 2026","El valor no cambia: sigue en $20.644.713.015","El texto publicado no dice qué cambió del alcance; el detalle está en el documento del otrosí"],"p":"Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026"}]},{"id":"CO1.PCCNTR.9263849","ref":"4151.010.26.1.0667-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA","prov":"GESTION Y SERVICIOS CORPORATIVOS E.S.T. SAS","td":"NIT","v":10847357298,"ff":"2026-01-29","fi":"2026-02-04","fn":"2026-08-16","mod":"Contratación directa","just":"Servicios profesionales y apoyo a la gestión","tc":"Prestación de servicios","un":"V1.80111615","obj":"PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN TÉCNICA; LOGÍSTICA Y OPERATIVA DE LA SECRETARÍA DE INFRAESTRUCTURA PARA PARA LA PROVISIÓN DE TALENTO HUMANO Y EQUIPOS EN DESARROLLO DEL PROYECTO BP-26005375 RECUPERACIÓN DE LA INFRAESTRUCTURA VIAL DEL DISTRITO ESPECIAL DEPORTIVO CULTURAL TURÍSTICO EMPRESARIAL Y DE SERVICIOS DE SANTIAGO DE CALI.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9895996&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-12","d":47,"vr":10847357298,"fin":"2026-08-17","tipo":"Prórroga","titulo":"Se amplía el plazo","puntos":["Se añaden 47 días de plazo","El plazo va hasta el 16 de agosto de 2026","El valor no cambia: sigue en $10.847.357.298"],"p":"Debido a emergencia ocurrida el 10 de agosto de 2026 parte de las actividades han sido reemprogramadas y el saldo pendiente de ejecución del contrato permite prorrogar la ejecución hasta el 16 de agosto de 2026"}]},{"id":"CO1.PCCNTR.7171236","ref":"1.130.17.12-13824","ciu":"Valle","ent":"GOBERNACION DEL VALLE DEL CAUCA - DADI","prov":"MEDIDAS ELÉCTRICAS INGENIERÍA S.A.S.","td":"NIT","v":7147991695,"ff":"2024-12-24","fi":"2025-06-17","fn":"2026-08-18","mod":"Licitación pública Obra Publica","just":"Article30_1993","tc":"Obra","un":"V1.81101700","obj":"REALIZAR LA MODERNIZACIÓN Y REPOTENCIACIÓN DE LA SUBESTACIÓN ELÉCTRICA DEL EDIFICIO PALACIO DE SAN FRANCISCO; DE CONFORMIDAD CON LOS REQUERIMIENTOS TÉCNICOS EXIGIDOS.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.7188566&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-19","d":19,"vr":7147991695,"fin":"2026-08-19","tipo":"Suspensión","titulo":"Se suspende la ejecución","puntos":["Se suspende por 19 días","Queda suspendido desde el 19 de agosto de 2026","El valor no cambia: sigue en $7.147.991.695","Finalidad declarada: realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general"],"p":"De conformidad con las circunstancias acaecidas el 10 de agosto de 2026 consistentes en el sismo que sacudió a Colombia y al Departamento del Valle del Cauca las cuales constituyen un evento de fuerza mayor se procede a suspender el contrato de obra. Lo anterior con el fin de realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general."}]}],"dias":[{"dia":"2026-07-20","n":326,"val":5117073060},{"dia":"2026-07-21","n":936,"val":16309215134},{"dia":"2026-07-22","n":586,"val":34172766183},{"dia":"2026-07-23","n":598,"val":13134841007},{"dia":"2026-07-24","n":508,"val":18613648495},{"dia":"2026-07-25","n":168,"val":2162977500},{"dia":"2026-07-26","n":68,"val":783918000},{"dia":"2026-07-27","n":311,"val":4832659100},{"dia":"2026-07-28","n":299,"val":13036656276},{"dia":"2026-07-29","n":430,"val":7248794299},{"dia":"2026-07-30","n":258,"val":4911277900},{"dia":"2026-07-31","n":174,"val":23838504611},{"dia":"2026-08-01","n":1,"val":18741000},{"dia":"2026-08-02","n":2,"val":22527000},{"dia":"2026-08-03","n":136,"val":4857872143},{"dia":"2026-08-04","n":117,"val":3576121095},{"dia":"2026-08-05","n":175,"val":3368108313},{"dia":"2026-08-06","n":200,"val":19711488451},{"dia":"2026-08-07","n":48,"val":582636974},{"dia":"2026-08-08","n":15,"val":203359000},{"dia":"2026-08-10","n":10,"val":220993950},{"dia":"2026-08-11","n":35,"val":980805000},{"dia":"2026-08-12","n":106,"val":4560461135},{"dia":"2026-08-13","n":109,"val":4262596563},{"dia":"2026-08-14","n":194,"val":2218356900},{"dia":"2026-08-15","n":62,"val":570259500},{"dia":"2026-08-16","n":173,"val":1324636000},{"dia":"2026-08-17","n":104,"val":5787900000},{"dia":"2026-08-18","n":550,"val":4842604435},{"dia":"2026-08-19","n":242,"val":2318931900},{"dia":"2026-08-20","n":89,"val":703835998}]};
 let D = SNAP;
 const nf=new Intl.NumberFormat('es-CO');
 const $=id=>document.getElementById(id);
@@ -196,9 +216,18 @@ function tarjeta(c,clase){
   if(c.mod) chips.push(`<span class="chip">${esc(c.mod)}</span>`);
   if(c.tc) chips.push(`<span class="chip">${esc(c.tc)}</span>`);
   if(c.un) chips.push(`<span class="chip a">${esc(c.un)}</span>`);
-  const mods=(c.mods||[]).map(m=>`<div class="mod">
-      <div class="mh"><span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span>${m.d?`<span>+${m.d} días</span>`:''}</div>
-      <q>${esc(m.p)}</q></div>`).join('');
+  const mods=(c.mods||[]).map(m=>{
+    const puntos=(m.puntos||[]).map(p=>{
+      const i=p.indexOf(':');
+      return i>0 && i<34 ? `<li><b>${esc(p.slice(0,i))}</b>${esc(p.slice(i))}</li>` : `<li>${esc(p)}</li>`;
+    }).join('');
+    return `<div class="mod">
+      <div class="mh">${m.tipo?`<span class="chip ${m.tipo==='Suspensión'?'r':m.tipo.includes('Adición')?'w':'a'}">${esc(m.tipo)}</span>`:''}
+        <span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span></div>
+      ${m.titulo?`<h4>${esc(m.titulo)}</h4>`:''}
+      ${puntos?`<ul>${puntos}</ul>`:''}
+      <details><summary>Texto oficial de la modificación</summary><q>${esc(m.p)}</q></details>
+    </div>`;}).join('');
   return `<div class="item ${clase}">
     <div class="ihead"><h3>${esc(c.prov)||'—'}</h3><span class="val">${mil(c.v)}</span></div>
     <div class="meta">${esc(c.ciu)} · ${esc(c.ent)}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
@@ -218,10 +247,24 @@ function pintar(){
     : '<p class="vacio">Ninguna modificación publicada invoca el sismo.</p>';
   // ritmo
   const dias=D.dias||[]; const max=Math.max(1,...dias.map(d=>d.n));
-  $('ritmo').innerHTML=dias.map(d=>{
+  $('ritmo').innerHTML=dias.map((d,i)=>{
     const post=d.dia>=D.evento;
-    return `<span class="bar ${post?'post':''}" data-t="${d.dia}: ${nf.format(d.n)} contratos · ${mil(d.val)}">
-      <i style="height:${Math.max(1,d.n/max*100)}%"></i></span>`;}).join('');
+    return `<button type="button" class="bar ${post?'post':''}" data-i="${i}"
+      aria-label="${fecha(d.dia)}: ${nf.format(d.n)} contratos, ${mil(d.val)}">
+      <i style="height:${Math.max(2,d.n/max*100)}%"></i></button>`;}).join('');
+  const leer=i=>{
+    const d=dias[i]; if(!d) return;
+    $('lectura').innerHTML=`<b>${fecha(d.dia)}</b>
+      <span class="val">${nf.format(d.n)} contratos</span>
+      <span class="val">${mil(d.val)}</span>
+      ${d.dia>=D.evento?'<span class="marca">después del sismo</span>':''}`;
+  };
+  const rit=$('ritmo');
+  rit.addEventListener('mouseover',e=>{const b=e.target.closest('.bar'); if(b) leer(+b.dataset.i);});
+  rit.addEventListener('focusin',e=>{const b=e.target.closest('.bar'); if(b) leer(+b.dataset.i);});
+  rit.addEventListener('click',e=>{const b=e.target.closest('.bar'); if(b) leer(+b.dataset.i);});
+  rit.addEventListener('mouseleave',()=>{
+    $('lectura').innerHTML='<span>Pasa el cursor o tabula por las barras para ver cada día</span>';});
   if(dias.length){ $('ejeIni').textContent=fecha(dias[0].dia); $('ejeFin').textContent=fecha(dias[dias.length-1].dia); }
   const post=dias.filter(d=>d.dia>=D.evento), prev=dias.filter(d=>d.dia<D.evento);
   const prom=a=>a.length? a.reduce((s,d)=>s+d.n,0)/a.length : 0;

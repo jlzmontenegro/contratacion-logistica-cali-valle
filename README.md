@@ -48,10 +48,14 @@ El límite es el rezago de publicación de SECOP II: lo que se ve es un piso, no
 
 ## Regeneración automática
 
-Una GitHub Action (`.github/workflows/actualizar.yml`) corre los lunes a las 5:00 a. m. de Colombia
+Una GitHub Action (`.github/workflows/actualizar.yml`) corre **cada 12 horas** (5:00 a. m. y 5:00 p. m. de Colombia)
 y ejecuta `scripts/actualizar.py` y `scripts/sismo.py`, que reconsultan la API, vuelve a clasificar, reaplica los
 veredictos de `datos/veredictos.json` y reescribe el tablero, los CSV y los indicadores de la
 portada. Sólo hace commit si algo cambió. También se puede lanzar a mano desde la pestaña Actions.
+
+> GitHub desactiva los workflows programados cuando un repositorio pasa 60 días sin actividad.
+> Como este hace commit cada vez que los datos cambian, se mantiene activo solo; si algún día
+> deja de correr, basta reactivarlo desde la pestaña Actions.
 
 El script usa únicamente la biblioteca estándar de Python, así que no hay dependencias que instalar.
 

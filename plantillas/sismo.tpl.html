@@ -82,18 +82,37 @@ p{margin:0 0 14px} .prose{max-width:70ch}
 .chip.w{background:var(--amber-soft); color:var(--amber); border-color:transparent}
 .chip.a{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
 .ev{font-size:12.5px; color:var(--muted); font-style:italic; margin-bottom:10px}
-.mod{background:var(--surface-2); border-radius:2px; padding:11px 13px; margin-top:8px; font-size:12.8px; line-height:1.55}
-.mod .mh{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); margin-bottom:5px;
-  display:flex; gap:8px; flex-wrap:wrap}
-.mod q{color:var(--ink-2); quotes:"«" "»"}
+.mod{background:var(--surface-2); border-radius:3px; padding:13px 15px; margin-top:10px; font-size:12.8px; line-height:1.55}
+.mod .mh{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); margin-bottom:8px;
+  display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+.mod h4{font-family:"Zilla Slab",Georgia,serif; font-size:.98rem; font-weight:600; margin:0 0 8px; line-height:1.3}
+.mod ul{margin:0 0 10px; padding-left:1.05em; list-style:none}
+.mod li{position:relative; margin-bottom:5px; color:var(--ink-2); font-size:13px; line-height:1.5}
+.mod li::before{content:"→"; position:absolute; left:-1.05em; color:var(--accent); font-weight:600}
+.mod li b{font-weight:600; color:var(--ink)}
+.mod details{margin-top:8px; border-top:1px solid var(--hair); padding-top:8px}
+.mod summary{cursor:pointer; font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted);
+  letter-spacing:.04em; text-transform:uppercase; list-style:none}
+.mod summary::-webkit-details-marker{display:none}
+.mod summary::before{content:"▸ "; color:var(--accent)}
+.mod details[open] summary::before{content:"▾ "}
+.mod summary:hover{color:var(--ink)}
+.mod q{color:var(--muted); quotes:"«" "»"; display:block; margin-top:7px; font-size:12.3px; line-height:1.55}
 a.secop{font-size:12.5px; font-family:"IBM Plex Mono",monospace}
-.ritmo{display:flex; align-items:flex-end; gap:2px; height:130px; padding:14px 0 0; overflow-x:auto}
-.bar{flex:1 0 9px; min-width:9px; display:flex; flex-direction:column; justify-content:flex-end; height:100%; position:relative}
-.bar i{display:block; background:var(--accent); border-radius:1px 1px 0 0; min-height:1px}
+/* lectura del gráfico: en vez de un globo que se recorta, un renglón fijo encima */
+.lectura{display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline; min-height:34px;
+  background:var(--surface); border:1px solid var(--hair); border-radius:3px; padding:8px 14px;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted); margin-bottom:4px}
+.lectura b{font-size:13px; color:var(--ink); font-weight:600}
+.lectura .val{color:var(--ink-2)}
+.lectura .marca{color:var(--rust); font-weight:600}
+.ritmo{display:flex; align-items:flex-end; gap:2px; height:130px; padding:6px 0 0; overflow-x:auto; overflow-y:hidden}
+.bar{flex:1 0 10px; min-width:10px; display:flex; flex-direction:column; justify-content:flex-end;
+  height:100%; cursor:pointer; background:none; border:0; padding:0}
+.bar i{display:block; background:var(--accent); border-radius:1px 1px 0 0; min-height:2px; transition:background .12s}
 .bar.post i{background:var(--rust)}
-.bar:hover::after{content:attr(data-t); position:absolute; bottom:100%; left:50%; transform:translateX(-50%);
-  background:var(--ink); color:var(--ground); font:500 10.5px/1.4 "IBM Plex Mono",monospace; padding:5px 8px;
-  border-radius:3px; white-space:nowrap; z-index:5; margin-bottom:4px}
+.bar:hover i,.bar:focus-visible i{background:var(--ink)}
+.bar:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
 .eje{display:flex; justify-content:space-between; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
   color:var(--muted); border-top:1px solid var(--hair); padding-top:6px; margin-top:2px}
 .vacio{color:var(--muted); font-style:italic; padding:20px 0}
@@ -136,6 +155,7 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 <section>
   <div class="sechead"><span class="tag">Contexto</span><h2>Ritmo de contratación alrededor del evento</h2></div>
   <p class="prose lead">Contratos firmados por día. En rojo, desde el 10 de agosto. Sirve para dimensionar cuánto de la respuesta ya está publicada — y cuánto falta.</p>
+  <div class="lectura" id="lectura"><span>Pasa el cursor o tabula por las barras para ver cada día</span></div>
   <div class="ritmo" id="ritmo"></div>
   <div class="eje"><span id="ejeIni"></span><span id="ejeFin"></span></div>
   <div class="note" id="avisoCobertura"></div>
@@ -187,9 +207,18 @@ function tarjeta(c,clase){
   if(c.mod) chips.push(`<span class="chip">${esc(c.mod)}</span>`);
   if(c.tc) chips.push(`<span class="chip">${esc(c.tc)}</span>`);
   if(c.un) chips.push(`<span class="chip a">${esc(c.un)}</span>`);
-  const mods=(c.mods||[]).map(m=>`<div class="mod">
-      <div class="mh"><span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span>${m.d?`<span>+${m.d} días</span>`:''}</div>
-      <q>${esc(m.p)}</q></div>`).join('');
+  const mods=(c.mods||[]).map(m=>{
+    const puntos=(m.puntos||[]).map(p=>{
+      const i=p.indexOf(':');
+      return i>0 && i<34 ? `<li><b>${esc(p.slice(0,i))}</b>${esc(p.slice(i))}</li>` : `<li>${esc(p)}</li>`;
+    }).join('');
+    return `<div class="mod">
+      <div class="mh">${m.tipo?`<span class="chip ${m.tipo==='Suspensión'?'r':m.tipo.includes('Adición')?'w':'a'}">${esc(m.tipo)}</span>`:''}
+        <span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span></div>
+      ${m.titulo?`<h4>${esc(m.titulo)}</h4>`:''}
+      ${puntos?`<ul>${puntos}</ul>`:''}
+      <details><summary>Texto oficial de la modificación</summary><q>${esc(m.p)}</q></details>
+    </div>`;}).join('');
   return `<div class="item ${clase}">
     <div class="ihead"><h3>${esc(c.prov)||'—'}</h3><span class="val">${mil(c.v)}</span></div>
     <div class="meta">${esc(c.ciu)} · ${esc(c.ent)}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
@@ -209,10 +238,24 @@ function pintar(){
     : '<p class="vacio">Ninguna modificación publicada invoca el sismo.</p>';
   // ritmo
   const dias=D.dias||[]; const max=Math.max(1,...dias.map(d=>d.n));
-  $('ritmo').innerHTML=dias.map(d=>{
+  $('ritmo').innerHTML=dias.map((d,i)=>{
     const post=d.dia>=D.evento;
-    return `<span class="bar ${post?'post':''}" data-t="${d.dia}: ${nf.format(d.n)} contratos · ${mil(d.val)}">
-      <i style="height:${Math.max(1,d.n/max*100)}%"></i></span>`;}).join('');
+    return `<button type="button" class="bar ${post?'post':''}" data-i="${i}"
+      aria-label="${fecha(d.dia)}: ${nf.format(d.n)} contratos, ${mil(d.val)}">
+      <i style="height:${Math.max(2,d.n/max*100)}%"></i></button>`;}).join('');
+  const leer=i=>{
+    const d=dias[i]; if(!d) return;
+    $('lectura').innerHTML=`<b>${fecha(d.dia)}</b>
+      <span class="val">${nf.format(d.n)} contratos</span>
+      <span class="val">${mil(d.val)}</span>
+      ${d.dia>=D.evento?'<span class="marca">después del sismo</span>':''}`;
+  };
+  const rit=$('ritmo');
+  rit.addEventListener('mouseover',e=>{const b=e.target.closest('.bar'); if(b) leer(+b.dataset.i);});
+  rit.addEventListener('focusin',e=>{const b=e.target.closest('.bar'); if(b) leer(+b.dataset.i);});
+  rit.addEventListener('click',e=>{const b=e.target.closest('.bar'); if(b) leer(+b.dataset.i);});
+  rit.addEventListener('mouseleave',()=>{
+    $('lectura').innerHTML='<span>Pasa el cursor o tabula por las barras para ver cada día</span>';});
   if(dias.length){ $('ejeIni').textContent=fecha(dias[0].dia); $('ejeFin').textContent=fecha(dias[dias.length-1].dia); }
   const post=dias.filter(d=>d.dia>=D.evento), prev=dias.filter(d=>d.dia<D.evento);
   const prom=a=>a.length? a.reduce((s,d)=>s+d.n,0)/a.length : 0;

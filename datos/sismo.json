@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-22T00:52:28Z",
+ "generado": "2026-08-22T01:14:21Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-08-20",
  "resumen": {
@@ -56,6 +56,14 @@
      "f": "2026-08-14",
      "d": 0,
      "vr": 20644713015,
+     "fin": "2026-11-16",
+     "tipo": "Cambio de alcance",
+     "titulo": "Se modifica el alcance del objeto",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 16 de noviembre de 2026",
+      "El valor no cambia: sigue en $20.644.713.015",
+      "El texto publicado no dice qué cambió del alcance; el detalle está en el documento del otrosí"
+     ],
      "p": "Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026"
     }
    ]
@@ -85,6 +93,14 @@
      "f": "2026-08-12",
      "d": 47,
      "vr": 10847357298,
+     "fin": "2026-08-17",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 47 días de plazo",
+      "El plazo va hasta el 16 de agosto de 2026",
+      "El valor no cambia: sigue en $10.847.357.298"
+     ],
      "p": "Debido a emergencia ocurrida el 10 de agosto de 2026 parte de las actividades han sido reemprogramadas y el saldo pendiente de ejecución del contrato permite prorrogar la ejecución hasta el 16 de agosto de 2026"
     }
    ]
@@ -114,6 +130,15 @@
      "f": "2026-08-19",
      "d": 19,
      "vr": 7147991695,
+     "fin": "2026-08-19",
+     "tipo": "Suspensión",
+     "titulo": "Se suspende la ejecución",
+     "puntos": [
+      "Se suspende por 19 días",
+      "Queda suspendido desde el 19 de agosto de 2026",
+      "El valor no cambia: sigue en $7.147.991.695",
+      "Finalidad declarada: realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general"
+     ],
      "p": "De conformidad con las circunstancias acaecidas el 10 de agosto de 2026 consistentes en el sismo que sacudió a Colombia y al Departamento del Valle del Cauca las cuales constituyen un evento de fuerza mayor se procede a suspender el contrato de obra. Lo anterior con el fin de realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general."
     }
    ]

@@ -78,6 +78,93 @@ def ficha(r, motivo, evidencia):
             "obj": cl(r.get("objeto_del_contrato"))[:900], "url": url_de(r),
             "motivo": motivo, "evidencia": evidencia}
 
+MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+         "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+def dia_es(iso):
+    """2026-08-16 -> 16 de agosto de 2026"""
+    if not iso or len(iso) < 10:
+        return ""
+    a, m, d = iso[:4], iso[5:7], iso[8:10]
+    try:
+        return f"{int(d)} de {MESES[int(m) - 1]} de {a}"
+    except (ValueError, IndexError):
+        return iso
+
+def pesos(n):
+    return "$" + f"{int(n):,}".replace(",", ".")
+
+def finalidad(texto):
+    """Extrae el proposito declarado: lo que sigue a 'con el fin de', 'para', etc."""
+    m = re.search(r"(?:con el fin de|a fin de|con el prop[oó]sito de|con el objeto de)\s+(.{15,300}?)(?:\.|$)",
+                  texto, re.I)
+    if m:
+        t = cl(m.group(1))
+        return t[0].lower() + t[1:] if t else ""
+    return ""
+
+def resumir_mod(m, valor_contrato):
+    """Devuelve {tipo, titulo, puntos[]} describiendo en qué consistió la modificación."""
+    t = cl(m.get("proposito_modificacion"))
+    b = t.lower()
+    dias = int(num(m.get("dias_extendidos")))
+    vmod = int(num(m.get("valor_modificacion")))
+    fin = (m.get("fecha_fin_contrato") or "")[:10]
+    delta = vmod - int(valor_contrato or 0)
+
+    suspende = bool(re.search(r"suspend|suspensi[oó]n", b))
+    prorroga = bool(re.search(r"prorrog|ampl[ií]a\w* el plazo|plazo de ejecuci[oó]n hasta", b))
+    alcance = bool(re.search(r"alcance del objeto|cl[aá]usula segunda|modifica.{0,25}objeto", b))
+    adiciona = bool(re.search(r"adicion|mayor valor", b))
+    cede = bool(re.search(r"cesi[oó]n del contrato|cede el contrato", b))
+
+    if suspende:
+        tipo, titulo = "Suspensión", "Se suspende la ejecución"
+    elif prorroga and adiciona:
+        tipo, titulo = "Adición y prórroga", "Se amplía el plazo y el valor"
+    elif prorroga:
+        tipo, titulo = "Prórroga", "Se amplía el plazo"
+    elif adiciona:
+        tipo, titulo = "Adición", "Se amplía el valor"
+    elif alcance:
+        tipo, titulo = "Cambio de alcance", "Se modifica el alcance del objeto"
+    elif cede:
+        tipo, titulo = "Cesión", "Cambia el contratista"
+    else:
+        tipo, titulo = "Otra", "Se modifica el contrato"
+
+    puntos = []
+    # plazo
+    hasta = re.search(r"hasta el (\d{1,2}) de (\w+) de (\d{4})", t, re.I)
+    if dias > 0:
+        verbo = "Se suspende por" if suspende else "Se añaden"
+        cola = " de plazo" if not suspende else ""
+        puntos.append(f"{verbo} {dias} días{cola}")
+    if hasta:
+        puntos.append(("La ejecución se reanuda el " if suspende else "El plazo va hasta el ")
+                      + f"{int(hasta.group(1))} de {hasta.group(2).lower()} de {hasta.group(3)}")
+    elif fin and dias > 0:
+        puntos.append(("Nueva fecha de fin: " if not suspende else "Queda suspendido desde el ") + dia_es(fin))
+    elif fin and dias == 0:
+        puntos.append("El plazo no cambia: sigue hasta el " + dia_es(fin))
+    # valor
+    if delta > 0:
+        pct = f" ({delta / (vmod - delta) * 100:.1f} % sobre el valor previo)" if vmod - delta > 0 else ""
+        puntos.append(f"Se adicionan {pesos(delta)}{pct}")
+    elif vmod:
+        puntos.append(f"El valor no cambia: sigue en {pesos(vmod)}")
+    # finalidad declarada
+    f = finalidad(t)
+    if f:
+        puntos.append("Finalidad declarada: " + f)
+    # alcance sin detalle
+    if tipo == "Cambio de alcance" and not f:
+        puntos.append("El texto publicado no dice qué cambió del alcance; el detalle está en el documento del otrosí")
+    if dias == 0 and delta == 0 and tipo != "Cambio de alcance":
+        puntos.append("No cambian ni el plazo ni el valor registrados")
+    return {"tipo": tipo, "titulo": titulo, "puntos": puntos}
+
+
 def buscar_contratos():
     """Contratos cuyo texto alude al evento, o suscritos por urgencia/calamidad."""
     campos = ["objeto_del_contrato", "descripcion_del_proceso", "justificacion_modalidad_de"]
@@ -102,7 +189,7 @@ def buscar_contratos():
 def buscar_modificaciones():
     """Modificaciones cuya justificación alude al evento (búsqueda nacional, luego filtrada)."""
     sel = ("id_contrato,identificador_modificacion,numero_version,estado_modificacion,fecha_de_aprobacion,"
-           "valor_modificacion,dias_extendidos,proposito_modificacion")
+           "valor_modificacion,dias_extendidos,proposito_modificacion,fecha_inicio_contrato,fecha_fin_contrato")
     # sobre el dataset nacional sólo se buscan las frases que responden rápido;
     # las tres son suficientes: los textos que invocan el sismo contienen alguna.
     mejor = {}
@@ -135,11 +222,16 @@ def buscar_modificaciones():
         ms = [m for m in mejor.values() if m["id_contrato"] == cid]
         ms.sort(key=lambda x: (x.get("fecha_de_aprobacion") or ""))
         d = ficha(r, "afectado", "Una modificación posterior invoca el sismo")
-        d["mods"] = [{"e": cl(m.get("estado_modificacion")),
-                      "f": (m.get("fecha_de_aprobacion") or "")[:10],
-                      "d": int(num(m.get("dias_extendidos"))),
-                      "vr": int(num(m.get("valor_modificacion"))),
-                      "p": cl(m.get("proposito_modificacion"))[:900]} for m in ms]
+        d["mods"] = []
+        for m in ms:
+            res = resumir_mod(m, r.get("valor_del_contrato"))
+            d["mods"].append({"e": cl(m.get("estado_modificacion")),
+                              "f": (m.get("fecha_de_aprobacion") or "")[:10],
+                              "d": int(num(m.get("dias_extendidos"))),
+                              "vr": int(num(m.get("valor_modificacion"))),
+                              "fin": (m.get("fecha_fin_contrato") or "")[:10],
+                              "tipo": res["tipo"], "titulo": res["titulo"], "puntos": res["puntos"],
+                              "p": cl(m.get("proposito_modificacion"))[:900]})
         out.append(d)
     return out
 
