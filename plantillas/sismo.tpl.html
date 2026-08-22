@@ -101,6 +101,14 @@ p{margin:0 0 14px} .prose{max-width:70ch}
 .mod details[open] summary::before{content:"▾ "}
 .mod summary:hover{color:var(--ink)}
 .mod q{color:var(--muted); quotes:"«" "»"; display:block; margin-top:7px; font-size:12.3px; line-height:1.55}
+.implica{background:var(--surface); border-left:3px solid var(--accent); padding:11px 14px; margin:10px 0 0}
+.implica b{display:block; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:6px}
+.implica p{margin:0 0 8px; font-size:12.8px; line-height:1.6; color:var(--ink-2)}
+.implica p:last-child{margin-bottom:0}
+.discrep{margin:10px 0 0; padding:9px 12px; background:var(--amber-soft); color:var(--amber);
+  font-size:12.2px; line-height:1.5; border-radius:2px}
+.fuente{margin:9px 0 0; font-size:11.5px; line-height:1.5; color:var(--muted); font-style:italic}
 a.secop{font-size:12.5px; font-family:"IBM Plex Mono",monospace}
 /* lectura del gráfico: en vez de un globo que se recorta, un renglón fijo encima */
 .lectura{display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline; min-height:34px;
@@ -232,10 +240,15 @@ function tarjeta(c,clase){
     }).join('');
     return `<div class="mod">
       <div class="mh">${m.tipo?`<span class="chip ${m.tipo==='Suspensión'?'r':m.tipo.includes('Adición')?'w':'a'}">${esc(m.tipo)}</span>`:''}
-        <span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span></div>
+        <span>${m.f||'sin fecha'}</span><span>${esc(m.e)}</span>${
+        m.verificada?'<span class="chip a">leída en el documento firmado</span>':''}</div>
       ${m.titulo?`<h4>${esc(m.titulo)}</h4>`:''}
       ${puntos?`<ul>${puntos}</ul>`:''}
+      ${(m.implica&&m.implica.length)?`<div class="implica"><b>Qué implica el alcance nuevo</b>${
+        (Array.isArray(m.implica)?m.implica:[m.implica]).map(t=>`<p>${esc(t)}</p>`).join('')}</div>`:''}
+      ${m.discrepancia?`<p class="discrep">${esc(m.discrepancia)}</p>`:''}
       <details><summary>Texto oficial de la modificación</summary><q>${esc(m.p)}</q></details>
+      ${m.fuente?`<p class="fuente">${esc(m.fuente)}</p>`:''}
     </div>`;}).join('');
   return `<div class="item ${clase}">
     <div class="ihead"><h3>${esc(c.prov)||'—'}</h3><span class="val">${mil(c.v)}</span></div>

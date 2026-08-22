@@ -7,6 +7,9 @@ Se ejecuta después de scripts/sismo.py. Sólo biblioteca estándar.
 """
 import json, os, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sismo import aplicar_notas   # noqa: E402
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 NAV = ('<nav class="sitenav"><a href="../index.html">← Inicio</a>'
@@ -25,7 +28,7 @@ def main():
         print("no existe datos/sismo.json; corre antes scripts/sismo.py", file=sys.stderr)
         return 1
 
-    datos = json.load(open(p_datos, encoding="utf-8"))
+    datos = aplicar_notas(json.load(open(p_datos, encoding="utf-8")))
     tpl = open(p_tpl, encoding="utf-8").read()
     for marca in ("__SISMO__", "__ORG__"):
         if marca not in tpl:

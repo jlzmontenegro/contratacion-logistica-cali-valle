@@ -31,6 +31,11 @@ def num(x):
     except (TypeError, ValueError):
         return 0.0
 
+# Consultas que no se pudieron completar. Si queda alguna, la busqueda esta incompleta
+# y el resultado no se puede publicar: un fallo de red se veria igual que "no hay nada".
+FALLOS = []
+
+
 def pedir(url, intentos=4, espera=6, tiempo=280):
     ultimo = None
     for i in range(intentos):
@@ -78,6 +83,48 @@ def organismos():
 
 
 ORG = {}
+
+
+def notas_verificadas():
+    """Lectura humana de los documentos firmados, cuando el texto de SECOP no basta."""
+    p = os.path.join(RAIZ, "datos", "sismo_notas.json")
+    if not os.path.exists(p):
+        return {}
+    try:
+        n = json.load(open(p, encoding="utf-8"))
+    except Exception as e:                # noqa: BLE001
+        print(f"  aviso: no se pudo leer sismo_notas.json ({e})")
+        return {}
+    n.pop("_nota", None)
+    return n
+
+
+def aplicar_notas(datos, notas=None):
+    """Sustituye el resumen automatico de una modificacion por la lectura del documento.
+
+    Idempotente: la llaman sismo.py al escribir el JSON y construir_sismo.py al armar la
+    pagina, para que la nota valga aunque sismo.json venga de una corrida anterior.
+    """
+    notas = notas_verificadas() if notas is None else notas
+    if not notas:
+        return datos
+    puestas = 0
+    for c in list(datos.get("contratos", [])) + list(datos.get("afectados", [])):
+        por_fecha = notas.get(c.get("id"))
+        if not por_fecha:
+            continue
+        for m in c.get("mods", []):
+            n = por_fecha.get(m.get("f"))
+            if not n:
+                continue
+            for campo in ("titulo", "puntos", "implica", "fuente", "discrepancia"):
+                if n.get(campo):
+                    m[campo] = n[campo]
+            m["verificada"] = True
+            puestas += 1
+    if puestas:
+        print(f"  {puestas} modificacion(es) con lectura del documento firmado")
+    return datos
 
 
 def ficha(r, motivo, evidencia):
@@ -212,7 +259,7 @@ def buscar_modificaciones():
     for f in ["SISMO", "TERREMOTO", "EMERGENCIA OCURRIDA", "10 DE AGOSTO DE 2026"]:
         w = f"upper(proposito_modificacion) like '%{f}%' AND fecha_de_aprobacion >= '{DESDE}'"
         try:
-            for x in soda("u8cx-r425", w, sel, 5000, intentos=2, espera=4, tiempo=100):
+            for x in soda("u8cx-r425", w, sel, 5000, intentos=2, espera=8, tiempo=200):
                 k = x.get("identificador_modificacion")
                 if not k:
                     continue
@@ -220,6 +267,7 @@ def buscar_modificaciones():
                     mejor[k] = x
         except Exception as e:            # noqa: BLE001
             print(f"    '{f}' falló: {e}", file=sys.stderr)
+            FALLOS.append(f"frase '{f}': {e}")
         time.sleep(1)
     print(f"    {len(mejor)} modificaciones candidatas en todo el país")
     ids = sorted({m["id_contrato"] for m in mejor.values()})
@@ -232,6 +280,7 @@ def buscar_modificaciones():
                     nuestros[r["id_contrato"]] = r
         except Exception as e:            # noqa: BLE001
             print(f"    lote falló: {e}", file=sys.stderr)
+            FALLOS.append(f"lote de contratos {i//70 + 1}: {e}")
         time.sleep(0.4)
     out = []
     for cid, r in nuestros.items():
@@ -289,9 +338,20 @@ def main():
         "afectados": sorted(afectados, key=lambda x: -x["v"]),
         "dias": dias,
     }
+    if FALLOS:
+        print("\nNO SE ESCRIBE datos/sismo.json: la búsqueda quedó incompleta.", file=sys.stderr)
+        for f in FALLOS:
+            print(f"  · {f}", file=sys.stderr)
+        print("Publicar este resultado diría que el sismo no alteró contratos, cuando lo que pasó\n"
+              "es que la consulta no respondió. Se conserva el archivo anterior; reintenta el\n"
+              "workflow cuando la API de datos.gov.co esté respondiendo.", file=sys.stderr)
+        return 1
+
+    aplicar_notas(salida)
     p = os.path.join(RAIZ, "datos", "sismo.json")
     json.dump(salida, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("listo:", salida["resumen"], "| cobertura hasta", maxfirma)
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)

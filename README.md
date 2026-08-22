@@ -100,6 +100,13 @@ aparecer completa en SECOP.
 
 ## Regeneración automática
 
+Si alguna consulta del rastreador del sismo falla, `scripts/sismo.py` **aborta sin escribir**
+`datos/sismo.json` y devuelve código 1. Es deliberado: un fallo de red se veía igual que «no hay
+nada que encontrar», y el 22 de agosto de 2026 una tanda de timeouts hizo que la Action
+publicara «0 contratos afectados», borrando el caso del Petronio Álvarez. Ahora el paso falla,
+no hay commit y se conserva lo anterior. Si ves el workflow en rojo con ese mensaje, la API
+estaba lenta: reintenta más tarde.
+
 Una GitHub Action (`.github/workflows/actualizar.yml`) corre **cada 12 horas** (5:00 a. m. y 5:00 p. m. de Colombia)
 y ejecuta `scripts/actualizar.py` y `scripts/sismo.py`, que reconsultan la API, vuelve a clasificar, reaplica los
 veredictos de `datos/veredictos.json` y reescribe el tablero, los CSV y los indicadores de la
@@ -117,6 +124,11 @@ El script usa únicamente la biblioteca estándar de Python, así que no hay dep
   verificada en el expediente cuando la hay. **Este es el archivo a editar si quieres corregir una
   clasificación**; sobrevive a todas las actualizaciones.
 - `datos/dependencias.json` — nombres cortos de los 44 organismos, para los filtros y los CSV.
+- `datos/sismo_notas.json` — la lectura humana de un documento firmado, cuando el campo de
+  propósito que publica SECOP II es demasiado escueto para saber qué cambió. Va indexado por
+  `id_contrato` y fecha de aprobación, reemplaza el resumen automático y sobrevive a las
+  actualizaciones, igual que `veredictos.json`. **Editar sólo con el documento a la vista**: la
+  página marca esas modificaciones como «leída en el documento firmado».
 - `datos/organismos.json` — nombre completo de cada organismo: el mismo `nombre_entidad` de SECOP II
   con mayúsculas, tildes y territorio corregidos. Es lo que titula cada grupo del tablero, para que
   dos homónimos (Educación de Cali y Educación del Valle) no se confundan. Si SECOP publica una
