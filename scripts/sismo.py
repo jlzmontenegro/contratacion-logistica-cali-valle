@@ -65,10 +65,26 @@ def url_de(r):
     u = r.get("urlproceso")
     return u.get("url") if isinstance(u, dict) else u
 
+def organismos():
+    """Nombre completo de cada organismo; el mismo mapa que usa el tablero."""
+    p = os.path.join(RAIZ, "datos", "organismos.json")
+    try:
+        m = json.load(open(p, encoding="utf-8"))
+    except Exception as e:                # noqa: BLE001
+        print(f"  aviso: no se pudo leer organismos.json ({e}); se usaran los nombres crudos")
+        return {}
+    m.pop("_nota", None)
+    return m
+
+
+ORG = {}
+
+
 def ficha(r, motivo, evidencia):
+    entf = cl(r.get("nombre_entidad"))
     return {"id": r["id_contrato"], "ref": cl(r.get("referencia_del_contrato")),
             "ciu": "Cali" if r.get("nit_entidad") in CALI else "Valle",
-            "ent": cl(r.get("nombre_entidad")), "prov": cl(r.get("proveedor_adjudicado")),
+            "ent": entf, "entl": ORG.get(entf, entf), "prov": cl(r.get("proveedor_adjudicado")),
             "td": cl(r.get("tipodocproveedor")), "v": int(num(r.get("valor_del_contrato"))),
             "ff": (r.get("fecha_de_firma") or "")[:10],
             "fi": (r.get("fecha_de_inicio_del_contrato") or "")[:10],
@@ -247,6 +263,8 @@ def main():
     contratos = buscar_contratos()
     print(f"  {len(contratos)} contratos")
     print("buscando modificaciones…")
+    global ORG
+    ORG = organismos()
     afectados = buscar_modificaciones()
     print(f"  {len(afectados)} contratos afectados")
     print("midiendo el ritmo de contratación…")

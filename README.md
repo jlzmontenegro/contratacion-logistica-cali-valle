@@ -35,6 +35,9 @@ agosto de 2026 en adelante**, sobre los contratos incluidos en el análisis. Es 
 que se movió después del sismo sin ser respuesta al sismo: los contratos que ya rastrea
 `sismo/` se excluyen, para no contar dos veces lo mismo.
 
+La misma lista aparece en `sismo/`, bajo **Otras modificaciones desde el 10 de agosto**, como
+contraste entre lo que el sismo movió y lo que se movió al margen del sismo.
+
 El panel no obedece a los filtros de la tabla — es un corte fijo por fecha. Cada entrada trae
 el organismo, el propósito publicado, el contratista y, si el contrato tiene adición verificada
 en el expediente, su monto y su porcentaje sobre el valor inicial. Dos advertencias sobre eso:
@@ -45,8 +48,17 @@ en el expediente, su monto y su porcentaje sobre el valor inicial. Dos advertenc
 - Solo se listan las modificaciones en estado **Publicado**. Las que están en edición, aceptadas,
   canceladas o rechazadas se cuentan en la nota del panel pero no se detallan.
 
-La lista de contratos del sismo se inyecta al generar el tablero desde `datos/sismo.json` y se
-refresca al abrir la página, porque `scripts/sismo.py` corre después de `scripts/actualizar.py`.
+Las dos páginas calculan el panel de forma distinta, a propósito:
+
+- El **tablero** lo calcula sobre sus datos vivos, así que refleja lo que la API devuelve en ese
+  momento. La lista de contratos del sismo se le inyecta desde `datos/sismo.json` al generarlo y
+  se refresca al abrir la página, porque `scripts/sismo.py` corre después de `actualizar.py`.
+- La página del **sismo** lo lee de `datos/novedades.json`, que `actualizar.py` publica en cada
+  corrida. Va al ritmo de la instantánea (cada 12 horas) y el pie del panel dice de cuándo es.
+
+`novedades.json` guarda **todas** las modificaciones posteriores al corte, sin excluir nada: cada
+página descarta después los contratos que ya rastrea por su cuenta. Así la lista de exclusión
+nunca queda desfasada respecto de `sismo.json`.
 
 ## Rastreador del sismo del 10 de agosto de 2026
 
@@ -110,6 +122,8 @@ El script usa únicamente la biblioteca estándar de Python, así que no hay dep
   dos homónimos (Educación de Cali y Educación del Valle) no se confundan. Si SECOP publica una
   entidad que no esté en el mapa, el tablero la muestra con el nombre crudo y el script lo avisa.
 - `plantillas/tablero.tpl.html` — el tablero sin datos; el script le inyecta la instantánea.
+- `datos/novedades.json` — generado, no editable a mano: las modificaciones posteriores al corte
+  que alimentan el panel de la página del sismo.
 
 ## Contenido
 
@@ -117,7 +131,7 @@ El script usa únicamente la biblioteca estándar de Python, así que no hay dep
 - `tablero/` — tablero interactivo, con actualización en vivo
 - `sismo/` — rastreador del sismo del 10 de agosto
 - `informe/` — informe metodológico y hallazgos
-- `datos/` — los dos CSV, los veredictos y los mapas de nombres de organismos
+- `datos/` — los dos CSV, los veredictos, los mapas de nombres y `novedades.json`
 - `scripts/` — el regenerador
 - `plantillas/` — la plantilla del tablero
 

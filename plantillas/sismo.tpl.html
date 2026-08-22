@@ -69,6 +69,9 @@ p{margin:0 0 14px} .prose{max-width:70ch}
   margin-bottom:12px; box-shadow:var(--shadow)}
 .item.resp{border-left:3px solid var(--rust)}
 .item.afec{border-left:3px solid var(--amber)}
+.item.otra{border-left:3px solid var(--accent); padding:15px 18px}
+.item.otra .ihead h3{font-size:.95rem}
+.otras-vacio{color:var(--muted); font-style:italic; padding:16px 0}
 .ihead{display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; margin-bottom:4px}
 .ihead .val{font-family:"IBM Plex Mono",monospace; font-size:1.05rem; font-weight:600; white-space:nowrap;
   margin-left:auto; font-variant-numeric:tabular-nums}
@@ -155,6 +158,15 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 </section>
 
 <section>
+  <div class="sechead"><span class="tag">Al margen</span><h2>Otras modificaciones desde el 10 de agosto</h2></div>
+  <p class="prose lead">Modificaciones y adiciones aprobadas del 10 de agosto en adelante sobre los contratos
+  de logística y catering del <a href="../tablero/">tablero</a>, que <strong>no</strong> invocan el sismo.
+  Sirven de contraste: es la actividad contractual corriente del mismo periodo.</p>
+  <div id="otras"><p class="otras-vacio">Cargando…</p></div>
+  <div class="note" id="otrasNota" hidden></div>
+</section>
+
+<section>
   <div class="sechead"><span class="tag">Contexto</span><h2>Ritmo de contratación alrededor del evento</h2></div>
   <p class="prose lead">Contratos firmados por día. En rojo, desde el 10 de agosto. Sirve para dimensionar cuánto de la respuesta ya está publicada — y cuánto falta.</p>
   <div class="lectura" id="lectura"><span>Pasa el cursor o tabula por las barras para ver cada día</span></div>
@@ -182,13 +194,17 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 
 <script>
 const SNAP = __SISMO__;
+const ORG = new Map(Object.entries(__ORG__));
 let D = SNAP;
+let NOV = null;              // datos/novedades.json, se carga aparte
 const nf=new Intl.NumberFormat('es-CO');
 const $=id=>document.getElementById(id);
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mil=n=> n>=1e6 ? '$'+nf.format(Math.round(n/1e6))+' M' : '$'+nf.format(n);
 const fecha=s=>{ if(!s) return '—'; const [a,m,d]=s.split('-');
   return d+' '+['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+m-1]+' '+a; };
+/* nombre completo del organismo: viene en los datos o se traduce con el mapa */
+const orgDe=c=>c.entl||ORG.get(c.ent)||ORG.get(c.entf)||c.ent||c.entf||'—';
 
 function estado(cls,txt){ $('estado').className='estado '+cls; $('estadoTxt').textContent=txt; }
 
@@ -223,7 +239,7 @@ function tarjeta(c,clase){
     </div>`;}).join('');
   return `<div class="item ${clase}">
     <div class="ihead"><h3>${esc(c.prov)||'—'}</h3><span class="val">${mil(c.v)}</span></div>
-    <div class="meta">${esc(c.ciu)} · ${esc(c.ent)}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
+    <div class="meta">${esc(orgDe(c))}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
     <div class="chips">${chips.join('')}</div>
     <p class="ev">${esc(c.evidencia)}</p>
     <p class="obj">${esc(c.obj)}</p>
@@ -231,6 +247,48 @@ function tarjeta(c,clase){
     ${c.url?`<a class="secop" href="${esc(c.url)}" target="_blank" rel="noopener">Ver el proceso en SECOP II ↗</a>`:''}
   </div>`;
 }
+/* ============ otras modificaciones desde el corte ============ */
+function tarjetaOtra(n){
+  const chips=n.t.map(t=>`<span class="chip ${t==='Adición en valor'?'w':'a'}">${esc(t)}</span>`);
+  if(n.d) chips.push(`<span class="chip">+${n.d} días de plazo</span>`);
+  if(n.ad) chips.push(`<span class="chip w">adición ${mil(n.ad)}${n.vi?` · ${(n.ad/n.vi*100).toFixed(1)}% del inicial`:''}</span>`);
+  return `<div class="item otra">
+    <div class="ihead"><h3>${esc(n.prov)||'—'}</h3><span class="val">${mil(n.v)}</span></div>
+    <div class="meta">${esc(orgDe(n))}<br>modificación aprobada ${fecha(n.f)} · ref ${esc(n.ref)||'—'}</div>
+    <div class="chips">${chips.join('')}</div>
+    <div class="mod">
+      <div class="mh"><span>texto oficial de la modificación</span></div>
+      <q>${esc(n.p)||'Sin descripción publicada.'}</q>
+    </div>
+    ${n.url?`<a class="secop" href="${esc(n.url)}" target="_blank" rel="noopener">Ver el proceso en SECOP II ↗</a>`:''}
+  </div>`;
+}
+function pintarOtras(){
+  const cont=$('otras'), nota=$('otrasNota');
+  if(!NOV){ cont.innerHTML='<p class="otras-vacio">No se pudo cargar la lista de modificaciones del tablero.</p>';
+            nota.hidden=true; return; }
+  const propios=new Set([...(D.contratos||[]),...(D.afectados||[])].map(c=>c.id));
+  const items=(NOV.items||[]).filter(n=>!propios.has(n.id));
+  const pub=items.filter(n=>n.e==='Publicado');
+  const otras=items.length-pub.length;
+  cont.innerHTML = pub.length? pub.map(tarjetaOtra).join('')
+    : '<p class="otras-vacio">Ningún contrato del tablero registra modificaciones publicadas desde el 10 de agosto, fuera de las que ya aparecen arriba.</p>';
+  const partes=[`Corte de esta lista: <b>${fecha(NOV.corte)}</b>. Se excluyen los ${propios.size} contratos que esta página ya rastrea como respuesta o afectados.`];
+  if(otras===1) partes.push('Hay además <b>1</b> modificación posterior al corte que no está publicada (en edición, aceptada, cancelada o rechazada) y no se lista.');
+  else if(otras) partes.push(`Hay además <b>${nf.format(otras)}</b> modificaciones posteriores al corte que no están publicadas (en edición, aceptadas, canceladas o rechazadas) y no se listan.`);
+  partes.push(`Se regenera con la instantánea del tablero; esta se generó el <b>${fecha((NOV.generado||'').slice(0,10))}</b>.`);
+  nota.innerHTML=partes.join(' ');
+  nota.hidden=false;
+}
+async function cargarOtras(){
+  try{
+    const r=await fetch('../datos/novedades.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    NOV=await r.json();
+  }catch(e){ console.warn('no se pudo cargar novedades.json:',e); NOV=null; }
+  pintarOtras();
+}
+
 function pintar(){
   pintarKpis();
   const resp=D.contratos.filter(c=>c.motivo==='respuesta'||c.motivo==='mecanismo');
@@ -238,6 +296,7 @@ function pintar(){
     : '<p class="vacio">Todavía no hay contratos publicados que aludan al evento.</p>';
   $('afectados').innerHTML = D.afectados.length? D.afectados.map(c=>tarjeta(c,'afec')).join('')
     : '<p class="vacio">Ninguna modificación publicada invoca el sismo.</p>';
+  if(NOV!==null || $('otras').dataset.listo) pintarOtras();
   // ritmo
   const dias=D.dias||[]; const max=Math.max(1,...dias.map(d=>d.n));
   $('ritmo').innerHTML=dias.map((d,i)=>{
@@ -317,6 +376,7 @@ async function refrescar(){
         fi:(x.fecha_de_inicio_del_contrato||'').slice(0,10), fn:(x.fecha_de_fin_del_contrato||'').slice(0,10),
         mod:(x.modalidad_de_contratacion||'').trim(), tc:(x.tipo_de_contrato||'').trim(),
         un:(x.codigo_de_categoria_principal||'').trim(),
+        entl:ORG.get((x.nombre_entidad||'').replace(/\s+/g,' ').trim())||'',
         obj:(x.objeto_del_contrato||'').replace(/\s+/g,' ').trim().slice(0,900), url:u,
         motivo, evidencia:ev});
     }
@@ -336,4 +396,5 @@ async function refrescar(){
   }
 }
 refrescar();
+cargarOtras().then(()=>{ $('otras').dataset.listo='1'; });
 </script>

@@ -27,12 +27,26 @@ def main():
 
     datos = json.load(open(p_datos, encoding="utf-8"))
     tpl = open(p_tpl, encoding="utf-8").read()
-    if "__SISMO__" not in tpl:
-        print("la plantilla no tiene el marcador __SISMO__", file=sys.stderr)
-        return 1
+    for marca in ("__SISMO__", "__ORG__"):
+        if marca not in tpl:
+            print(f"la plantilla no tiene el marcador {marca}", file=sys.stderr)
+            return 1
+
+    # el mismo mapa de nombres completos que usa el tablero, para que la pagina
+    # del sismo nombre los organismos igual que el resto del sitio
+    org = {}
+    p_org = os.path.join(RAIZ, "datos", "organismos.json")
+    try:
+        org = json.load(open(p_org, encoding="utf-8"))
+        org.pop("_nota", None)
+    except Exception as e:                # noqa: BLE001
+        print(f"aviso: no se pudo leer organismos.json ({e}); se usaran los nombres crudos",
+              file=sys.stderr)
 
     crudo = json.dumps(datos, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
-    cuerpo = tpl.replace("__SISMO__", crudo)
+    cuerpo = (tpl.replace("__SISMO__", crudo)
+                 .replace("__ORG__", json.dumps(org, ensure_ascii=False, separators=(",", ":"))
+                                         .replace("<", "\\u003c")))
 
     i = cuerpo.index("</style>") + len("</style>")
     cab, cpo = cuerpo[:i], cuerpo[i:]

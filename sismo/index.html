@@ -73,6 +73,9 @@ p{margin:0 0 14px} .prose{max-width:70ch}
   margin-bottom:12px; box-shadow:var(--shadow)}
 .item.resp{border-left:3px solid var(--rust)}
 .item.afec{border-left:3px solid var(--amber)}
+.item.otra{border-left:3px solid var(--accent); padding:15px 18px}
+.item.otra .ihead h3{font-size:.95rem}
+.otras-vacio{color:var(--muted); font-style:italic; padding:16px 0}
 .ihead{display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; margin-bottom:4px}
 .ihead .val{font-family:"IBM Plex Mono",monospace; font-size:1.05rem; font-weight:600; white-space:nowrap;
   margin-left:auto; font-variant-numeric:tabular-nums}
@@ -164,6 +167,15 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 </section>
 
 <section>
+  <div class="sechead"><span class="tag">Al margen</span><h2>Otras modificaciones desde el 10 de agosto</h2></div>
+  <p class="prose lead">Modificaciones y adiciones aprobadas del 10 de agosto en adelante sobre los contratos
+  de logística y catering del <a href="../tablero/">tablero</a>, que <strong>no</strong> invocan el sismo.
+  Sirven de contraste: es la actividad contractual corriente del mismo periodo.</p>
+  <div id="otras"><p class="otras-vacio">Cargando…</p></div>
+  <div class="note" id="otrasNota" hidden></div>
+</section>
+
+<section>
   <div class="sechead"><span class="tag">Contexto</span><h2>Ritmo de contratación alrededor del evento</h2></div>
   <p class="prose lead">Contratos firmados por día. En rojo, desde el 10 de agosto. Sirve para dimensionar cuánto de la respuesta ya está publicada — y cuánto falta.</p>
   <div class="lectura" id="lectura"><span>Pasa el cursor o tabula por las barras para ver cada día</span></div>
@@ -191,13 +203,17 @@ footer code{font-family:"IBM Plex Mono",monospace; font-size:12px}
 
 <script>
 const SNAP = {"generado":"2026-08-22T10:33:07Z","evento":"2026-08-10","cobertura_hasta":"2026-08-20","resumen":{"respuesta":1,"valor_respuesta":3759980000,"afectados":3,"valor_afectados":38640062008},"contratos":[{"id":"CO1.PCCNTR.9820439","ref":"4182.010.26.1.653-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS","prov":"EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA","td":"NIT","v":3759980000,"ff":"2026-08-17","fi":"2026-08-18","fn":"2026-10-18","mod":"Contratación directa","just":"Urgencia manifiesta","tc":"Prestación de servicios","un":"V1.25101600","obj":"REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"respuesta","evidencia":"El objeto alude expresamente a los hechos del 10 de agosto"}],"afectados":[{"id":"CO1.PCCNTR.9683605","ref":"4148.010.27.1.0016-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA","prov":"Corporación de Eventos, Ferias y Espectáculos de Cali","td":"NIT","v":20644713015,"ff":"2026-07-17","fi":"2026-07-22","fn":"2026-11-15","mod":"Contratación directa","just":"Contratos o convenios Interadministrativos (valor cero)","tc":"Otro","un":"V1.93141700","obj":"Aunar esfuerzos técnicos; logísticos; humanos; administrativos y financieros para realizar las acciones que visibilizan y fortalecen el proceso y la realización del Festival de Música del Pacífico Petronio Álvarez en su versión XXX; en el marco de los proyectos de inversión destinados para tal fin","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10536695&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-14","d":0,"vr":20644713015,"fin":"2026-11-16","tipo":"Cambio de alcance","titulo":"Se modifica el alcance del objeto","puntos":["El plazo no cambia: sigue hasta el 16 de noviembre de 2026","El valor no cambia: sigue en $20.644.713.015","El texto publicado no dice qué cambió del alcance; el detalle está en el documento del otrosí"],"p":"Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026"}]},{"id":"CO1.PCCNTR.9263849","ref":"4151.010.26.1.0667-2026","ciu":"Cali","ent":"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA","prov":"GESTION Y SERVICIOS CORPORATIVOS E.S.T. SAS","td":"NIT","v":10847357298,"ff":"2026-01-29","fi":"2026-02-04","fn":"2026-08-16","mod":"Contratación directa","just":"Servicios profesionales y apoyo a la gestión","tc":"Prestación de servicios","un":"V1.80111615","obj":"PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN TÉCNICA; LOGÍSTICA Y OPERATIVA DE LA SECRETARÍA DE INFRAESTRUCTURA PARA PARA LA PROVISIÓN DE TALENTO HUMANO Y EQUIPOS EN DESARROLLO DEL PROYECTO BP-26005375 RECUPERACIÓN DE LA INFRAESTRUCTURA VIAL DEL DISTRITO ESPECIAL DEPORTIVO CULTURAL TURÍSTICO EMPRESARIAL Y DE SERVICIOS DE SANTIAGO DE CALI.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9895996&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-12","d":47,"vr":10847357298,"fin":"2026-08-17","tipo":"Prórroga","titulo":"Se amplía el plazo","puntos":["Se añaden 47 días de plazo","El plazo va hasta el 16 de agosto de 2026","El valor no cambia: sigue en $10.847.357.298"],"p":"Debido a emergencia ocurrida el 10 de agosto de 2026 parte de las actividades han sido reemprogramadas y el saldo pendiente de ejecución del contrato permite prorrogar la ejecución hasta el 16 de agosto de 2026"}]},{"id":"CO1.PCCNTR.7171236","ref":"1.130.17.12-13824","ciu":"Valle","ent":"GOBERNACION DEL VALLE DEL CAUCA - DADI","prov":"MEDIDAS ELÉCTRICAS INGENIERÍA S.A.S.","td":"NIT","v":7147991695,"ff":"2024-12-24","fi":"2025-06-17","fn":"2026-08-18","mod":"Licitación pública Obra Publica","just":"Article30_1993","tc":"Obra","un":"V1.81101700","obj":"REALIZAR LA MODERNIZACIÓN Y REPOTENCIACIÓN DE LA SUBESTACIÓN ELÉCTRICA DEL EDIFICIO PALACIO DE SAN FRANCISCO; DE CONFORMIDAD CON LOS REQUERIMIENTOS TÉCNICOS EXIGIDOS.","url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.7188566&isFromPublicArea=True&isModal=true&asPopupView=true","motivo":"afectado","evidencia":"Una modificación posterior invoca el sismo","mods":[{"e":"Publicado","f":"2026-08-19","d":19,"vr":7147991695,"fin":"2026-08-19","tipo":"Suspensión","titulo":"Se suspende la ejecución","puntos":["Se suspende por 19 días","Queda suspendido desde el 19 de agosto de 2026","El valor no cambia: sigue en $7.147.991.695","Finalidad declarada: realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general"],"p":"De conformidad con las circunstancias acaecidas el 10 de agosto de 2026 consistentes en el sismo que sacudió a Colombia y al Departamento del Valle del Cauca las cuales constituyen un evento de fuerza mayor se procede a suspender el contrato de obra. Lo anterior con el fin de realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general."}]}],"dias":[{"dia":"2026-07-20","n":326,"val":5117073060},{"dia":"2026-07-21","n":936,"val":16309215134},{"dia":"2026-07-22","n":586,"val":34172766183},{"dia":"2026-07-23","n":598,"val":13134841007},{"dia":"2026-07-24","n":508,"val":18613648495},{"dia":"2026-07-25","n":168,"val":2162977500},{"dia":"2026-07-26","n":68,"val":783918000},{"dia":"2026-07-27","n":311,"val":4832659100},{"dia":"2026-07-28","n":299,"val":13036656276},{"dia":"2026-07-29","n":430,"val":7248794299},{"dia":"2026-07-30","n":258,"val":4911277900},{"dia":"2026-07-31","n":174,"val":23838504611},{"dia":"2026-08-01","n":1,"val":18741000},{"dia":"2026-08-02","n":2,"val":22527000},{"dia":"2026-08-03","n":136,"val":4857872143},{"dia":"2026-08-04","n":117,"val":3576121095},{"dia":"2026-08-05","n":175,"val":3368108313},{"dia":"2026-08-06","n":200,"val":19711488451},{"dia":"2026-08-07","n":48,"val":582636974},{"dia":"2026-08-08","n":15,"val":203359000},{"dia":"2026-08-10","n":10,"val":220993950},{"dia":"2026-08-11","n":35,"val":980805000},{"dia":"2026-08-12","n":106,"val":4560461135},{"dia":"2026-08-13","n":109,"val":4262596563},{"dia":"2026-08-14","n":194,"val":2218356900},{"dia":"2026-08-15","n":62,"val":570259500},{"dia":"2026-08-16","n":173,"val":1324636000},{"dia":"2026-08-17","n":104,"val":5787900000},{"dia":"2026-08-18","n":550,"val":4842604435},{"dia":"2026-08-19","n":242,"val":2318931900},{"dia":"2026-08-20","n":89,"val":703835998}]};
+const ORG = new Map(Object.entries({"SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL":"Secretaría de Bienestar Social de Cali","CONCEJO DISTRITAL DE SANTIAGO DE CALI":"Concejo Distrital de Santiago de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE CONTRATACION PUBLICA":"Departamento Administrativo de Contratación Pública de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE CONTROL DISCIPLINARIO INTERNO":"Departamento Administrativo de Control Disciplinario Interno de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE CONTROL INTERNO":"Departamento Administrativo de Control Interno de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA":"Secretaría de Cultura de Cali","DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA":"Departamento Administrativo de Gestión del Medio Ambiente (DAGMA) de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES":"Departamento Administrativo de Tecnologías de la Información y las Comunicaciones (DATIC) de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN":"Secretaría del Deporte y la Recreación de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO TERRITORIAL Y PARTICIPACION CIUDADANA":"Secretaría de Desarrollo Territorial y Participación Ciudadana de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL":"Departamento Administrativo de Desarrollo e Innovación Institucional de Cali","SECRETARIA DE EDUCACION DE CALI":"Secretaría de Educación de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE":"Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO":"Secretaría de Gobierno de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA":"Departamento Administrativo de Hacienda de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA":"Secretaría de Infraestructura de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD":"Secretaría de Movilidad de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA":"Secretaría de Paz y Cultura Ciudadana de Cali","PLANEACIÓN MUNICIPAL CALI**":"Planeación Municipal de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI":"Secretaría Distrital de Salud de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA":"Secretaría de Seguridad y Justicia de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO":"Secretaría de Turismo de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI":"Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS":"Unidad Administrativa Especial de Servicios Públicos de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT":"Secretaría de Vivienda Social y Hábitat de Cali","SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO":"Secretaría de Desarrollo Económico de Cali","GOBERNACION DEL VALLE DEL CAUCA - DADI":"Departamento Administrativo de Desarrollo Institucional (DADI) del Valle del Cauca","GOBERNACION DEL VALLE - SECRETARIA DE ASUNTOS ETNICOS":"Secretaría de Asuntos Étnicos del Valle del Cauca","SECRETARIA DE INFRAESTRUCTURA - GOBERNACION DEL VALLE":"Secretaría de Infraestructura del Valle del Cauca","SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN":"Secretaría de Paz Territorial y Reconciliación del Valle del Cauca","CASA DEL VALLE- GOBERNACION DEL VALLE":"Casa del Valle — Gobernación del Valle del Cauca","GOBERNACION DEL VALLE - SECRETARIA DE CONVIVENCIA Y SEGURIDAD CIUDADANA":"Secretaría de Convivencia y Seguridad Ciudadana del Valle del Cauca","SECRETARIA DE DESARROLLO ECONOMICO Y COMPETITIVIDAD":"Secretaría de Desarrollo Económico y Competitividad del Valle del Cauca","GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA":"Secretaría de Desarrollo Rural, Agricultura y Pesca del Valle del Cauca","GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE DESARROLLO SOCIAL Y PARTICIPACION":"Secretaría de Desarrollo Social y Participación del Valle del Cauca","GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION":"Secretaría de Educación del Valle del Cauca","DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES":"Secretaría de Gestión del Riesgo de Desastres del Valle del Cauca","GOBVALLE - HACIENDA":"Secretaría de Hacienda del Valle del Cauca","SECRETARIA DE MOVILIDAD Y TRANSPORTE":"Secretaría de Movilidad y Transporte del Valle del Cauca","GOBERNACION DEL VALLE- SECRETARIA DE MUJER, EQUIDAD DE GENERO Y DIVERSIDAD SEXUAL":"Secretaría de Mujer, Equidad de Género y Diversidad Sexual del Valle del Cauca","GOBERNACION DEL VALLE DEL CAUCA - DEPARTAMENTO ADMINISTRATIVO DE PLANEACION":"Departamento Administrativo de Planeación del Valle del Cauca","GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD":"Secretaría de Salud del Valle del Cauca","SECRETARIA GENERAL- GOBERNACION DEL VALLE":"Secretaría General de la Gobernación del Valle del Cauca","DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO":"Secretaría de Turismo del Valle del Cauca","DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA":"Unidad Administrativa Especial de Impuestos, Rentas y Gestión Tributaria del Valle del Cauca"}));
 let D = SNAP;
+let NOV = null;              // datos/novedades.json, se carga aparte
 const nf=new Intl.NumberFormat('es-CO');
 const $=id=>document.getElementById(id);
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mil=n=> n>=1e6 ? '$'+nf.format(Math.round(n/1e6))+' M' : '$'+nf.format(n);
 const fecha=s=>{ if(!s) return '—'; const [a,m,d]=s.split('-');
   return d+' '+['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+m-1]+' '+a; };
+/* nombre completo del organismo: viene en los datos o se traduce con el mapa */
+const orgDe=c=>c.entl||ORG.get(c.ent)||ORG.get(c.entf)||c.ent||c.entf||'—';
 
 function estado(cls,txt){ $('estado').className='estado '+cls; $('estadoTxt').textContent=txt; }
 
@@ -232,7 +248,7 @@ function tarjeta(c,clase){
     </div>`;}).join('');
   return `<div class="item ${clase}">
     <div class="ihead"><h3>${esc(c.prov)||'—'}</h3><span class="val">${mil(c.v)}</span></div>
-    <div class="meta">${esc(c.ciu)} · ${esc(c.ent)}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
+    <div class="meta">${esc(orgDe(c))}<br>firmado ${fecha(c.ff)} · ejecución ${fecha(c.fi)} → ${fecha(c.fn)} · ref ${esc(c.ref)||'—'}</div>
     <div class="chips">${chips.join('')}</div>
     <p class="ev">${esc(c.evidencia)}</p>
     <p class="obj">${esc(c.obj)}</p>
@@ -240,6 +256,48 @@ function tarjeta(c,clase){
     ${c.url?`<a class="secop" href="${esc(c.url)}" target="_blank" rel="noopener">Ver el proceso en SECOP II ↗</a>`:''}
   </div>`;
 }
+/* ============ otras modificaciones desde el corte ============ */
+function tarjetaOtra(n){
+  const chips=n.t.map(t=>`<span class="chip ${t==='Adición en valor'?'w':'a'}">${esc(t)}</span>`);
+  if(n.d) chips.push(`<span class="chip">+${n.d} días de plazo</span>`);
+  if(n.ad) chips.push(`<span class="chip w">adición ${mil(n.ad)}${n.vi?` · ${(n.ad/n.vi*100).toFixed(1)}% del inicial`:''}</span>`);
+  return `<div class="item otra">
+    <div class="ihead"><h3>${esc(n.prov)||'—'}</h3><span class="val">${mil(n.v)}</span></div>
+    <div class="meta">${esc(orgDe(n))}<br>modificación aprobada ${fecha(n.f)} · ref ${esc(n.ref)||'—'}</div>
+    <div class="chips">${chips.join('')}</div>
+    <div class="mod">
+      <div class="mh"><span>texto oficial de la modificación</span></div>
+      <q>${esc(n.p)||'Sin descripción publicada.'}</q>
+    </div>
+    ${n.url?`<a class="secop" href="${esc(n.url)}" target="_blank" rel="noopener">Ver el proceso en SECOP II ↗</a>`:''}
+  </div>`;
+}
+function pintarOtras(){
+  const cont=$('otras'), nota=$('otrasNota');
+  if(!NOV){ cont.innerHTML='<p class="otras-vacio">No se pudo cargar la lista de modificaciones del tablero.</p>';
+            nota.hidden=true; return; }
+  const propios=new Set([...(D.contratos||[]),...(D.afectados||[])].map(c=>c.id));
+  const items=(NOV.items||[]).filter(n=>!propios.has(n.id));
+  const pub=items.filter(n=>n.e==='Publicado');
+  const otras=items.length-pub.length;
+  cont.innerHTML = pub.length? pub.map(tarjetaOtra).join('')
+    : '<p class="otras-vacio">Ningún contrato del tablero registra modificaciones publicadas desde el 10 de agosto, fuera de las que ya aparecen arriba.</p>';
+  const partes=[`Corte de esta lista: <b>${fecha(NOV.corte)}</b>. Se excluyen los ${propios.size} contratos que esta página ya rastrea como respuesta o afectados.`];
+  if(otras===1) partes.push('Hay además <b>1</b> modificación posterior al corte que no está publicada (en edición, aceptada, cancelada o rechazada) y no se lista.');
+  else if(otras) partes.push(`Hay además <b>${nf.format(otras)}</b> modificaciones posteriores al corte que no están publicadas (en edición, aceptadas, canceladas o rechazadas) y no se listan.`);
+  partes.push(`Se regenera con la instantánea del tablero; esta se generó el <b>${fecha((NOV.generado||'').slice(0,10))}</b>.`);
+  nota.innerHTML=partes.join(' ');
+  nota.hidden=false;
+}
+async function cargarOtras(){
+  try{
+    const r=await fetch('../datos/novedades.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    NOV=await r.json();
+  }catch(e){ console.warn('no se pudo cargar novedades.json:',e); NOV=null; }
+  pintarOtras();
+}
+
 function pintar(){
   pintarKpis();
   const resp=D.contratos.filter(c=>c.motivo==='respuesta'||c.motivo==='mecanismo');
@@ -247,6 +305,7 @@ function pintar(){
     : '<p class="vacio">Todavía no hay contratos publicados que aludan al evento.</p>';
   $('afectados').innerHTML = D.afectados.length? D.afectados.map(c=>tarjeta(c,'afec')).join('')
     : '<p class="vacio">Ninguna modificación publicada invoca el sismo.</p>';
+  if(NOV!==null || $('otras').dataset.listo) pintarOtras();
   // ritmo
   const dias=D.dias||[]; const max=Math.max(1,...dias.map(d=>d.n));
   $('ritmo').innerHTML=dias.map((d,i)=>{
@@ -326,6 +385,7 @@ async function refrescar(){
         fi:(x.fecha_de_inicio_del_contrato||'').slice(0,10), fn:(x.fecha_de_fin_del_contrato||'').slice(0,10),
         mod:(x.modalidad_de_contratacion||'').trim(), tc:(x.tipo_de_contrato||'').trim(),
         un:(x.codigo_de_categoria_principal||'').trim(),
+        entl:ORG.get((x.nombre_entidad||'').replace(/\s+/g,' ').trim())||'',
         obj:(x.objeto_del_contrato||'').replace(/\s+/g,' ').trim().slice(0,900), url:u,
         motivo, evidencia:ev});
     }
@@ -345,6 +405,7 @@ async function refrescar(){
   }
 }
 refrescar();
+cargarOtras().then(()=>{ $('otras').dataset.listo='1'; });
 </script>
 
 </body>

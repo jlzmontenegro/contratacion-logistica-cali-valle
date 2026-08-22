@@ -258,6 +258,43 @@ def escribir_portada(regs):
         print("  portada actualizada")
 
 
+# Corte del panel de novedades: el sismo del 10 de agosto de 2026.
+CORTE_NOVEDADES = "2026-08-10"
+
+
+def escribir_novedades(regs):
+    """Modificaciones aprobadas desde el corte, para el panel del tablero y el del sismo.
+
+    Publica todas las modificaciones posteriores al corte, sin excluir nada: cada pagina
+    descarta despues los contratos que ya rastrea por su cuenta. Asi la lista de exclusion
+    nunca queda desfasada respecto de sismo.json, que se regenera en otro paso.
+    """
+    items = []
+    for d in regs:
+        if not d["inc"]:
+            continue
+        for m in d["ms"]:
+            if not m["f"] or m["f"] < CORTE_NOVEDADES:
+                continue
+            items.append({
+                "id": d["id"], "ref": d["ref"], "ciu": d["ciu"], "ent": d["ent"],
+                "entf": d["entf"], "entl": d["entl"], "prov": d["prov"],
+                "v": d["v"], "vi": d["vi"], "ad": d["ad"], "url": d["url"],
+                "f": m["f"], "e": m["e"], "t": m["t"], "d": m["d"], "p": m["p"],
+            })
+    items.sort(key=lambda x: (x["f"], x["v"]), reverse=True)
+    salida = {
+        "generado": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "corte": CORTE_NOVEDADES,
+        "items": items,
+    }
+    p = os.path.join(RAIZ, "datos", "novedades.json")
+    json.dump(salida, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    pub = sum(1 for i in items if i["e"] == "Publicado")
+    print(f"  novedades desde {CORTE_NOVEDADES}: {pub} publicadas de {len(items)}")
+    return p
+
+
 def ids_sismo():
     """Contratos que ya rastrea la pagina del sismo; el tablero los excluye de sus novedades.
 
@@ -348,6 +385,7 @@ def main():
     print(f"valor incluido: ${sum(d['v'] for d in inc):,}")
 
     escribir_tablero(regs)
+    escribir_novedades(regs)
     escribir_csv(regs)
     escribir_portada(regs)
     meta = {"generado": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
