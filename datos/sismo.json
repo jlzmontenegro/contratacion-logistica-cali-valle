@@ -1,7 +1,7 @@
 {
- "generado": "2026-08-22T10:33:07Z",
+ "generado": "2026-08-23T02:52:06Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-08-20",
+ "cobertura_hasta": "2026-08-21",
  "resumen": {
   "respuesta": 1,
   "valor_respuesta": 3759980000,
@@ -14,6 +14,7 @@
    "ref": "4182.010.26.1.653-2026",
    "ciu": "Cali",
    "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
    "prov": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA",
    "td": "NIT",
    "v": 3759980000,
@@ -36,6 +37,7 @@
    "ref": "4148.010.27.1.0016-2026",
    "ciu": "Cali",
    "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA",
+   "entl": "Secretaría de Cultura de Cali",
    "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
    "td": "NIT",
    "v": 20644713015,
@@ -58,13 +60,25 @@
      "vr": 20644713015,
      "fin": "2026-11-16",
      "tipo": "Cambio de alcance",
-     "titulo": "Se modifica el alcance del objeto",
+     "titulo": "Se suspende el Festival y su logística se destina a atender el sismo",
      "puntos": [
-      "El plazo no cambia: sigue hasta el 16 de noviembre de 2026",
-      "El valor no cambia: sigue en $20.644.713.015",
-      "El texto publicado no dice qué cambió del alcance; el detalle está en el documento del otrosí"
+      "Cláusula primera: suspende temporalmente la edición XXX del Festival, programada del 12 al 17 de agosto de 2026, por fuerza mayor derivada del sismo y la declaratoria de calamidad pública",
+      "Cláusula segunda: reescribe el ALCANCE DEL OBJETO. CORFECALI pasa a deber dos cosas — garantizar bienes, servicios, infraestructura, equipos y suministros para la atención prioritaria de la calamidad, y realizar el festival en el lugar y la fecha que le indique la Secretaría de Cultura",
+      "Cláusula cuarta: destina los medios y recursos ya instalados para el Festival a conjurar la emergencia del decreto 4112.010.20.0963. El parágrafo los limita a los estrictamente necesarios y avalados por las autoridades del Distrito",
+      "El valor no cambia: sigue en $20.644.713.015 y el formato marca «VALOR ADICIÓN AL CONVENIO: N/A»",
+      "El plazo no cambia: termina el 15 de noviembre de 2026 y el formato marca «PRÓRROGA No. 1: N/A»",
+      "El Festival no se cancela: queda suspendido y sin fecha nueva, sujeto a lo que determine la Secretaría de Cultura"
      ],
-     "p": "Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026"
+     "p": "Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026",
+     "implica": [
+      "El montaje que ya estaba en pie en la Ciudadela del Petronio —tarimas, sonido, iluminación, energía, mobiliario, señalización, seguridad privada, limpieza, atención de emergencias, personal operativo— se reorienta a atender el sismo sin contratar nada nuevo y sin pagar nada adicional.",
+      "La Resolución 4148.010.21.914.000270 del 13 de agosto, que la modificación transcribe, es explícita en que esa destinación temporal «no implica, por sí sola, la modificación del objeto, valor, plazo o demás condiciones del instrumento contractual» ni «genera automáticamente el reconocimiento de prestaciones económicas adicionales». El argumento es de eficiencia: aprovechar lo ya desplegado en vez de abrir contratos nuevos para conseguir lo mismo.",
+      "El efecto neto es que un convenio de $20.644.713.015 queda cubriendo dos frentes con el mismo dinero. El propio texto del nuevo alcance lo dice: las etapas operativas comprenden «tanto del cierre de la calamidad como de la realización del festival». Queda por verse si el festival aplazado se ejecuta después con lo que quede, o si más adelante aparece una adición.",
+      "La modificación insiste en que esto no crea un objeto contractual nuevo ni autónomo, sino que adecúa actividades ya previstas ante un hecho sobreviniente."
+     ],
+     "fuente": "Modificación No. 1 al Convenio Interadministrativo 4148.010.27.1.0016-2026, 12 páginas, firmada electrónicamente por el Secretario de Cultura y el gerente de CORFECALI. El documento no aparece entre los archivos descargables del proceso en SECOP II; se leyó de una copia aportada por fuera de la plataforma.",
+     "discrepancia": "SECOP publica dos fechas de terminación para este convenio: 15 de noviembre en el registro del contrato y 16 de noviembre en el de la modificación. El documento firmado dice 15 de noviembre de 2026.",
+     "verificada": true
     }
    ]
   },
@@ -73,6 +87,7 @@
    "ref": "4151.010.26.1.0667-2026",
    "ciu": "Cali",
    "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA",
+   "entl": "Secretaría de Infraestructura de Cali",
    "prov": "GESTION Y SERVICIOS CORPORATIVOS E.S.T. SAS",
    "td": "NIT",
    "v": 10847357298,
@@ -110,6 +125,7 @@
    "ref": "1.130.17.12-13824",
    "ciu": "Valle",
    "ent": "GOBERNACION DEL VALLE DEL CAUCA - DADI",
+   "entl": "Departamento Administrativo de Desarrollo Institucional (DADI) del Valle del Cauca",
    "prov": "MEDIDAS ELÉCTRICAS INGENIERÍA S.A.S.",
    "td": "NIT",
    "v": 7147991695,
@@ -153,12 +169,12 @@
   {
    "dia": "2026-07-21",
    "n": 936,
-   "val": 16309215134
+   "val": 16312766134
   },
   {
    "dia": "2026-07-22",
    "n": 586,
-   "val": 34172766183
+   "val": 34177571183
   },
   {
    "dia": "2026-07-23",
@@ -297,8 +313,13 @@
   },
   {
    "dia": "2026-08-20",
-   "n": 89,
-   "val": 703835998
+   "n": 184,
+   "val": 7186370827
+  },
+  {
+   "dia": "2026-08-21",
+   "n": 61,
+   "val": 635450700
   }
  ]
 }

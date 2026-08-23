@@ -31,6 +31,11 @@ def num(x):
     except (TypeError, ValueError):
         return 0.0
 
+def norm(s):
+    """Minusculas, sin tildes y con espacios colapsados, para comparar textos."""
+    s = unicodedata.normalize("NFD", (s or "")).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"\s+", " ", s)
+
 # Consultas que no se pudieron completar. Si queda alguna, la busqueda esta incompleta
 # y el resultado no se puede publicar: un fallo de red se veria igual que "no hay nada".
 FALLOS = []
@@ -51,15 +56,29 @@ def pedir(url, intentos=4, espera=6, tiempo=280):
 def v3(q):
     return pedir(f"{API}/api/v3/views/jbjy-vk9h/query.json?" + urllib.parse.urlencode({"query": q}))
 
-def soda(ds, where, sel=None, lim=50000, **kw):
+def soda(ds, where, sel=None, lim=50000, q=None, offset=0, orden=None, **kw):
     p = {"$where": where, "$limit": lim}
     if sel:
         p["$select"] = sel
+    if q:
+        p["$q"] = q
+    if offset:
+        p["$offset"] = offset
+    if orden:
+        p["$order"] = orden
     return pedir(f"{API}/resource/{ds}.json?" + urllib.parse.urlencode(p), **kw)
 
 # frases con que la contratación nombra el evento (sin tildes: el LIKE no las normaliza)
 FRASES = ["ACAECID", "10 DE AGOSTO DE 2026", "EMERGENCIA OCURRIDA", "SISMO", "TERREMOTO", "TEMBLOR"]
 MECANISMO = ["URGENCIA MANIFIESTA", "CALAMIDAD P"]
+# Terminos para el indice de texto completo de Socrata ($q). No son el filtro final:
+# solo acotan el universo nacional a unos cientos de filas, que luego se filtran aqui
+# con FRASES_MOD. Un LIKE sobre proposito_modificacion recorre la tabla entera y la API
+# lo deja morir por timeout; $q esta indexado y responde en segundos.
+TERMINOS_Q = ["sismo", "terremoto", "emergencia", "calamidad"]
+# Frases que debe contener el proposito para que la modificacion cuente como del sismo.
+FRASES_MOD = ["sismo", "terremoto", "emergencia ocurrida", "10 de agosto de 2026"]
+LOTE_Q = 5000
 NITS_SQL = ",".join(f"'{n}'" for n in NITS)
 COLS = ("`id_contrato`,`referencia_del_contrato`,`nit_entidad`,`nombre_entidad`,`objeto_del_contrato`,"
         "`valor_del_contrato`,`fecha_de_firma`,`fecha_de_inicio_del_contrato`,`fecha_de_fin_del_contrato`,"
@@ -253,23 +272,34 @@ def buscar_modificaciones():
     """Modificaciones cuya justificación alude al evento (búsqueda nacional, luego filtrada)."""
     sel = ("id_contrato,identificador_modificacion,numero_version,estado_modificacion,fecha_de_aprobacion,"
            "valor_modificacion,dias_extendidos,proposito_modificacion,fecha_inicio_contrato,fecha_fin_contrato")
-    # sobre el dataset nacional sólo se buscan las frases que responden rápido;
-    # las tres son suficientes: los textos que invocan el sismo contienen alguna.
-    mejor = {}
-    for f in ["SISMO", "TERREMOTO", "EMERGENCIA OCURRIDA", "10 DE AGOSTO DE 2026"]:
-        w = f"upper(proposito_modificacion) like '%{f}%' AND fecha_de_aprobacion >= '{DESDE}'"
-        try:
-            for x in soda("u8cx-r425", w, sel, 5000, intentos=2, espera=8, tiempo=200):
+    w = f"fecha_de_aprobacion >= '{DESDE}'"
+    crudas = {}
+    for t in TERMINOS_Q:
+        off = 0
+        while True:
+            try:
+                d = soda("u8cx-r425", w, sel, LOTE_Q, q=t, offset=off,
+                         orden="identificador_modificacion", intentos=3, espera=8, tiempo=200)
+            except Exception as e:        # noqa: BLE001
+                print(f"    '{t}' falló: {e}", file=sys.stderr)
+                FALLOS.append(f"término '{t}' (desde la fila {off}): {e}")
+                break
+            for x in d:
                 k = x.get("identificador_modificacion")
-                if not k:
-                    continue
-                if k not in mejor or num(x.get("numero_version")) > num(mejor[k].get("numero_version")):
-                    mejor[k] = x
-        except Exception as e:            # noqa: BLE001
-            print(f"    '{f}' falló: {e}", file=sys.stderr)
-            FALLOS.append(f"frase '{f}': {e}")
-        time.sleep(1)
-    print(f"    {len(mejor)} modificaciones candidatas en todo el país")
+                if k:
+                    crudas[k] = x if (k not in crudas or num(x.get("numero_version"))
+                                      > num(crudas[k].get("numero_version"))) else crudas[k]
+            if len(d) < LOTE_Q:
+                break
+            off += LOTE_Q
+            time.sleep(0.4)
+        time.sleep(0.5)
+
+    # el indice de texto es amplio a proposito; aqui se aplica el criterio real
+    mejor = {k: x for k, x in crudas.items()
+             if any(f in norm(x.get("proposito_modificacion")) for f in FRASES_MOD)}
+    print(f"    {len(crudas)} modificaciones traídas por el índice, "
+          f"{len(mejor)} con alguna frase del evento")
     ids = sorted({m["id_contrato"] for m in mejor.values()})
     nuestros = {}
     for i in range(0, len(ids), 70):
@@ -297,7 +327,14 @@ def buscar_modificaciones():
                               "fin": (m.get("fecha_fin_contrato") or "")[:10],
                               "tipo": res["tipo"], "titulo": res["titulo"], "puntos": res["puntos"],
                               "p": cl(m.get("proposito_modificacion"))})
-        out.append(d)
+        # Una modificacion cancelada o rechazada no alteró el contrato. Para contar como
+        # afectado hace falta al menos una publicada; las demas se conservan como contexto
+        # dentro de la ficha, con su estado a la vista.
+        if any(x["e"] == "Publicado" for x in d["mods"]):
+            out.append(d)
+        else:
+            estados = ", ".join(sorted({x["e"] for x in d["mods"]}))
+            print(f"    se descarta {cid}: ninguna modificación publicada ({estados})")
     return out
 
 def contexto():

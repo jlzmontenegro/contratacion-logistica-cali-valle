@@ -100,6 +100,13 @@ aparecer completa en SECOP.
 
 ## Regeneración automática
 
+La búsqueda nacional de modificaciones usa el **índice de texto completo** de Socrata (`$q`) para
+acotar el universo a unos cientos de filas, y aplica después las frases del evento en Python. Antes
+usaba `LIKE` sobre `proposito_modificacion`, que recorre la tabla entera: la API lo dejaba morir por
+timeout y el 22 de agosto de 2026 tumbó dos corridas seguidas. Con `$q` las mismas cuatro consultas
+responden en unos ocho segundos. Un contrato cuenta como afectado sólo si tiene al menos una
+modificación **publicada** que invoque el evento; las canceladas o rechazadas no alteraron nada.
+
 Si alguna consulta del rastreador del sismo falla, `scripts/sismo.py` **aborta sin escribir**
 `datos/sismo.json` y devuelve código 1. Es deliberado: un fallo de red se veía igual que «no hay
 nada que encontrar», y el 22 de agosto de 2026 una tanda de timeouts hizo que la Action
