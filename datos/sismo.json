@@ -1,12 +1,12 @@
 {
- "generado": "2026-08-26T10:37:19Z",
+ "generado": "2026-08-27T02:59:41Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-08-24",
  "resumen": {
   "respuesta": 1,
   "valor_respuesta": 3759980000,
-  "afectados": 3,
-  "valor_afectados": 38640062008
+  "afectados": 5,
+  "valor_afectados": 38948850008
  },
  "contratos": [
   {
@@ -156,6 +156,82 @@
       "Finalidad declarada: realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general"
      ],
      "p": "De conformidad con las circunstancias acaecidas el 10 de agosto de 2026 consistentes en el sismo que sacudió a Colombia y al Departamento del Valle del Cauca las cuales constituyen un evento de fuerza mayor se procede a suspender el contrato de obra. Lo anterior con el fin de realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9435756",
+   "ref": "4143.010.26.1.1013.2026",
+   "ciu": "Cali",
+   "ent": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "EDITORIAL GROW SAS",
+   "td": "NIT",
+   "v": 293000000,
+   "ff": "2026-04-08",
+   "fi": "2026-06-30",
+   "fn": "2026-08-30",
+   "mod": "Selección abreviada subasta inversa",
+   "just": "Suministro de bienes y servicios de características técnicas uniformes y común utilización",
+   "tc": "Compraventa",
+   "un": "V1.44121702",
+   "obj": "ADQUISICIÓN DE PAQUETES ESCOLARES PARA ESTUDIANTES VULNERABLES Y CON PERTENENCIA ÉTNICA MATRICULADOS EN INSTITUCIONES EDUCATIVAS OFICIALES DEL DISTRITO DE SANTIAGO DE CALI",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10112456&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-25",
+     "d": 108,
+     "vr": 293000000,
+     "fin": "2026-09-30",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 108 días de plazo",
+      "El plazo va hasta el 29 de septiembre de 2026",
+      "El valor no cambia: sigue en $293.000.000"
+     ],
+     "p": "Teniendo en cuenta los últimos acontecimientos presentados el 10 de agosto de 2026 relacionados con el sismo sucedido en Colombia y ante la imposibilidad de dar estricto cumplimento al objeto del contrato las partes acuerdan prorrogar la ejecución del contrato hasta el 29 de septiembre de 2026 igualmente se corrige el valor del IVA señalada en la clausula tercera del complemento del contrato"
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9759897",
+   "ref": "4181.010.26.1.585-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "GRETTI MARILYN CORTES QUIÑONES",
+   "td": "Cédula de Ciudadanía",
+   "v": 15788000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-12",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10637891&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 15788000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $15.788.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
     }
    ]
   }
