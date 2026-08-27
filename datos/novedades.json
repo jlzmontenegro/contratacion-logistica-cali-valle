@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-27T02:59:29Z",
+ "generado": "2026-08-27T20:11:45Z",
  "corte": "2026-08-10",
  "items": [
   {
@@ -15,7 +15,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-08-26",
-   "e": "Enviado al Proveedor",
+   "e": "Rechazado por el Proveedor",
    "t": [
     "Otra"
    ],
@@ -35,7 +35,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-08-26",
-   "e": "Enviado al Proveedor",
+   "e": "Publicado",
    "t": [
     "Otra"
    ],
@@ -55,7 +55,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-08-26",
-   "e": "Aceptado por el Proveedor",
+   "e": "Publicado",
    "t": [
     "Otra"
    ],
@@ -75,7 +75,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-08-26",
-   "e": "Enviado al Proveedor",
+   "e": "Publicado",
    "t": [
     "Otra"
    ],
@@ -94,8 +94,8 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9910106&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-08-25",
-   "e": "En Edición",
+   "f": "2026-08-26",
+   "e": "Enviado al Proveedor",
    "t": [
     "Otra"
    ],
@@ -114,8 +114,8 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9888670&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-08-25",
-   "e": "En Proceso de Aprobación",
+   "f": "2026-08-26",
+   "e": "Enviado al Proveedor",
    "t": [
     "Adición en valor"
    ],

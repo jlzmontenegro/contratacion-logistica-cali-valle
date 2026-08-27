@@ -1,12 +1,12 @@
 {
- "generado": "2026-08-27T02:59:41Z",
+ "generado": "2026-08-27T20:12:04Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-08-24",
  "resumen": {
   "respuesta": 1,
   "valor_respuesta": 3759980000,
-  "afectados": 5,
-  "valor_afectados": 38948850008
+  "afectados": 23,
+  "valor_afectados": 39173078008
  },
  "contratos": [
   {
@@ -198,6 +198,196 @@
    ]
   },
   {
+   "id": "CO1.PCCNTR.9759997",
+   "ref": "4181.010.26.1.561-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "YIRLEAN ASPRILLA MORENO",
+   "td": "Cédula de Ciudadanía",
+   "v": 22652000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-12",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10638208&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 22652000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $22.652.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9762120",
+   "ref": "4181.010.26.1.670-2026.",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "CARLOS JAVIER ANDINO ARANA",
+   "td": "Cédula de Ciudadanía",
+   "v": 22652000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-12",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10642130&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 22652000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $22.652.000"
+     ],
+     "p": "El Supervisor del Contrato de Prestación de Servicios solicita al Ordenador del Gasto prorrogar el plazo contractual sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas por el sismo ocurrido el 10 de agosto de 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9779655",
+   "ref": "4181.010.26.1.797-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "Estefania Ararat",
+   "td": "Cédula de Ciudadanía",
+   "v": 22652000,
+   "ff": "2026-08-06",
+   "fi": "2026-08-10",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10667727&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 22652000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $22.652.000"
+     ],
+     "p": "El Supervisor del Contrato de Prestación de Servicios solicita al Ordenador del Gasto prorrogar el plazo contractual sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas por el sismo ocurrido el 10 de agosto de 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9762121",
+   "ref": "4181.010.26.1.786-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "DAVID MAURICIO MARTINEZ VARGAS",
+   "td": "Cédula de Ciudadanía",
+   "v": 19220000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-05",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10642018&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 19220000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $19.220.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9780926",
+   "ref": "4181.010.26.1.496-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "GERALDINE ORTIZ LARA",
+   "td": "NIT",
+   "v": 19220000,
+   "ff": "2026-08-06",
+   "fi": "2026-08-14",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10669172&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 19220000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $19.220.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
    "id": "CO1.PCCNTR.9759897",
    "ref": "4181.010.26.1.585-2026",
    "ciu": "Cali",
@@ -232,6 +422,500 @@
       "El valor no cambia: sigue en $15.788.000"
      ],
      "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9760066",
+   "ref": "4181.010.26.1.587-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "DIEGO FERNANDO TRUJILLO CABRERA",
+   "td": "Cédula de Ciudadanía",
+   "v": 15788000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-05",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10637947&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-27",
+     "d": 15,
+     "vr": 15788000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $15.788.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9760415",
+   "ref": "4181.010.26.1.780-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "LEIDY AÑASCO MOSQUERA",
+   "td": "Cédula de Ciudadanía",
+   "v": 15788000,
+   "ff": "2026-08-03",
+   "fi": "2026-08-05",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10638028&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 15788000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $15.788.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9778524",
+   "ref": "4181.010.26.1.781-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "Marianne Andrea Hoyos Murillas",
+   "td": "Cédula de Ciudadanía",
+   "v": 14204000,
+   "ff": "2026-08-06",
+   "fi": "2026-08-14",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios de apoyo a la gestión; con el fin de ejecutar las actividades en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10665910&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 14204000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $14.204.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9765582",
+   "ref": "4181.010.26.1.789-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "YESENIA RIVAS",
+   "td": "Cédula de Ciudadanía",
+   "v": 11168000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-12",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios de apoyo a la gestión; con el fin de ejecutar las actividades en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10648230&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 11168000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $11.168.000"
+     ],
+     "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9779346",
+   "ref": "4181.010.26.1.606-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "Joanna Carolina Cruz Agudelo",
+   "td": "Cédula de Ciudadanía",
+   "v": 9084000,
+   "ff": "2026-08-06",
+   "fi": "2026-08-18",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios de apoyo a la gestión; con el fin de ejecutar las actividades en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/ContractNoticeManagement/Index?currentLanguage=es-CO&Page=login&Country=CO&SkinName=CCE",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 15,
+     "vr": 9084000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $9.084.000"
+     ],
+     "p": "El Supervisor del Contrato de Prestación de Servicios solicita al Ordenador del Gasto prorrogar el plazo contractual sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas por el sismo ocurrido el 10 de agosto de 2026"
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9811810",
+   "ref": "1.420.19.13-8607",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "Luz karime carvajal castro",
+   "td": "Cédula de Ciudadanía",
+   "v": 7700000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10710853&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 7700000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $7.700.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9813164",
+   "ref": "1.420.19.13-8599",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "Luisa Fernanda Duque Muñoz",
+   "td": "Cédula de Ciudadanía",
+   "v": 7700000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10712960&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 7700000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $7.700.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9813914",
+   "ref": "1.420.19.13-8601",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "WILMAR ENOC OBANDO GUERRERO",
+   "td": "Cédula de Ciudadanía",
+   "v": 7700000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10712761&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 7700000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $7.700.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9843990",
+   "ref": "1.420.19.13-10065",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "vanessa angulo cortes",
+   "td": "Cédula de Ciudadanía",
+   "v": 7700000,
+   "ff": "2026-08-21",
+   "fi": "",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10753327&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 7700000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $7.700.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9812481",
+   "ref": "1.420.19.13-8606",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "Evelyn Vanessa Marín Sarria",
+   "td": "Cédula de Ciudadanía",
+   "v": 6000000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10711876&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 6000000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $6.000.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9811743",
+   "ref": "1.420.19.13-8604",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "ASTRID CAROLINA VALLEJO BUENO",
+   "td": "Cédula de Ciudadanía",
+   "v": 5000000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10710963&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 5000000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $5.000.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO HACIENDO LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9812153",
+   "ref": "1.420.19.13-8605",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "Carolina Martínez Barona",
+   "td": "Cédula de Ciudadanía",
+   "v": 5000000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10711361&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 5000000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $5.000.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9812689",
+   "ref": "1.420.19.13-8600",
+   "ciu": "Valle",
+   "ent": "SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN",
+   "entl": "Secretaría de Paz Territorial y Reconciliación del Valle del Cauca",
+   "prov": "LIZETH JOHANA GIRALDO GOMEZ",
+   "td": "Cédula de Ciudadanía",
+   "v": 5000000,
+   "ff": "2026-08-14",
+   "fi": "2026-08-14",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111600",
+   "obj": "PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACION EN EL MARCO DEL PROYECTO IDENTIFICACIÓN DE INICIATIVAS SOCIO COMUNITARIAS DE CONSTRUCCIÓN DE PAZ EN EL DEPARTAMENTO VALLE DEL CAUCA",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10712384&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-26",
+     "d": 0,
+     "vr": 5000000,
+     "fin": "2026-09-01",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 1 de septiembre de 2026",
+      "El valor no cambia: sigue en $5.000.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "SE REALIZA EL CARGUE DEL COMPLEMENTO CON CONCEPTO JURIICO SE HACE LA ACLARACIÓN DE LA CONTINENCIA DE LAS FIRMAS DIGITALES POR CONTINGENCIA DEL TERREMOTO DEL 10 DE AGOSTO DE 2026."
     }
    ]
   }
