@@ -1,12 +1,12 @@
 {
- "generado": "2026-08-28T06:00:02Z",
+ "generado": "2026-08-28T21:07:59Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-08-24",
  "resumen": {
   "respuesta": 1,
   "valor_respuesta": 3759980000,
-  "afectados": 23,
-  "valor_afectados": 39173078008
+  "afectados": 24,
+  "valor_afectados": 39192298008
  },
  "contratos": [
   {
@@ -346,6 +346,44 @@
       "El valor no cambia: sigue en $19.220.000"
      ],
      "p": "Se prorroga el plazo contractual del contrato sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas del sismo ocurrido el 10 de agosto de 2026 que incidieron en el normal desarrollo de las actividades. La ampliación permitirá garantizar el cumplimiento integral del objeto y las obligaciones pactadas manteniéndose sin modificación el valor del contrato. VER DOCUMENTOS ANEXOS."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9765932",
+   "ref": "4181.010.26.1.784-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "rosa milena rojas vasquez",
+   "td": "Cédula de Ciudadanía",
+   "v": 19220000,
+   "ff": "2026-08-04",
+   "fi": "2026-08-05",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Servicios profesionales y apoyo a la gestión",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestar los servicios profesionales; con el fin de brindar soporte a las actividades adelantadas en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10648533&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-27",
+     "d": 15,
+     "vr": 19220000,
+     "fin": "2026-12-16",
+     "tipo": "Prórroga",
+     "titulo": "Se amplía el plazo",
+     "puntos": [
+      "Se añaden 15 días de plazo",
+      "Nueva fecha de fin: 16 de diciembre de 2026",
+      "El valor no cambia: sigue en $19.220.000"
+     ],
+     "p": "El Supervisor del Contrato de Prestación de Servicios solicita al Ordenador del Gasto prorrogar el plazo contractual sin adición de recursos debido a las circunstancias administrativas iniciales y a las afectaciones derivadas por el sismo ocurrido el 10 de agosto de 2026."
     }
    ]
   },

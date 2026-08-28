@@ -1,7 +1,48 @@
 {
- "generado": "2026-08-28T05:59:48Z",
+ "generado": "2026-08-28T21:07:41Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.8850155",
+   "ref": "4143.010.26.1.0579.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "UNION TEMPORAL NUTRIENDO CALI 2026",
+   "v": 37795283401,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-27",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1.0579.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.9188973",
+   "ref": "1.370.19.13-5893",
+   "ciu": "Valle",
+   "ent": "Turismo",
+   "entf": "DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo del Valle del Cauca",
+   "prov": "CALI-VALLE DEL CAUCA CONVENTION AND VISITORS BUREAU",
+   "v": 1400000000,
+   "vi": 1000000000,
+   "ad": 400000000,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9821163&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-27",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor",
+    "Prórroga de plazo"
+   ],
+   "d": 122,
+   "p": "Otro si modificatorio de adicion y prorroga hasta el 31 de octubre del 2026 por temas de ferias y eventos"
+  },
   {
    "id": "CO1.PCCNTR.8850155",
    "ref": "4143.010.26.1.0579.2026",
@@ -95,7 +136,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9910106&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-08-26",
-   "e": "Enviado al Proveedor",
+   "e": "Aceptado por el Proveedor",
    "t": [
     "Otra"
    ],
