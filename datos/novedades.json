@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-29T14:57:07Z",
+ "generado": "2026-08-29T23:56:47Z",
  "corte": "2026-08-10",
  "items": [
   {
@@ -14,13 +14,53 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-08-27",
-   "e": "Enviado al Proveedor",
+   "f": "2026-08-28",
+   "e": "Publicado",
    "t": [
     "Otra"
    ],
    "d": 0,
    "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1.0579.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.9188973",
+   "ref": "1.370.19.13-5893",
+   "ciu": "Valle",
+   "ent": "Turismo",
+   "entf": "DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo del Valle del Cauca",
+   "prov": "CALI-VALLE DEL CAUCA CONVENTION AND VISITORS BUREAU",
+   "v": 1400000000,
+   "vi": 1000000000,
+   "ad": 400000000,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9821163&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-28",
+   "e": "En Edición",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 122,
+   "p": "se requiere adicionar el contrato por valor de 100.000.000 de pesos para eventos y ferias"
+  },
+  {
+   "id": "CO1.PCCNTR.9278135",
+   "ref": "4134.010.26.1.0261-2026",
+   "ciu": "Cali",
+   "ent": "DATIC",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES",
+   "entl": "Departamento Administrativo de Tecnologías de la Información y las Comunicaciones (DATIC) de Cali",
+   "prov": "CORFERIAS INVERSIONES SAS",
+   "v": 1324510000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9910106&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-28",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Se realiza la presente modificación teniendo en cuenta el rol de Cali como ciudad anfitriona se ha identificado la necesidad de complementar el alcance del contrato suscrito con Corferias para fortalecer las acciones de activación apropiación y visibilización de la estrategia Cali Ciudad Inteligente."
   },
   {
    "id": "CO1.PCCNTR.9188973",
@@ -124,26 +164,6 @@
    "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1. 0578.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
   },
   {
-   "id": "CO1.PCCNTR.9278135",
-   "ref": "4134.010.26.1.0261-2026",
-   "ciu": "Cali",
-   "ent": "DATIC",
-   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES",
-   "entl": "Departamento Administrativo de Tecnologías de la Información y las Comunicaciones (DATIC) de Cali",
-   "prov": "CORFERIAS INVERSIONES SAS",
-   "v": 1324510000,
-   "vi": null,
-   "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9910106&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-08-26",
-   "e": "Aceptado por el Proveedor",
-   "t": [
-    "Otra"
-   ],
-   "d": 0,
-   "p": "Se realiza la presente modificación teniendo en cuenta el rol de Cali como ciudad anfitriona se ha identificado la necesidad de complementar el alcance del contrato suscrito con Corferias para fortalecer las acciones de activación apropiación y visibilización de la estrategia Cali Ciudad Inteligente."
-  },
-  {
    "id": "CO1.PCCNTR.9256549",
    "ref": "4132.010.26.1.425-2026",
    "ciu": "Cali",
@@ -156,7 +176,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9888670&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-08-26",
-   "e": "Enviado al Proveedor",
+   "e": "Aceptado por el Proveedor",
    "t": [
     "Adición en valor"
    ],

@@ -1,12 +1,12 @@
 {
- "generado": "2026-08-29T14:57:19Z",
+ "generado": "2026-08-29T23:56:59Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-08-24",
  "resumen": {
   "respuesta": 1,
   "valor_respuesta": 3759980000,
-  "afectados": 24,
-  "valor_afectados": 39192298008
+  "afectados": 26,
+  "valor_afectados": 46301944702
  },
  "contratos": [
   {
@@ -156,6 +156,83 @@
       "Finalidad declarada: realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general"
      ],
      "p": "De conformidad con las circunstancias acaecidas el 10 de agosto de 2026 consistentes en el sismo que sacudió a Colombia y al Departamento del Valle del Cauca las cuales constituyen un evento de fuerza mayor se procede a suspender el contrato de obra. Lo anterior con el fin de realizar la verificación y el diagnóstico del estado estabilidad y seguridad de la obra antes de continuar con su ejecución en garantía de la correcta ejecución contractual y el interés general."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.8546805",
+   "ref": "4132.010.27.1.859-2025",
+   "ciu": "Cali",
+   "ent": "PLANEACIÓN MUNICIPAL CALI**",
+   "entl": "Planeación Municipal de Cali",
+   "prov": "UNIAJC",
+   "td": "NIT",
+   "v": 5440159648,
+   "ff": "2025-11-06",
+   "fi": "2025-11-10",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Contratos o convenios Interadministrativos (valor cero)",
+   "tc": "Otro",
+   "un": "V1.81131500",
+   "obj": "AUNAR ESFUERZOS Y RECURSOS PARA REALIZAR LA ADMINISTRACIÓN; ACTUALIZACIÓN Y MANTENIMIENTO DE LA BASE DE DATOS DEL SISBÉN EN SU METODOLOGÍA IV; EN PROCURA DE MEJORAR LA CALIDAD DE VIDA DE LA POBLACIÓN VULNERABLE DE CONFORMIDAD CON LOS PROCEDIMIENTOS Y LINEAMIENTOS ESTABLECIDOS PARA TAL PROPÓSITO POR EL DEPARTAMENTO NACIONAL DE PLANEACIÓN - DNP",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9070069&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-28",
+     "d": 30,
+     "vr": 5440159648,
+     "fin": "2026-10-01",
+     "tipo": "Adición y prórroga",
+     "titulo": "Se amplía el plazo y el valor",
+     "puntos": [
+      "Se añaden 30 días de plazo",
+      "El plazo va hasta el 30 de septiembre de 2026",
+      "El valor no cambia: sigue en $5.440.159.648",
+      "Finalidad declarada: no afectar la continuidad de la operación"
+     ],
+     "p": "Prorrogar la ejecución por un mes adicional es decir hasta el 30 de septiembre de 2026 término dentro del cual se dará continuidad al cumplimiento de la meta pactada y se revisarán las estrategias conducentes a garantizar su cumplimiento total conforme a lo establecido en el convenio. Lo anterior considerando las consecuencias derivadas del sismo recientemente presentado y con el fin de no afectar la continuidad de la operación."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.8554560",
+   "ref": "1.350.17.17-16719 de 2025",
+   "ciu": "Valle",
+   "ent": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT",
+   "entl": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT",
+   "prov": "FUNDACION UNIVERSIDAD DEL VALLE",
+   "td": "NIT",
+   "v": 1669487046,
+   "ff": "2025-11-07",
+   "fi": "2025-12-11",
+   "fn": "2026-08-31",
+   "mod": "Contratación directa",
+   "just": "Contratos o convenios Interadministrativos (valor cero)",
+   "tc": "Otro",
+   "un": "V1.80111600",
+   "obj": "EJECUTAR LA INTERVENTORÍA TÉCNICA; JURÍDICA; ADMINISTRATIVA Y FINANCIERA Y DE CONTROL PRESUPUESTAL DE LOS MEJORAMIENTOS A LAS VIVIENDAS URBANAS Y/O RURALES EN EL DEPARTAMENTO DEL VALLE DEL CAUCA.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9081162&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-28",
+     "d": 61,
+     "vr": 1669487046,
+     "fin": "2026-08-31",
+     "tipo": "Suspensión",
+     "titulo": "Se suspende la ejecución",
+     "puntos": [
+      "Se suspende por 61 días",
+      "Queda suspendido desde el 31 de agosto de 2026",
+      "El valor no cambia: sigue en $1.669.487.046"
+     ],
+     "p": "Movimiento sismico del dia 10 de agosto de 2026. El artículo 64 del Código Civil subrogado por el artículo 1 de la Ley 95 de 1890 define la fuerza mayor o caso fortuito como el imprevisto a que no es posible resistir e incluye expresamente el terremoto como ejemplo de este tipo de acontecimientos. La suspensión temporal constituye en este caso una medida de administración y mitigación del riesgo orientada a evitar la ejecución de actividades constructivas en condiciones que no hayan sido previamente verificadas preservar la integridad de las personas proteger las obras y materiales existentes evitar reprocesos y garantizar el uso eficiente y adecuado de los recursos públicos."
     }
    ]
   },
