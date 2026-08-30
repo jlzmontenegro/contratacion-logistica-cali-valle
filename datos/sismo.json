@@ -1,12 +1,12 @@
 {
- "generado": "2026-08-29T23:56:59Z",
+ "generado": "2026-08-30T14:43:34Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-08-24",
  "resumen": {
   "respuesta": 1,
   "valor_respuesta": 3759980000,
-  "afectados": 26,
-  "valor_afectados": 46301944702
+  "afectados": 27,
+  "valor_afectados": 46893589317
  },
  "contratos": [
   {
@@ -233,6 +233,44 @@
       "El valor no cambia: sigue en $1.669.487.046"
      ],
      "p": "Movimiento sismico del dia 10 de agosto de 2026. El artículo 64 del Código Civil subrogado por el artículo 1 de la Ley 95 de 1890 define la fuerza mayor o caso fortuito como el imprevisto a que no es posible resistir e incluye expresamente el terremoto como ejemplo de este tipo de acontecimientos. La suspensión temporal constituye en este caso una medida de administración y mitigación del riesgo orientada a evitar la ejecución de actividades constructivas en condiciones que no hayan sido previamente verificadas preservar la integridad de las personas proteger las obras y materiales existentes evitar reprocesos y garantizar el uso eficiente y adecuado de los recursos públicos."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.7953938",
+   "ref": "1.130.17.17-7297",
+   "ciu": "Valle",
+   "ent": "GOBERNACION DEL VALLE DEL CAUCA - DADI",
+   "entl": "Departamento Administrativo de Desarrollo Institucional (DADI) del Valle del Cauca",
+   "prov": "FUNDACION UNIVERSIDAD DEL VALLE",
+   "td": "NIT",
+   "v": 591644615,
+   "ff": "2025-06-10",
+   "fi": "2025-06-17",
+   "fn": "2026-08-30",
+   "mod": "Contratación directa",
+   "just": "Contratos o convenios Interadministrativos (valor cero)",
+   "tc": "Otro",
+   "un": "V1.81101500",
+   "obj": "REALIZAR LA INTERVENTORIA INTEGRAL AL CONTRATO DE OBRA No. 1.130.17.12-13824.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.8247430&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-08-29",
+     "d": 0,
+     "vr": 591644615,
+     "fin": "2026-08-31",
+     "tipo": "Suspensión",
+     "titulo": "Se suspende la ejecución",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 31 de agosto de 2026",
+      "El valor no cambia: sigue en $591.644.615",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "Teniendo en cuenta el sismo ocurrido el 10 de agosto de 2026 y las afectaciones derivadas del mismo que imposibilitan temporalmente la ejecución de las obras objeto del contrato de interventoría se hace necesario suspender su ejecución mientras se superan las circunstancias que dieron origen a dicha situación y se restablecen las condiciones necesarias para continuar con las actividades de obra y consecuentemente con las labores de interventoría."
     }
    ]
   },
