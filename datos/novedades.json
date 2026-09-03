@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-03T14:13:25Z",
+ "generado": "2026-09-03T23:50:18Z",
  "corte": "2026-08-10",
  "items": [
   {
@@ -10,17 +10,37 @@
    "entf": "DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO",
    "entl": "Secretaría de Turismo del Valle del Cauca",
    "prov": "CALI-VALLE DEL CAUCA CONVENTION AND VISITORS BUREAU",
-   "v": 1400000000,
+   "v": 1500000000,
    "vi": 1000000000,
    "ad": 400000000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9821163&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-01",
-   "e": "En Proceso de Aprobación",
+   "f": "2026-09-02",
+   "e": "Publicado",
    "t": [
     "Adición en valor"
    ],
    "d": 122,
    "p": "se requiere adicionar el contrato por valor de 100.000.000 de pesos para eventos y ferias"
+  },
+  {
+   "id": "CO1.PCCNTR.9453073",
+   "ref": "1.210.19.13-6051",
+   "ciu": "Valle",
+   "ent": "Educación",
+   "entf": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION",
+   "entl": "Secretaría de Educación del Valle del Cauca",
+   "prov": "GRAN FARALLONES SAS",
+   "v": 715000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10135538&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-02",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Por medio de la presente se procede a adicionar recursos al contrato con el fin de contar con una disponibilidad suficiente de vehículos y servicios de transporte que permitan atender de manera oportuna las solicitudes de visita hacia las zonas urbanas y rurales donde se encuentran las ciento cuarenta y ocho (148) instituciones educativas"
   },
   {
    "id": "CO1.PCCNTR.9404830",
@@ -111,7 +131,7 @@
    "entf": "DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO",
    "entl": "Secretaría de Turismo del Valle del Cauca",
    "prov": "CALI-VALLE DEL CAUCA CONVENTION AND VISITORS BUREAU",
-   "v": 1400000000,
+   "v": 1500000000,
    "vi": 1000000000,
    "ad": 400000000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9821163&isFromPublicArea=True&isModal=true&asPopupView=true",
