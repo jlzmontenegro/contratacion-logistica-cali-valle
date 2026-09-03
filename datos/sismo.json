@@ -1,14 +1,56 @@
 {
- "generado": "2026-09-02T23:54:22Z",
+ "generado": "2026-09-03T14:13:49Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-08-24",
+ "cobertura_hasta": "2026-09-01",
  "resumen": {
-  "respuesta": 1,
-  "valor_respuesta": 3759980000,
+  "respuesta": 4,
+  "valor_respuesta": 11867874000,
   "afectados": 28,
   "valor_afectados": 48322160746
  },
  "contratos": [
+  {
+   "id": "CO1.PCCNTR.9886868",
+   "ref": "4163.001.27.1.5-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
+   "td": "NIT",
+   "v": 4050000000,
+   "ff": "2026-09-01",
+   "fi": "",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Otro",
+   "un": "V1.93151500",
+   "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "mecanismo",
+   "evidencia": "Suscrito por urgencia manifiesta o calamidad pública tras el evento"
+  },
+  {
+   "id": "CO1.PCCNTR.9884818",
+   "ref": "4163.001.27.1.4-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
+   "td": "NIT",
+   "v": 4050000000,
+   "ff": "2026-08-31",
+   "fi": "",
+   "fn": "2026-12-31",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Otro",
+   "un": "V1.90101800",
+   "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10809890&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "mecanismo",
+   "evidencia": "Suscrito por urgencia manifiesta o calamidad pública tras el evento"
+  },
   {
    "id": "CO1.PCCNTR.9820439",
    "ref": "4182.010.26.1.653-2026",
@@ -29,6 +71,27 @@
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "respuesta",
    "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
+  {
+   "id": "CO1.PCCNTR.9864677",
+   "ref": "4163.001.26.1.491-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "prov": "JOSE FERNANDO ACOSTA CEBALLOS",
+   "td": "Cédula de Ciudadanía",
+   "v": 7894000,
+   "ff": "2026-08-26",
+   "fi": "2026-08-28",
+   "fn": "2026-10-10",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Prestación de servicios",
+   "un": "V1.80111501",
+   "obj": "Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de Emergencias y Desastres en desarrollo del proyecto denominado: FORTALECIMIENTO DE LAS INSTITUCIONES DEL SUBSISTEMA NACIONAL DE VOLUNTARIOS DE PRIMERA RESPUESTA EN SANTIAGO DE CALI; según Ficha EBI BP-26005409",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10782873&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "mecanismo",
+   "evidencia": "Suscrito por urgencia manifiesta o calamidad pública tras el evento"
   }
  ],
  "afectados": [
@@ -170,7 +233,7 @@
    "v": 5440159648,
    "ff": "2025-11-06",
    "fi": "2025-11-10",
-   "fn": "2026-08-31",
+   "fn": "2026-09-30",
    "mod": "Contratación directa",
    "just": "Contratos o convenios Interadministrativos (valor cero)",
    "tc": "Otro",
@@ -247,7 +310,7 @@
    "v": 1428571429,
    "ff": "2025-12-30",
    "fi": "2025-12-31",
-   "fn": "2026-08-31",
+   "fn": "2026-10-15",
    "mod": "Contratación régimen especial",
    "just": "Decreto 092 de 2017",
    "tc": "Decreto 092 de 2017",
@@ -324,7 +387,7 @@
    "v": 293000000,
    "ff": "2026-04-08",
    "fi": "2026-06-30",
-   "fn": "2026-08-30",
+   "fn": "2026-09-29",
    "mod": "Selección abreviada subasta inversa",
    "just": "Suministro de bienes y servicios de características técnicas uniformes y común utilización",
    "tc": "Compraventa",
@@ -362,7 +425,7 @@
    "v": 22652000,
    "ff": "2026-08-04",
    "fi": "2026-08-12",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -400,7 +463,7 @@
    "v": 22652000,
    "ff": "2026-08-04",
    "fi": "2026-08-12",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -438,7 +501,7 @@
    "v": 22652000,
    "ff": "2026-08-06",
    "fi": "2026-08-10",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -476,7 +539,7 @@
    "v": 19220000,
    "ff": "2026-08-04",
    "fi": "2026-08-05",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -514,7 +577,7 @@
    "v": 19220000,
    "ff": "2026-08-04",
    "fi": "2026-08-05",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -552,7 +615,7 @@
    "v": 19220000,
    "ff": "2026-08-06",
    "fi": "2026-08-14",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -590,7 +653,7 @@
    "v": 15788000,
    "ff": "2026-08-04",
    "fi": "2026-08-12",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -628,7 +691,7 @@
    "v": 15788000,
    "ff": "2026-08-04",
    "fi": "2026-08-05",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -666,7 +729,7 @@
    "v": 15788000,
    "ff": "2026-08-03",
    "fi": "2026-08-05",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -704,7 +767,7 @@
    "v": 14204000,
    "ff": "2026-08-06",
    "fi": "2026-08-14",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -742,7 +805,7 @@
    "v": 11168000,
    "ff": "2026-08-04",
    "fi": "2026-08-12",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -780,13 +843,13 @@
    "v": 9084000,
    "ff": "2026-08-06",
    "fi": "2026-08-18",
-   "fn": "2026-11-30",
+   "fn": "2026-12-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
    "un": "V1.80111501",
    "obj": "Prestar los servicios de apoyo a la gestión; con el fin de ejecutar las actividades en la Unidad Administrativa Especial de Gestión de Bienes y Servicios; teniendo como fuente de financiación recursos propios.",
-   "url": "https://community.secop.gov.co/Public/Tendering/ContractNoticeManagement/Index?currentLanguage=es-CO&Page=login&Country=CO&SkinName=CCE",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10667328&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "afectado",
    "evidencia": "Una modificación posterior invoca el sismo",
    "mods": [
@@ -931,8 +994,8 @@
    "td": "Cédula de Ciudadanía",
    "v": 7700000,
    "ff": "2026-08-21",
-   "fi": "",
-   "fn": "2026-08-31",
+   "fi": "2026-08-24",
+   "fn": "2026-09-15",
    "mod": "Contratación directa",
    "just": "Servicios profesionales y apoyo a la gestión",
    "tc": "Prestación de servicios",
@@ -1121,22 +1184,22 @@
   {
    "dia": "2026-07-21",
    "n": 936,
-   "val": 16312766134
+   "val": 16317571134
   },
   {
    "dia": "2026-07-22",
    "n": 586,
-   "val": 34177571183
+   "val": 34195353183
   },
   {
    "dia": "2026-07-23",
    "n": 598,
-   "val": 13134841007
+   "val": 13140504007
   },
   {
    "dia": "2026-07-24",
    "n": 508,
-   "val": 18613648495
+   "val": 18616651495
   },
   {
    "dia": "2026-07-25",
@@ -1191,7 +1254,7 @@
   {
    "dia": "2026-08-04",
    "n": 117,
-   "val": 3576121095
+   "val": 3583947095
   },
   {
    "dia": "2026-08-05",
@@ -1285,8 +1348,43 @@
   },
   {
    "dia": "2026-08-24",
-   "n": 46,
-   "val": 5519414056
+   "n": 147,
+   "val": 11553002517
+  },
+  {
+   "dia": "2026-08-25",
+   "n": 121,
+   "val": 9970876493
+  },
+  {
+   "dia": "2026-08-26",
+   "n": 213,
+   "val": 8019920084
+  },
+  {
+   "dia": "2026-08-27",
+   "n": 83,
+   "val": 2370890962
+  },
+  {
+   "dia": "2026-08-28",
+   "n": 86,
+   "val": 5049491062
+  },
+  {
+   "dia": "2026-08-29",
+   "n": 6,
+   "val": 72296000
+  },
+  {
+   "dia": "2026-08-31",
+   "n": 45,
+   "val": 7279718168
+  },
+  {
+   "dia": "2026-09-01",
+   "n": 79,
+   "val": 9350680303
   }
  ]
 }
