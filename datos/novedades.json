@@ -1,7 +1,47 @@
 {
- "generado": "2026-09-09T14:14:09Z",
+ "generado": "2026-09-09T23:53:37Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9441414",
+   "ref": "4172.010.26.1.121-2026",
+   "ciu": "Cali",
+   "ent": "Turismo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo de Cali",
+   "prov": "ADONITRANS S.A.S.",
+   "v": 530100000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10119670&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-08",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Modificación No. 1 - Modificación alcance del contrato y forma de pago como consecuencia del evento de fuerza mayor derivado del sismo del 10 de agosto de 2026."
+  },
+  {
+   "id": "CO1.PCCNTR.8937837",
+   "ref": "100.8.4.46.2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "ID INNOVACIÓN DOCUMENTAL SAS",
+   "v": 234173343,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9571809&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-08",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICATORIO No. 1 CONTRATO DE ARRENDAMIENTO No. 100.8.4.46.2026"
+  },
   {
    "id": "CO1.PCCNTR.9453073",
    "ref": "1.210.19.13-6051",
