@@ -1,7 +1,27 @@
 {
- "generado": "2026-09-10T14:07:58Z",
+ "generado": "2026-09-10T23:49:34Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9250975",
+   "ref": "4137.010.26.1.200-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo e Innovación Institucional",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL",
+   "entl": "Departamento Administrativo de Desarrollo e Innovación Institucional de Cali",
+   "prov": "IRON MOUNTAIN COLOMBIA SAS",
+   "v": 689397763,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9883610&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-09",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "Modificar clausulas cuarta y quinta aclarando que el valor de las consultas elevadas por Planeación Distrital no se asumirán con cargo al presupuesto del contrato"
+  },
   {
    "id": "CO1.PCCNTR.9441414",
    "ref": "4172.010.26.1.121-2026",
@@ -14,8 +34,8 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10119670&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-08",
-   "e": "Enviado al Proveedor",
+   "f": "2026-09-09",
+   "e": "Publicado",
    "t": [
     "Otra"
    ],
@@ -34,8 +54,8 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9571809&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-08",
-   "e": "Enviado al Proveedor",
+   "f": "2026-09-09",
+   "e": "Publicado",
    "t": [
     "Otra"
    ],

@@ -1,12 +1,12 @@
 {
- "generado": "2026-09-10T14:08:19Z",
+ "generado": "2026-09-10T23:50:00Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-09-08",
  "resumen": {
   "respuesta": 4,
   "valor_respuesta": 11867874000,
-  "afectados": 28,
-  "valor_afectados": 48322160746
+  "afectados": 29,
+  "valor_afectados": 48852260746
  },
  "contratos": [
   {
@@ -373,6 +373,44 @@
       "No cambian ni el plazo ni el valor registrados"
      ],
      "p": "Teniendo en cuenta el sismo ocurrido el 10 de agosto de 2026 y las afectaciones derivadas del mismo que imposibilitan temporalmente la ejecución de las obras objeto del contrato de interventoría se hace necesario suspender su ejecución mientras se superan las circunstancias que dieron origen a dicha situación y se restablecen las condiciones necesarias para continuar con las actividades de obra y consecuentemente con las labores de interventoría."
+    }
+   ]
+  },
+  {
+   "id": "CO1.PCCNTR.9441414",
+   "ref": "4172.010.26.1.121-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo de Cali",
+   "prov": "ADONITRANS S.A.S.",
+   "td": "NIT",
+   "v": 530100000,
+   "ff": "2026-04-09",
+   "fi": "2026-04-14",
+   "fn": "2026-12-30",
+   "mod": "Selección Abreviada de Menor Cuantía",
+   "just": "Presupuesto menor al 10% de la Menor Cuantía",
+   "tc": "Prestación de servicios",
+   "un": "UNSPECIFIED",
+   "obj": "Prestar el servicio de transporte terrestre automotor especial de pasajeros; mediante la disposición de un (1) vehículo tipo bus con capacidad mínima para 40 pasajeros; idóneo para la realización de recorridos educativos y guiados por los principales sitios de interés turístico del Distrito de Santiago de Cali dirigidos a población local; visitantes y/o turistas",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10119670&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "afectado",
+   "evidencia": "Una modificación posterior invoca el sismo",
+   "mods": [
+    {
+     "e": "Publicado",
+     "f": "2026-09-09",
+     "d": 0,
+     "vr": 530100000,
+     "fin": "2026-12-31",
+     "tipo": "Otra",
+     "titulo": "Se modifica el contrato",
+     "puntos": [
+      "El plazo no cambia: sigue hasta el 31 de diciembre de 2026",
+      "El valor no cambia: sigue en $530.100.000",
+      "No cambian ni el plazo ni el valor registrados"
+     ],
+     "p": "Modificación No. 1 - Modificación alcance del contrato y forma de pago como consecuencia del evento de fuerza mayor derivado del sismo del 10 de agosto de 2026."
     }
    ]
   },
