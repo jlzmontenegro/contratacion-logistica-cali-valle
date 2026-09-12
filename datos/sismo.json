@@ -1,10 +1,10 @@
 {
- "generado": "2026-09-11T23:56:52Z",
+ "generado": "2026-09-12T13:24:22Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-09-10",
+ "cobertura_hasta": "2026-09-11",
  "resumen": {
-  "respuesta": 4,
-  "valor_respuesta": 11867874000,
+  "respuesta": 5,
+  "valor_respuesta": 12567874000,
   "afectados": 29,
   "valor_afectados": 48852260746
  },
@@ -69,6 +69,27 @@
    "un": "V1.25101600",
    "obj": "REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "respuesta",
+   "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
+  {
+   "id": "CO1.PCCNTR.9933537",
+   "ref": "4181.010.26.1.805-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "prov": "2 GROUP SAS",
+   "td": "NIT",
+   "v": 700000000,
+   "ff": "2026-09-11",
+   "fi": "",
+   "fn": "2026-12-31",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Otro",
+   "un": "V1.78141500",
+   "obj": "CONTRATAR LA PRESTACIÓN DEL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR; REQUERIDO POR LOS ORGANISMOS DEL DISTRITO ESPECIAL DE SANTIAGO DE CALI PARA LA ATENCIÓN DE LA EMERGENCIA GENERADA POR EL SISMO DEL 10 DE AGOSTO DE 2026.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10878570&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "respuesta",
    "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
   },
@@ -1237,7 +1258,7 @@
   {
    "dia": "2026-07-24",
    "n": 508,
-   "val": 18616651495
+   "val": 19239484944
   },
   {
    "dia": "2026-07-25",
@@ -1292,7 +1313,7 @@
   {
    "dia": "2026-08-04",
    "n": 117,
-   "val": 3583947095
+   "val": 3587363585
   },
   {
    "dia": "2026-08-05",
@@ -1407,7 +1428,7 @@
   {
    "dia": "2026-08-28",
    "n": 86,
-   "val": 5065143062
+   "val": 5065142062
   },
   {
    "dia": "2026-08-29",
@@ -1466,8 +1487,13 @@
   },
   {
    "dia": "2026-09-10",
-   "n": 82,
-   "val": 737479998
+   "n": 145,
+   "val": 1988388255
+  },
+  {
+   "dia": "2026-09-11",
+   "n": 44,
+   "val": 3902530286
   }
  ]
 }
