@@ -1,7 +1,27 @@
 {
- "generado": "2026-09-15T14:41:38Z",
+ "generado": "2026-09-16T00:02:07Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9441375",
+   "ref": "4172.010.26.1.122-2026",
+   "ciu": "Cali",
+   "ent": "Turismo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo de Cali",
+   "prov": "U.T. CorpoQ",
+   "v": 1152546305,
+   "vi": null,
+   "ad": 0,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10121731&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-14",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Las partes acuerdan adicionar el valor del Contrato No. 4172.010.26.1.122-2026 en la suma de $576.273.152) con cargo al CDP No. 3600012853 de conformidad con la justificación y los documentos que hacen parte integral de la presente modificación."
+  },
   {
    "id": "CO1.PCCNTR.9678479",
    "ref": "4162.010.26.1.2090-2026",
@@ -41,26 +61,6 @@
    ],
    "d": 0,
    "p": "No definido"
-  },
-  {
-   "id": "CO1.PCCNTR.9441375",
-   "ref": "4172.010.26.1.122-2026",
-   "ciu": "Cali",
-   "ent": "Turismo",
-   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO",
-   "entl": "Secretaría de Turismo de Cali",
-   "prov": "U.T. CorpoQ",
-   "v": 1152546305,
-   "vi": null,
-   "ad": 0,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10121731&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-11",
-   "e": "Aceptado por el Proveedor",
-   "t": [
-    "Adición en valor"
-   ],
-   "d": 0,
-   "p": "Las partes acuerdan adicionar el valor del Contrato No. 4172.010.26.1.122-2026 en la suma de $576.273.152) con cargo al CDP No. 3600012853 de conformidad con la justificación y los documentos que hacen parte integral de la presente modificación."
   },
   {
    "id": "CO1.PCCNTR.9325971",
