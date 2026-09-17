@@ -1,27 +1,7 @@
 {
- "generado": "2026-09-17T14:45:15Z",
+ "generado": "2026-09-17T23:58:17Z",
  "corte": "2026-08-10",
  "items": [
-  {
-   "id": "CO1.PCCNTR.9924015",
-   "ref": "100.8.4.736-2026",
-   "ciu": "Cali",
-   "ent": "Concejo Distrital",
-   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
-   "entl": "Concejo Distrital de Santiago de Cali",
-   "prov": "UNIVERSIDAD DE PAMPLONA",
-   "v": 25000000,
-   "vi": null,
-   "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10829594&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-16",
-   "e": "En Proceso de Aprobación",
-   "t": [
-    "Aclaración o corrección"
-   ],
-   "d": 0,
-   "p": "ACLARACIÓN No. 1 CONTRATO INTERADMINISTRATIVO"
-  },
   {
    "id": "CO1.PCCNTR.9820439",
    "ref": "4182.010.26.1.653-2026",
@@ -34,13 +14,33 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-15",
-   "e": "Rechazado",
+   "f": "2026-09-16",
+   "e": "Publicado",
    "t": [
     "Adición en valor"
    ],
    "d": 0,
    "p": "Se procede a adicionar recursos al contrato teniendo en cuenta la necesidad de continuar con la ejecución del objeto contractual."
+  },
+  {
+   "id": "CO1.PCCNTR.9908509",
+   "ref": "4132.010.26.1.840-2026",
+   "ciu": "Cali",
+   "ent": "Planeación Municipal",
+   "entf": "PLANEACIÓN MUNICIPAL CALI**",
+   "entl": "Planeación Municipal de Cali",
+   "prov": "AGPHSAS",
+   "v": 159300000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10844069&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-16",
+   "e": "Publicado",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "Por error de digitación se indicó como fecha de inicio del contrato el día 16 de septiembre de 2026 siendo en realidad el día 14 de septiembre de la presente vigencia."
   },
   {
    "id": "CO1.PCCNTR.9741309",
@@ -54,13 +54,33 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10575905&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-15",
-   "e": "Enviado al Proveedor",
+   "f": "2026-09-16",
+   "e": "Publicado",
    "t": [
     "Adición en valor"
    ],
    "d": 0,
    "p": "POR EL CUAL SE REALIZA ADICION 01 AL CONTRATO"
+  },
+  {
+   "id": "CO1.PCCNTR.9924015",
+   "ref": "100.8.4.736-2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "UNIVERSIDAD DE PAMPLONA",
+   "v": 25000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10829594&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-16",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "ACLARACIÓN No. 1 CONTRATO INTERADMINISTRATIVO"
   },
   {
    "id": "CO1.PCCNTR.9441375",
