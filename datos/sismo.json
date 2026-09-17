@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-16T14:42:00Z",
+ "generado": "2026-09-17T00:11:51Z",
  "evento": "2026-08-10",
  "cobertura_hasta": "2026-09-14",
  "resumen": {
@@ -24,7 +24,7 @@
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
    "tc": "Otro",
-   "un": "V1.93151500",
+   "un": "V1.80111600",
    "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "mecanismo",
@@ -45,7 +45,7 @@
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
    "tc": "Otro",
-   "un": "V1.90101800",
+   "un": "V1.81141600",
    "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10809890&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "mecanismo",
@@ -66,7 +66,7 @@
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
    "tc": "Prestación de servicios",
-   "un": "V1.25101600",
+   "un": "V1.78101802",
    "obj": "REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "respuesta",
@@ -131,7 +131,7 @@
    "mod": "Contratación directa",
    "just": "Contratos o convenios Interadministrativos (valor cero)",
    "tc": "Otro",
-   "un": "V1.93141700",
+   "un": "V1.80141600",
    "obj": "Aunar esfuerzos técnicos; logísticos; humanos; administrativos y financieros para realizar las acciones que visibilizan y fortalecen el proceso y la realización del Festival de Música del Pacífico Petronio Álvarez en su versión XXX; en el marco de los proyectos de inversión destinados para tal fin",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10536695&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "afectado",
@@ -1276,7 +1276,7 @@
   {
    "dia": "2026-07-20",
    "n": 326,
-   "val": 5117073060
+   "val": 5122736060
   },
   {
    "dia": "2026-07-21",
@@ -1286,7 +1286,7 @@
   {
    "dia": "2026-07-22",
    "n": 586,
-   "val": 34202159183
+   "val": 34207822183
   },
   {
    "dia": "2026-07-23",
@@ -1316,7 +1316,7 @@
   {
    "dia": "2026-07-28",
    "n": 299,
-   "val": 13036656276
+   "val": 13039448276
   },
   {
    "dia": "2026-07-29",
@@ -1326,12 +1326,12 @@
   {
    "dia": "2026-07-30",
    "n": 258,
-   "val": 4923976900
+   "val": 4933190900
   },
   {
    "dia": "2026-07-31",
    "n": 174,
-   "val": 23838504611
+   "val": 23848794611
   },
   {
    "dia": "2026-08-01",
@@ -1346,7 +1346,7 @@
   {
    "dia": "2026-08-03",
    "n": 136,
-   "val": 4857872143
+   "val": 4861423143
   },
   {
    "dia": "2026-08-04",
@@ -1361,7 +1361,7 @@
   {
    "dia": "2026-08-06",
    "n": 200,
-   "val": 19711488451
+   "val": 19724119451
   },
   {
    "dia": "2026-08-07",
@@ -1416,7 +1416,7 @@
   {
    "dia": "2026-08-18",
    "n": 550,
-   "val": 4842604435
+   "val": 4845396435
   },
   {
    "dia": "2026-08-19",
@@ -1520,33 +1520,33 @@
   },
   {
    "dia": "2026-09-09",
-   "n": 62,
-   "val": 12932703837
+   "n": 69,
+   "val": 13024091837
   },
   {
    "dia": "2026-09-10",
-   "n": 145,
-   "val": 1988388255
+   "n": 156,
+   "val": 2114718255
   },
   {
    "dia": "2026-09-11",
-   "n": 160,
-   "val": 29023306003
+   "n": 180,
+   "val": 29253427003
   },
   {
    "dia": "2026-09-12",
-   "n": 80,
-   "val": 4401966634
+   "n": 82,
+   "val": 4417754634
   },
   {
    "dia": "2026-09-13",
-   "n": 19,
-   "val": 157022000
+   "n": 20,
+   "val": 162606000
   },
   {
    "dia": "2026-09-14",
-   "n": 59,
-   "val": 583921500
+   "n": 112,
+   "val": 1613035299
   }
  ]
 }
