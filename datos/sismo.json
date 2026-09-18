@@ -1,14 +1,35 @@
 {
- "generado": "2026-09-18T14:11:59Z",
+ "generado": "2026-09-18T23:57:15Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-09-16",
+ "cobertura_hasta": "2026-09-17",
  "resumen": {
   "respuesta": 5,
-  "valor_respuesta": 12567874000,
+  "valor_respuesta": 13977044000,
   "afectados": 30,
   "valor_afectados": 51152717546
  },
  "contratos": [
+  {
+   "id": "CO1.PCCNTR.9820439",
+   "ref": "4182.010.26.1.653-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "prov": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA",
+   "td": "NIT",
+   "v": 5169150000,
+   "ff": "2026-08-17",
+   "fi": "2026-08-18",
+   "fn": "2026-10-18",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Prestación de servicios",
+   "un": "V1.78101802",
+   "obj": "REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "respuesta",
+   "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
   {
    "id": "CO1.PCCNTR.9886868",
    "ref": "4163.001.27.1.5-2026",
@@ -50,27 +71,6 @@
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10809890&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "mecanismo",
    "evidencia": "Suscrito por urgencia manifiesta o calamidad pública tras el evento"
-  },
-  {
-   "id": "CO1.PCCNTR.9820439",
-   "ref": "4182.010.26.1.653-2026",
-   "ciu": "Cali",
-   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
-   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
-   "prov": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA",
-   "td": "NIT",
-   "v": 3759980000,
-   "ff": "2026-08-17",
-   "fi": "2026-08-18",
-   "fn": "2026-10-18",
-   "mod": "Contratación directa",
-   "just": "Urgencia manifiesta",
-   "tc": "Prestación de servicios",
-   "un": "V1.78101802",
-   "obj": "REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.",
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "motivo": "respuesta",
-   "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
   },
   {
    "id": "CO1.PCCNTR.9933537",
@@ -1281,7 +1281,7 @@
   {
    "dia": "2026-07-21",
    "n": 936,
-   "val": 16326785134
+   "val": 16309796134
   },
   {
    "dia": "2026-07-22",
@@ -1396,7 +1396,7 @@
   {
    "dia": "2026-08-14",
    "n": 194,
-   "val": 2218356900
+   "val": 2221148900
   },
   {
    "dia": "2026-08-15",
@@ -1411,7 +1411,7 @@
   {
    "dia": "2026-08-17",
    "n": 104,
-   "val": 5787900000
+   "val": 7197070000
   },
   {
    "dia": "2026-08-18",
@@ -1431,7 +1431,7 @@
   {
    "dia": "2026-08-21",
    "n": 363,
-   "val": 4080910946
+   "val": 4085715946
   },
   {
    "dia": "2026-08-22",
@@ -1555,8 +1555,13 @@
   },
   {
    "dia": "2026-09-16",
-   "n": 27,
-   "val": 915776194
+   "n": 161,
+   "val": 3668559429
+  },
+  {
+   "dia": "2026-09-17",
+   "n": 48,
+   "val": 352004500
   }
  ]
 }
