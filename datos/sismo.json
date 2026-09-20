@@ -1,14 +1,35 @@
 {
- "generado": "2026-09-19T13:44:43Z",
+ "generado": "2026-09-20T14:00:02Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-09-17",
+ "cobertura_hasta": "2026-09-19",
  "resumen": {
-  "respuesta": 5,
-  "valor_respuesta": 13977044000,
+  "respuesta": 7,
+  "valor_respuesta": 27569044000,
   "afectados": 30,
   "valor_afectados": 51152717546
  },
  "contratos": [
+  {
+   "id": "CO1.PCCNTR.9961352",
+   "ref": "CO1.PCCNTR.9961352",
+   "ciu": "Valle",
+   "ent": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT",
+   "entl": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT",
+   "prov": "COMERCIALIZADORA ORIKUA SAS",
+   "td": "NIT",
+   "v": 8592000000,
+   "ff": "2026-09-18",
+   "fi": "",
+   "fn": "2026-11-30",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Compraventa",
+   "un": "UNSPECIFIED",
+   "obj": "REALIZAR LA GESTIÓN INTEGRAL PARA EL SUMINISTRO Y DISTRIBUCIÓN DE MATERIALES DE CONSTRUCCIÓN PARA LA EJECUCIÓN DE MEJORAMIENTO DE VIVIENDAS EN LOS MUNICIPIOS Y DISTRITOS DEL DEPARTAMENTO DEL VALLE DEL CAUCA AFECTADOS POR EL SISMO DEL 10 DE AGOSTO DEL 2026",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10917528&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "respuesta",
+   "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
   {
    "id": "CO1.PCCNTR.9820439",
    "ref": "4182.010.26.1.653-2026",
@@ -27,6 +48,27 @@
    "un": "V1.78101802",
    "obj": "REALIZAR EL CARGUE Y TRANSPORTE A LOS SITIOS DE DISPOSICIÓN FINAL O TRASLADO A PLANTAS DE APROVECHAMIENTO; APROBADOS POR LA AUTORIDAD COMPETENTE PARA LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL MARCO DE LA URGENCIA MANIFIESTA EN EL DISTRITO DE SANTIAGO DE CALI; POR LOS HECHOS ACAECIDOS EL 10 DE AGOSTO DE 2026.",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "respuesta",
+   "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
+  {
+   "id": "CO1.PCCNTR.9966501",
+   "ref": "4112.020.26.1.721-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO",
+   "prov": "ADD MEDIA S.A.S",
+   "td": "NIT",
+   "v": 5000000000,
+   "ff": "2026-09-18",
+   "fi": "",
+   "fn": "2026-12-31",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Otro",
+   "un": "UNSPECIFIED",
+   "obj": "Prestar servicios de apoyo logístico para el desarrollo y despliegue de las acciones de comunicación institucional definidas por la Oficina de Comunicaciones de la Secretaría de Gobierno; en el marco de la atención y manejo de la situación de Calamidad Pública y Urgencia Manifiesta declaradas mediante los Decretos Distritales No. 4112.010.20.0963 y 4112.010.20.0964 del 10 de agosto de 2026.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10923484&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "respuesta",
    "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
   },
@@ -1281,12 +1323,12 @@
   {
    "dia": "2026-07-21",
    "n": 936,
-   "val": 16309796134
+   "val": 16316535134
   },
   {
    "dia": "2026-07-22",
    "n": 586,
-   "val": 34230197183
+   "val": 34243358183
   },
   {
    "dia": "2026-07-23",
@@ -1296,7 +1338,7 @@
   {
    "dia": "2026-07-24",
    "n": 508,
-   "val": 19215031344
+   "val": 19221078944
   },
   {
    "dia": "2026-07-25",
@@ -1321,17 +1363,17 @@
   {
    "dia": "2026-07-29",
    "n": 430,
-   "val": 7255823799
+   "val": 7273800199
   },
   {
    "dia": "2026-07-30",
    "n": 258,
-   "val": 4933190900
+   "val": 4951166700
   },
   {
    "dia": "2026-07-31",
    "n": 174,
-   "val": 23880035364
+   "val": 23882827964
   },
   {
    "dia": "2026-08-01",
@@ -1356,12 +1398,12 @@
   {
    "dia": "2026-08-05",
    "n": 175,
-   "val": 3368108313
+   "val": 3371659313
   },
   {
    "dia": "2026-08-06",
    "n": 200,
-   "val": 19742768451
+   "val": 19757656251
   },
   {
    "dia": "2026-08-07",
@@ -1396,7 +1438,7 @@
   {
    "dia": "2026-08-14",
    "n": 194,
-   "val": 2221148900
+   "val": 2232397100
   },
   {
    "dia": "2026-08-15",
@@ -1421,7 +1463,7 @@
   {
    "dia": "2026-08-19",
    "n": 242,
-   "val": 2318931900
+   "val": 2344253100
   },
   {
    "dia": "2026-08-20",
@@ -1431,7 +1473,7 @@
   {
    "dia": "2026-08-21",
    "n": 363,
-   "val": 4085715946
+   "val": 4088508546
   },
   {
    "dia": "2026-08-22",
@@ -1446,7 +1488,7 @@
   {
    "dia": "2026-08-24",
    "n": 147,
-   "val": 11553002517
+   "val": 11556553517
   },
   {
    "dia": "2026-08-25",
@@ -1560,8 +1602,18 @@
   },
   {
    "dia": "2026-09-17",
-   "n": 48,
-   "val": 352004500
+   "n": 165,
+   "val": 11804282706
+  },
+  {
+   "dia": "2026-09-18",
+   "n": 138,
+   "val": 15523344920
+  },
+  {
+   "dia": "2026-09-19",
+   "n": 5,
+   "val": 48606000
   }
  ]
 }
