@@ -1,7 +1,7 @@
 {
- "generado": "2026-09-22T00:39:00Z",
+ "generado": "2026-09-22T16:18:42Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-09-19",
+ "cobertura_hasta": "2026-09-20",
  "resumen": {
   "respuesta": 7,
   "valor_respuesta": 27569044000,
@@ -87,7 +87,7 @@
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
    "tc": "Otro",
-   "un": "V1.80111600",
+   "un": "V1.93151500",
    "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "mecanismo",
@@ -108,7 +108,7 @@
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
    "tc": "Otro",
-   "un": "V1.81141600",
+   "un": "V1.90101800",
    "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10809890&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "mecanismo",
@@ -1398,7 +1398,7 @@
   {
    "dia": "2026-08-05",
    "n": 175,
-   "val": 3371659313
+   "val": 3375210313
   },
   {
    "dia": "2026-08-06",
@@ -1612,8 +1612,13 @@
   },
   {
    "dia": "2026-09-19",
-   "n": 5,
-   "val": 48606000
+   "n": 17,
+   "val": 174333500
+  },
+  {
+   "dia": "2026-09-20",
+   "n": 1,
+   "val": 20000000
   }
  ]
 }
