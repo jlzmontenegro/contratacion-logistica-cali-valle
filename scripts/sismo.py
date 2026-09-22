@@ -192,7 +192,13 @@ def resumir_mod(m, valor_contrato):
     dias = int(num(m.get("dias_extendidos")))
     vmod = int(num(m.get("valor_modificacion")))
     fin = (m.get("fecha_fin_contrato") or "")[:10]
-    delta = vmod - int(valor_contrato or 0)
+    # A un campo de la fuente NUNCA se le aplica int() en crudo: SECOP devuelve
+    # los valores unas veces como entero y otras con decimales, y mientras
+    # int("7147991695") pasa, int("7147991695.000000") revienta con ValueError.
+    # Tumbo la corrida del 22-sep-2026. El resto del archivo ya lo hacia bien
+    # -este mismo campo va con num() al armar las fichas-; esta linea era la
+    # unica que se habia quedado sin el.
+    delta = vmod - int(num(valor_contrato))
 
     suspende = bool(re.search(r"suspend|suspensi[oó]n", b))
     prorroga = bool(re.search(r"prorrog|ampl[ií]a\w* el plazo|plazo de ejecuci[oó]n hasta", b))
