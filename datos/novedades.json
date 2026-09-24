@@ -1,5 +1,648 @@
 {
- "generado": "2026-09-24T00:17:13Z",
+ "generado": "2026-09-24T14:41:26Z",
  "corte": "2026-08-10",
- "items": []
+ "items": [
+  {
+   "id": "CO1.PCCNTR.9250975",
+   "ref": "4137.010.26.1.200-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo e Innovación Institucional",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL",
+   "entl": "Departamento Administrativo de Desarrollo e Innovación Institucional de Cali",
+   "prov": "IRON MOUNTAIN COLOMBIA SAS",
+   "v": 689397763,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9883610&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-22",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "Modificar clausulas cuarta y quinta aclarando que el valor de las consultas elevadas por Planeación Distrital no se asumirán con cargo al presupuesto del contrato"
+  },
+  {
+   "id": "CO1.PCCNTR.9265668",
+   "ref": "4181.010.27.1-002. 2026",
+   "ciu": "Cali",
+   "ent": "UAE Bienes y Servicios",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
+   "v": 650000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9897988&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-22",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "La supervisión solicita al Ordenador del Gasto: Modificar y Adicionar el valor del contrato en la suma de DOSCIENTOS MILLONES DE PESOS M/CTE ($200.000.000) compromiso que se respalda con el CDP No. 3700030585 fechado 15/09/2026 apropiación presupuestal 4181/1.2.1.0.00/2.1.2.02.02.008/04019999999"
+  },
+  {
+   "id": "CO1.PCCNTR.9667634",
+   "ref": "4148.010.26.1.0813-2026",
+   "ciu": "Cali",
+   "ent": "Cultura",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA",
+   "entl": "Secretaría de Cultura de Cali",
+   "prov": "Quack de Colombia SAS",
+   "v": 300018000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10306022&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-22",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "se realiza cambio del anexo de la oferta económica lo anterior debido a que por error se cargó un anexo que no corresponde al presentando en la propuesta del contratista en la sección de documentos del contrato."
+  },
+  {
+   "id": "CO1.PCCNTR.9741309",
+   "ref": "4173.010.26.1.0884-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo Territorial",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO TERRITORIAL Y PARTICIPACION CIUDADANA",
+   "entl": "Secretaría de Desarrollo Territorial y Participación Ciudadana de Cali",
+   "prov": "Daniela Valverde Moreno",
+   "v": 48062478,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10575905&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-22",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICACION No.02: POR EL CUAL SE AJUSTA LA FORMA DE PAGO EN DOS CUOTAS"
+  },
+  {
+   "id": "CO1.PCCNTR.9924015",
+   "ref": "100.8.4.748.2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "UNIVERSIDAD DE PAMPLONA",
+   "v": 25000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10829594&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-17",
+   "e": "Publicado",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "ACLARACIÓN No. 1 CONTRATO INTERADMINISTRATIVO"
+  },
+  {
+   "id": "CO1.PCCNTR.9820439",
+   "ref": "4182.010.26.1.653-2026",
+   "ciu": "Cali",
+   "ent": "UAE Servicios Públicos",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "entl": "Unidad Administrativa Especial de Servicios Públicos de Cali",
+   "prov": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA",
+   "v": 5169150000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10720660&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-16",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Se procede a adicionar recursos al contrato teniendo en cuenta la necesidad de continuar con la ejecución del objeto contractual."
+  },
+  {
+   "id": "CO1.PCCNTR.9908509",
+   "ref": "4132.010.26.1.840-2026",
+   "ciu": "Cali",
+   "ent": "Planeación Municipal",
+   "entf": "PLANEACIÓN MUNICIPAL CALI**",
+   "entl": "Planeación Municipal de Cali",
+   "prov": "AGPHSAS",
+   "v": 159300000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10844069&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-16",
+   "e": "Publicado",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "Por error de digitación se indicó como fecha de inicio del contrato el día 16 de septiembre de 2026 siendo en realidad el día 14 de septiembre de la presente vigencia."
+  },
+  {
+   "id": "CO1.PCCNTR.9741309",
+   "ref": "4173.010.26.1.0884-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo Territorial",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO TERRITORIAL Y PARTICIPACION CIUDADANA",
+   "entl": "Secretaría de Desarrollo Territorial y Participación Ciudadana de Cali",
+   "prov": "Daniela Valverde Moreno",
+   "v": 48062478,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10575905&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-16",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "POR EL CUAL SE REALIZA ADICION 01 AL CONTRATO"
+  },
+  {
+   "id": "CO1.PCCNTR.9441375",
+   "ref": "4172.010.26.1.122-2026",
+   "ciu": "Cali",
+   "ent": "Turismo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo de Cali",
+   "prov": "U.T. CorpoQ",
+   "v": 1728819457,
+   "vi": null,
+   "ad": 0,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10121731&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-14",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Las partes acuerdan adicionar el valor del Contrato No. 4172.010.26.1.122-2026 en la suma de $576.273.152) con cargo al CDP No. 3600012853 de conformidad con la justificación y los documentos que hacen parte integral de la presente modificación."
+  },
+  {
+   "id": "CO1.PCCNTR.9678479",
+   "ref": "4162.010.26.1.2090-2026",
+   "ciu": "Cali",
+   "ent": "Deporte y Recreación",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN",
+   "entl": "Secretaría del Deporte y la Recreación de Cali",
+   "prov": "LIVATRI",
+   "v": 5503283933,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10432188&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-12",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Modificación No.2 del Convenio No. 4162.010.26.1.2090-2026 se realiza modificación en unificación de las dos (2) jornadas de carreras Run Río 5K y Meléndez Run 5K en una única jornada Cali Somos Todos 5K se anexa Justificación para modificación de contrato y/o convenio acta de Modificación acta de reunión Oficio respuesta de concepto carrera atlética."
+  },
+  {
+   "id": "CO1.PCCNTR.9678479",
+   "ref": "4162.010.26.1.2090-2026",
+   "ciu": "Cali",
+   "ent": "Deporte y Recreación",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN",
+   "entl": "Secretaría del Deporte y la Recreación de Cali",
+   "prov": "LIVATRI",
+   "v": 5503283933,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10432188&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-11",
+   "e": "Cancelado",
+   "t": [
+    "Sin descripción"
+   ],
+   "d": 0,
+   "p": "No definido"
+  },
+  {
+   "id": "CO1.PCCNTR.9325971",
+   "ref": "1.340.19.13-5995",
+   "ciu": "Valle",
+   "ent": "Movilidad y Transporte",
+   "entf": "SECRETARIA DE MOVILIDAD Y TRANSPORTE",
+   "entl": "Secretaría de Movilidad y Transporte del Valle del Cauca",
+   "prov": "CONSTRUCTORA OIKOGENIA S.A.S",
+   "v": 262500000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9882227&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-11",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "OTROSI ADICION DE ACUERDO CON LOS DOCUMENTOS ADJUNTOS"
+  },
+  {
+   "id": "CO1.PCCNTR.9376167",
+   "ref": "1.340.19.13.6020",
+   "ciu": "Valle",
+   "ent": "Movilidad y Transporte",
+   "entf": "SECRETARIA DE MOVILIDAD Y TRANSPORTE",
+   "entl": "Secretaría de Movilidad y Transporte del Valle del Cauca",
+   "prov": "CONSTRUCTORA OIKOGENIA S.A.S",
+   "v": 180000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10064643&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-11",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "OTROSI ADICION DE ACUERDO CON LOS DOCUMENTOS ADJUNTOS"
+  },
+  {
+   "id": "CO1.PCCNTR.9441414",
+   "ref": "4172.010.26.1.121-2026",
+   "ciu": "Cali",
+   "ent": "Turismo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo de Cali",
+   "prov": "ADONITRANS S.A.S.",
+   "v": 530100000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10119670&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-09",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Modificación No. 1 - Modificación alcance del contrato y forma de pago como consecuencia del evento de fuerza mayor derivado del sismo del 10 de agosto de 2026."
+  },
+  {
+   "id": "CO1.PCCNTR.8937837",
+   "ref": "100.8.4.46.2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "ID INNOVACIÓN DOCUMENTAL SAS",
+   "v": 234173343,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9571809&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-09",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICATORIO No. 1 CONTRATO DE ARRENDAMIENTO No. 100.8.4.46.2026"
+  },
+  {
+   "id": "CO1.PCCNTR.9453073",
+   "ref": "1.210.19.13-6051",
+   "ciu": "Valle",
+   "ent": "Educación",
+   "entf": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION",
+   "entl": "Secretaría de Educación del Valle del Cauca",
+   "prov": "GRAN FARALLONES SAS",
+   "v": 1015000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10135538&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-03",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Por medio de la presente se procede a adicionar recursos al contrato con el fin de contar con una disponibilidad suficiente de vehículos y servicios de transporte que permitan atender de manera oportuna las solicitudes de visita hacia las zonas urbanas y rurales donde se encuentran las ciento cuarenta y ocho (148) instituciones educativas"
+  },
+  {
+   "id": "CO1.PCCNTR.9188973",
+   "ref": "1.370.19.13-5893",
+   "ciu": "Valle",
+   "ent": "Turismo",
+   "entf": "DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo del Valle del Cauca",
+   "prov": "CALI-VALLE DEL CAUCA CONVENTION AND VISITORS BUREAU",
+   "v": 1500000000,
+   "vi": 1000000000,
+   "ad": 400000000,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9821163&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-02",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 122,
+   "p": "se requiere adicionar el contrato por valor de 100.000.000 de pesos para eventos y ferias"
+  },
+  {
+   "id": "CO1.PCCNTR.9404830",
+   "ref": "4145.010.26.1.1004-2026",
+   "ciu": "Cali",
+   "ent": "Salud Distrital",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI",
+   "entl": "Secretaría Distrital de Salud de Cali",
+   "prov": "K.L.T.",
+   "v": 727280000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10080399&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-01",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor",
+    "Prórroga de plazo"
+   ],
+   "d": 92,
+   "p": "modificación: ampliando el parque automotor y adición y prorroga al contrato No. 4145.010.26.1.1004-2026 cuyo objeto es : Prestar servicio de transporte de pasajeros y bienes requeridos por la Secretaría de Salud Pública en las actividades de articulación intersectorial transectorial e institucional por las razones expuestas."
+  },
+  {
+   "id": "CO1.PCCNTR.9256549",
+   "ref": "4132.010.26.1.425-2026",
+   "ciu": "Cali",
+   "ent": "Planeación Municipal",
+   "entf": "PLANEACIÓN MUNICIPAL CALI**",
+   "entl": "Planeación Municipal de Cali",
+   "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
+   "v": 700558500,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9888670&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-31",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "ADICIONAR al contrato Interadministrativo No. 4132.010.26.1.425-2026 la suma de TREINTA Y SEIS MILLONES DOSCIENTOS CINCUENTA MIL PESOS M/CTE ($36.250.000)"
+  },
+  {
+   "id": "CO1.PCCNTR.8850155",
+   "ref": "4143.010.26.1.0579.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "UNION TEMPORAL NUTRIENDO CALI 2026",
+   "v": 37795283401,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-28",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1.0579.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.9278135",
+   "ref": "4134.010.26.1.0261-2026",
+   "ciu": "Cali",
+   "ent": "DATIC",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES",
+   "entl": "Departamento Administrativo de Tecnologías de la Información y las Comunicaciones (DATIC) de Cali",
+   "prov": "CORFERIAS INVERSIONES SAS",
+   "v": 1419710000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9910106&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-28",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Se realiza la presente modificación teniendo en cuenta el rol de Cali como ciudad anfitriona se ha identificado la necesidad de complementar el alcance del contrato suscrito con Corferias para fortalecer las acciones de activación apropiación y visibilización de la estrategia Cali Ciudad Inteligente."
+  },
+  {
+   "id": "CO1.PCCNTR.9188973",
+   "ref": "1.370.19.13-5893",
+   "ciu": "Valle",
+   "ent": "Turismo",
+   "entf": "DEPARTAMENTO DEL VALLE DEL CAUCA - SECRETARIA DE TURISMO",
+   "entl": "Secretaría de Turismo del Valle del Cauca",
+   "prov": "CALI-VALLE DEL CAUCA CONVENTION AND VISITORS BUREAU",
+   "v": 1500000000,
+   "vi": 1000000000,
+   "ad": 400000000,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9821163&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-27",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor",
+    "Prórroga de plazo"
+   ],
+   "d": 122,
+   "p": "Otro si modificatorio de adicion y prorroga hasta el 31 de octubre del 2026 por temas de ferias y eventos"
+  },
+  {
+   "id": "CO1.PCCNTR.8850155",
+   "ref": "4143.010.26.1.0579.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "UNION TEMPORAL NUTRIENDO CALI 2026",
+   "v": 37795283401,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-26",
+   "e": "Rechazado por el Proveedor",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1.0579.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.8850314",
+   "ref": "4143.010.26.1. 0576.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "ORGANIZACION EMPRESARIAL NRC S.A",
+   "v": 37208427317,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-26",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1.0576.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.8849869",
+   "ref": "4143.010.26.1.0577.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "Fundacion Prodesarrollo Comunitario Accion por Colombia",
+   "v": 36837759134,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-26",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1.0577.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.8850153",
+   "ref": "4143.010.26.1.0578.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "(CON) ALIMENTANDO CALI 2026",
+   "v": 34683577839,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9193041&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-26",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICAR el Contrato de Prestación de Servicios No. 4143.010.26.1. 0578.2026 con el fin de incorporar la MODALIDAD DE CANASTA PAE EN CASA garantizando así su ejecución inmediata continua y adecuada y evitando posibles afectaciones graves en la prestación del servicio. De igual manera se deberán adelantar las acciones administrativas financieras y contractuales que sean necesarias para garantizar la continuidad y adecuada atención de los estudiantes beneficiarios del Programa de Alimentación Escolar (PAE)."
+  },
+  {
+   "id": "CO1.PCCNTR.9256549",
+   "ref": "4132.010.26.1.425-2026",
+   "ciu": "Cali",
+   "ent": "Planeación Municipal",
+   "entf": "PLANEACIÓN MUNICIPAL CALI**",
+   "entl": "Planeación Municipal de Cali",
+   "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
+   "v": 700558500,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9888670&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-25",
+   "e": "Cancelado",
+   "t": [
+    "Sin descripción"
+   ],
+   "d": 0,
+   "p": "No definido"
+  },
+  {
+   "id": "CO1.PCCNTR.9682964",
+   "ref": "4145.010.26.1.1915-2026",
+   "ciu": "Cali",
+   "ent": "Salud Distrital",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI",
+   "entl": "Secretaría Distrital de Salud de Cali",
+   "prov": "Sol Naciente",
+   "v": 142886227,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10408740&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-21",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "La presente modificación tiene por objeto corregir la fecha de terminación registrada en la aceptación de la oferta para armonizarla con el plazo de ejecución pactado de diecisiete (17) días. Dado que el contrato se perfeccionó el 5 de agosto fijar como límite el 10 de agosto restringe indebidamente el término pactado a solo cinco (5) días impidiendo el cabal cumplimiento de las obligaciones. En aplicación de los principios de eficacia economía y prevalencia de lo sustancial sobre lo formal se actualiza la fecha final en la plataforma para garantizar los 17 días reales de ejecución contados a partir de su perfeccionamiento."
+  },
+  {
+   "id": "CO1.PCCNTR.9537628",
+   "ref": "100.8.4.421.2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "UNIVERSIDAD DE PAMPLONA",
+   "v": 30000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10307585&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-21",
+   "e": "Publicado",
+   "t": [
+    "Prórroga de plazo"
+   ],
+   "d": 60,
+   "p": "MODIFICATORIO CONTRATO 100.8.4.421.2026 (PRORROGA)"
+  },
+  {
+   "id": "CO1.PCCNTR.9683605",
+   "ref": "4148.010.27.1.0016-2026",
+   "ciu": "Cali",
+   "ent": "Cultura",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA",
+   "entl": "Secretaría de Cultura de Cali",
+   "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
+   "v": 20644713015,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10536695&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-14",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Se modifica cláusula segunda - Alcance del Objeto del Convenio Interadministrativo como consecuencia del sismo de magnitud 74 del pasado 10 de agosto de 2026"
+  },
+  {
+   "id": "CO1.PCCNTR.9714423",
+   "ref": "4173.010.26.1.0835-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo Territorial",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO TERRITORIAL Y PARTICIPACION CIUDADANA",
+   "entl": "Secretaría de Desarrollo Territorial y Participación Ciudadana de Cali",
+   "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
+   "v": 3670664544,
+   "vi": 3101810000,
+   "ad": 568854544,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10579092&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-12",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Que durante la ejecución contractual la supervisión evidenció la necesidad de fortalecer la capacidad operativa y financiera del contrato para atender nuevas actividades de apoyo logístico vinculadas al mismo objeto contractual razón por la cual elaboró la correspondiente justificación técnica financiera y jurídica de la adición concluyendo que esta resulta necesaria para garantizar el cumplimiento integral de los fines públicos perseguidos por la contratación y asegurar la continuidad de las intervenciones territoriales programadas"
+  },
+  {
+   "id": "CO1.PCCNTR.9678479",
+   "ref": "4162.010.26.1.2090-2026",
+   "ciu": "Cali",
+   "ent": "Deporte y Recreación",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN",
+   "entl": "Secretaría del Deporte y la Recreación de Cali",
+   "prov": "LIVATRI",
+   "v": 5503283933,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10432188&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-08-11",
+   "e": "Publicado",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "Mediante MODIFICATORIO 1 se ajusta la cláusula de garantías y el nombre del contratista en el complemento al convenio de asociación (Ver anexos)."
+  }
+ ]
 }
