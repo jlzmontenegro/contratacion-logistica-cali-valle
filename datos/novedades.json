@@ -1,26 +1,26 @@
 {
- "generado": "2026-09-24T14:41:26Z",
+ "generado": "2026-09-25T00:19:52Z",
  "corte": "2026-08-10",
  "items": [
   {
-   "id": "CO1.PCCNTR.9250975",
-   "ref": "4137.010.26.1.200-2026",
+   "id": "CO1.PCCNTR.9631313",
+   "ref": "4131.010.26.1.1177-2026",
    "ciu": "Cali",
-   "ent": "Desarrollo e Innovación Institucional",
-   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL",
-   "entl": "Departamento Administrativo de Desarrollo e Innovación Institucional de Cali",
-   "prov": "IRON MOUNTAIN COLOMBIA SAS",
-   "v": 689397763,
+   "ent": "Hacienda",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA",
+   "entl": "Departamento Administrativo de Hacienda de Cali",
+   "prov": "Carlos Andres Gomez Zuñiga",
+   "v": 16752000,
    "vi": null,
    "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9883610&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-22",
-   "e": "Enviado al Proveedor",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10471539&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-24",
+   "e": "Publicado",
    "t": [
-    "Aclaración o corrección"
+    "Otra"
    ],
    "d": 0,
-   "p": "Modificar clausulas cuarta y quinta aclarando que el valor de las consultas elevadas por Planeación Distrital no se asumirán con cargo al presupuesto del contrato"
+   "p": "SE TERMINA EL CONTRATO ANTICIPADAMENTE POR MUTUO ACUERDO ENTRE LAS PARTES - VER ANEXOS"
   },
   {
    "id": "CO1.PCCNTR.9265668",
@@ -34,13 +34,53 @@
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9897988&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-22",
-   "e": "En Proceso de Aprobación",
+   "f": "2026-09-23",
+   "e": "Aceptado por el Proveedor",
    "t": [
     "Adición en valor"
    ],
    "d": 0,
    "p": "La supervisión solicita al Ordenador del Gasto: Modificar y Adicionar el valor del contrato en la suma de DOSCIENTOS MILLONES DE PESOS M/CTE ($200.000.000) compromiso que se respalda con el CDP No. 3700030585 fechado 15/09/2026 apropiación presupuestal 4181/1.2.1.0.00/2.1.2.02.02.008/04019999999"
+  },
+  {
+   "id": "CO1.PCCNTR.9741309",
+   "ref": "4173.010.26.1.0884-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo Territorial",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO TERRITORIAL Y PARTICIPACION CIUDADANA",
+   "entl": "Secretaría de Desarrollo Territorial y Participación Ciudadana de Cali",
+   "prov": "Daniela Valverde Moreno",
+   "v": 48062478,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10575905&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-23",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Otra"
+   ],
+   "d": 0,
+   "p": "MODIFICACION No.02: POR EL CUAL SE AJUSTA LA FORMA DE PAGO EN DOS CUOTAS"
+  },
+  {
+   "id": "CO1.PCCNTR.9250975",
+   "ref": "4137.010.26.1.200-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo e Innovación Institucional",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL",
+   "entl": "Departamento Administrativo de Desarrollo e Innovación Institucional de Cali",
+   "prov": "IRON MOUNTAIN COLOMBIA SAS",
+   "v": 689397763,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9883610&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-22",
+   "e": "Aceptado por el Proveedor",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "Modificar clausulas cuarta y quinta aclarando que el valor de las consultas elevadas por Planeación Distrital no se asumirán con cargo al presupuesto del contrato"
   },
   {
    "id": "CO1.PCCNTR.9667634",
@@ -61,26 +101,6 @@
    ],
    "d": 0,
    "p": "se realiza cambio del anexo de la oferta económica lo anterior debido a que por error se cargó un anexo que no corresponde al presentando en la propuesta del contratista en la sección de documentos del contrato."
-  },
-  {
-   "id": "CO1.PCCNTR.9741309",
-   "ref": "4173.010.26.1.0884-2026",
-   "ciu": "Cali",
-   "ent": "Desarrollo Territorial",
-   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO TERRITORIAL Y PARTICIPACION CIUDADANA",
-   "entl": "Secretaría de Desarrollo Territorial y Participación Ciudadana de Cali",
-   "prov": "Daniela Valverde Moreno",
-   "v": 48062478,
-   "vi": null,
-   "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10575905&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-22",
-   "e": "En Proceso de Aprobación",
-   "t": [
-    "Otra"
-   ],
-   "d": 0,
-   "p": "MODIFICACION No.02: POR EL CUAL SE AJUSTA LA FORMA DE PAGO EN DOS CUOTAS"
   },
   {
    "id": "CO1.PCCNTR.9924015",
