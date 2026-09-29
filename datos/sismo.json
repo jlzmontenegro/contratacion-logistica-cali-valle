@@ -1,14 +1,35 @@
 {
- "generado": "2026-09-29T01:34:10Z",
+ "generado": "2026-09-29T16:23:10Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-09-22",
+ "cobertura_hasta": "2026-09-28",
  "resumen": {
-  "respuesta": 7,
-  "valor_respuesta": 27569044000,
+  "respuesta": 8,
+  "valor_respuesta": 36747614453,
   "afectados": 30,
-  "valor_afectados": 51152717546
+  "valor_afectados": 52722954484
  },
  "contratos": [
+  {
+   "id": "CO1.PCCNTR.9992991",
+   "ref": "4171.010.26.1.394",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO",
+   "prov": "FUNDACION WWB COLOMBIA",
+   "td": "NIT",
+   "v": 9178570453,
+   "ff": "2026-09-25",
+   "fi": "",
+   "fn": "2026-12-15",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Prestación de servicios",
+   "un": "UNSPECIFIED",
+   "obj": "Prestar los servicios requeridos para la implementación de la línea de Capital Semilla del Programa Fondo Solidario y de Oportunidades; mediante la ejecución de acciones orientadas a la recuperación y fortalecimiento de las unidades productivas afectadas; en el marco de la Calamidad Pública declarada mediante el Decreto No. 4112.010.20.0963 del 10 de agosto de 2026 y la Urgencia Manifiesta declarada mediante Decreto No. 4112.010.20.0964 del 10 de agosto de 2026.",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10961051&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "respuesta",
+   "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
   {
    "id": "CO1.PCCNTR.9961352",
    "ref": "CO1.PCCNTR.9961352",
@@ -61,7 +82,7 @@
    "td": "NIT",
    "v": 5000000000,
    "ff": "2026-09-18",
-   "fi": "",
+   "fi": "2026-09-22",
    "fn": "2026-12-31",
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
@@ -87,7 +108,7 @@
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
    "tc": "Otro",
-   "un": "V1.93151500",
+   "un": "V1.80111600",
    "obj": "AUNAR ESFUERZOS PARA EL FORTALECIMIENTO DEL SOPORTE LOGÍSTICO DE LA RESPUESTA A LA CALAMIDAD PÚBLICA Y PARA LOS PROCESOS DE CENSO Y CARACTERIZACIÓN DE LA POBLACIÓN DAMNIFICADA Y AFECTADA EN EL DISTRITO ESPECIAL DE SANTIAGO DE CALI",
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "mecanismo",
@@ -293,10 +314,10 @@
    "entl": "Planeación Municipal de Cali",
    "prov": "UNIAJC",
    "td": "NIT",
-   "v": 5440159648,
+   "v": 7010396586,
    "ff": "2025-11-06",
    "fi": "2025-11-10",
-   "fn": "2026-09-30",
+   "fn": "2026-12-31",
    "mod": "Contratación directa",
    "just": "Contratos o convenios Interadministrativos (valor cero)",
    "tc": "Otro",
@@ -1323,22 +1344,22 @@
   {
    "dia": "2026-07-21",
    "n": 936,
-   "val": 16316535134
+   "val": 16319327134
   },
   {
    "dia": "2026-07-22",
    "n": 586,
-   "val": 34248942183
+   "val": 34257397183
   },
   {
    "dia": "2026-07-23",
    "n": 598,
-   "val": 13144055007
+   "val": 13163064007
   },
   {
    "dia": "2026-07-24",
    "n": 508,
-   "val": 19226741944
+   "val": 19230292944
   },
   {
    "dia": "2026-07-25",
@@ -1353,7 +1374,7 @@
   {
    "dia": "2026-07-27",
    "n": 311,
-   "val": 4833547100
+   "val": 4837098100
   },
   {
    "dia": "2026-07-28",
@@ -1368,12 +1389,12 @@
   {
    "dia": "2026-07-30",
    "n": 258,
-   "val": 4951166700
+   "val": 4964327700
   },
   {
    "dia": "2026-07-31",
    "n": 174,
-   "val": 23882827964
+   "val": 23873217964
   },
   {
    "dia": "2026-08-01",
@@ -1458,7 +1479,7 @@
   {
    "dia": "2026-08-18",
    "n": 550,
-   "val": 4845396435
+   "val": 4851059435
   },
   {
    "dia": "2026-08-19",
@@ -1498,7 +1519,7 @@
   {
    "dia": "2026-08-26",
    "n": 213,
-   "val": 8019920084
+   "val": 8020468084
   },
   {
    "dia": "2026-08-27",
@@ -1627,8 +1648,38 @@
   },
   {
    "dia": "2026-09-22",
-   "n": 107,
-   "val": 1606356877
+   "n": 265,
+   "val": 4914632565
+  },
+  {
+   "dia": "2026-09-23",
+   "n": 157,
+   "val": 32489032433
+  },
+  {
+   "dia": "2026-09-24",
+   "n": 122,
+   "val": 2111890689
+  },
+  {
+   "dia": "2026-09-25",
+   "n": 85,
+   "val": 10265001692
+  },
+  {
+   "dia": "2026-09-26",
+   "n": 140,
+   "val": 1530300000
+  },
+  {
+   "dia": "2026-09-27",
+   "n": 213,
+   "val": 2252380000
+  },
+  {
+   "dia": "2026-09-28",
+   "n": 95,
+   "val": 889696500
   }
  ]
 }
