@@ -1,7 +1,27 @@
 {
- "generado": "2026-09-30T16:18:10Z",
+ "generado": "2026-10-01T01:08:27Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9428024",
+   "ref": "100.8.4.420-2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "CYC SUPERSERVICIOS INTEGRALES SAS",
+   "v": 403970460,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10136849&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-29",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Adición"
+  },
   {
    "id": "CO1.PCCNTR.9966501",
    "ref": "4112.020.26.1.721-2026",

@@ -1,10 +1,10 @@
 {
- "generado": "2026-09-30T16:18:37Z",
+ "generado": "2026-10-01T01:08:45Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-09-28",
+ "cobertura_hasta": "2026-09-29",
  "resumen": {
-  "respuesta": 8,
-  "valor_respuesta": 36747614453,
+  "respuesta": 9,
+  "valor_respuesta": 36758782453,
   "afectados": 30,
   "valor_afectados": 52722954484
  },
@@ -155,6 +155,27 @@
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10878570&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "respuesta",
    "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
+  {
+   "id": "CO1.PCCNTR.10004927",
+   "ref": "4163.001.26.1.617-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "prov": "Juan Carlos Gallego Matallana",
+   "td": "Cédula de Ciudadanía",
+   "v": 11168000,
+   "ff": "2026-09-29",
+   "fi": "",
+   "fn": "2026-12-31",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Prestación de servicios",
+   "un": "UNSPECIFIED",
+   "obj": "Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Riesgo de Emergencias y Desastres en desarrollo del proyecto denominado: ACTUALIZACIÓN DE LOS INSTRUMENTOS DE RESPUESTA Y MANEJO DE DESASTRES EN SANTIAGO DE CALI; según Ficha EBI - BP-26005456",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10975466&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "mecanismo",
+   "evidencia": "Suscrito por urgencia manifiesta o calamidad pública tras el evento"
   },
   {
    "id": "CO1.PCCNTR.9864677",
@@ -1659,7 +1680,7 @@
   {
    "dia": "2026-09-24",
    "n": 122,
-   "val": 2111890689
+   "val": 2115890689
   },
   {
    "dia": "2026-09-25",
@@ -1678,8 +1699,13 @@
   },
   {
    "dia": "2026-09-28",
-   "n": 95,
-   "val": 889696500
+   "n": 372,
+   "val": 5353410500
+  },
+  {
+   "dia": "2026-09-29",
+   "n": 68,
+   "val": 1520284539
   }
  ]
 }
