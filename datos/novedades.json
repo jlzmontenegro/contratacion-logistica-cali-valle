@@ -1,7 +1,88 @@
 {
- "generado": "2026-10-01T16:55:17Z",
+ "generado": "2026-10-02T01:22:00Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9702039",
+   "ref": "4146.010.26.1.2298.2026",
+   "ciu": "Cali",
+   "ent": "Bienestar Social",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL",
+   "entl": "Secretaría de Bienestar Social de Cali",
+   "prov": "Fondo Mixto de Cultura y las Artes del Valle del Cauca",
+   "v": 3300000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10561763&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-01",
+   "e": "Publicado",
+   "t": [
+    "Prórroga de plazo"
+   ],
+   "d": 91,
+   "p": "Se realiza la prórroga del presente contrato con el fin de dar continuidad a las actividades previstas en su objeto contractual."
+  },
+  {
+   "id": "CO1.PCCNTR.9474103",
+   "ref": "4164.010.26.1.0441-2026",
+   "ciu": "Cali",
+   "ent": "Paz y Cultura Ciudadana",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA",
+   "entl": "Secretaría de Paz y Cultura Ciudadana de Cali",
+   "prov": "FUNDACIÓN PRO SOCIAL Y DEL MEDIO AMBIENTE MEJORHABITAT",
+   "v": 915539039,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10186844&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-01",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 60,
+   "p": "SE ADICIONA Y SE PRÓRRROGA EL CONTRATO."
+  },
+  {
+   "id": "CO1.PCCNTR.9268342",
+   "ref": "4148.010.26.1.0562-2026",
+   "ciu": "Cali",
+   "ent": "Cultura",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA",
+   "entl": "Secretaría de Cultura de Cali",
+   "prov": "Fondo Mixto de Cultura y las Artes del Valle del Cauca",
+   "v": 1844415625,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9899984&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-30",
+   "e": "Publicado",
+   "t": [
+    "Prórroga de plazo"
+   ],
+   "d": 76,
+   "p": "Se prorroga el contrato hasta el 15 de diciembre del 2026"
+  },
+  {
+   "id": "CO1.PCCNTR.9590824",
+   "ref": "1.320-19.15-6080",
+   "ciu": "Valle",
+   "ent": "Desarrollo Rural",
+   "entf": "GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",
+   "entl": "Secretaría de Desarrollo Rural, Agricultura y Pesca del Valle del Cauca",
+   "prov": "COMERCIALIZADORA RUESAA S.A.S",
+   "v": 30000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10384915&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-09-30",
+   "e": "Publicado",
+   "t": [
+    "Aclaración o corrección",
+    "Liquidación o terminación"
+   ],
+   "d": 0,
+   "p": "En la plataforma SECOP quedó registrado que el contrato iniciaba su liquidación el 24 de junio de 2026 fecha de suscripción. Sin embargo se aclara que la fecha correcta de inicio de liquidación es el 01 de noviembre de 2026 dado que el contrato tiene como fecha de terminación el 31 de octubre de 2026. De igual manera la supervisión contractual fue registrada en SECOP el 29 de septiembre de 2026; no obstante se precisa que la supervisora inició funciones desde el 29 de julio de 2026 fecha en la cual regresó de vacaciones y retomó sus funciones como ordenadora del gasto. Con esta aclaración se ajustan las fechas para efectos de transparencia y precisión administrativa."
+  },
   {
    "id": "CO1.PCCNTR.9428024",
    "ref": "100.8.4.420-2026",
