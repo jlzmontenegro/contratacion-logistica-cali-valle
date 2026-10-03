@@ -1,7 +1,68 @@
 {
- "generado": "2026-10-03T00:59:08Z",
+ "generado": "2026-10-03T14:35:50Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9595525",
+   "ref": "4135.010.26.1.127-2026",
+   "ciu": "Cali",
+   "ent": "Contratación Pública",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE CONTRATACION PUBLICA",
+   "entl": "Departamento Administrativo de Contratación Pública de Cali",
+   "prov": "Corporación de Eventos, Ferias y Espectáculos de Cali",
+   "v": 543805285,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10417448&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-02",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Adicionar y modificar contrato"
+  },
+  {
+   "id": "CO1.PCCNTR.9628064",
+   "ref": "4137.010.26.1.296-2026",
+   "ciu": "Cali",
+   "ent": "Desarrollo e Innovación Institucional",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL",
+   "entl": "Departamento Administrativo de Desarrollo e Innovación Institucional de Cali",
+   "prov": "TURISMO DEL MORROSQUILLO LTDA",
+   "v": 262635750,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10407829&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-02",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor",
+    "Prórroga de plazo"
+   ],
+   "d": 28,
+   "p": "ADICIONAR Y PRORROGAR"
+  },
+  {
+   "id": "CO1.PCCNTR.9886868",
+   "ref": "4163.001.27.1.5-2026",
+   "ciu": "Cali",
+   "ent": "Gestión del Riesgo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
+   "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
+   "v": 4050000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-01",
+   "e": "Aceptado por el Proveedor",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Que durante la ejecución del convenio se identificaron necesidades operativas adicionales y complementarias relacionadas con el transporte manejo de ayudas humanitarias procesamiento de información alimentación y saneamiento requeridos para atender la calamidad pública por tal motivo se determinor modificar parcialmente la descripción y alcance de las líneas 1 2 3 y 4 previstas en la cláusula segunda del Convenio de Asociación No. 4163.001.27.1.5-2026"
+  },
   {
    "id": "CO1.PCCNTR.9702039",
    "ref": "4146.010.26.1.2298.2026",
@@ -30,7 +91,7 @@
    "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA",
    "entl": "Secretaría de Paz y Cultura Ciudadana de Cali",
    "prov": "FUNDACIÓN PRO SOCIAL Y DEL MEDIO AMBIENTE MEJORHABITAT",
-   "v": 915539039,
+   "v": 1078353039,
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10186844&isFromPublicArea=True&isModal=true&asPopupView=true",
