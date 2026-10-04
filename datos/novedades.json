@@ -1,7 +1,67 @@
 {
- "generado": "2026-10-03T14:35:50Z",
+ "generado": "2026-10-04T00:23:28Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9508319",
+   "ref": "4143.010.26.1.1014.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "CRP",
+   "v": 662995291,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10239163&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-03",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Que se requiere ADICIONAR al contrato No.4143.010.26.1.1014.2026 la suma de SESENTA Y CUATRO MILLONES DOSCIENTOS CUARENTA Y SIETE MIL QUINIENTOS CINCUENTA PESOS MDA CTE ($64.247.550) IVA incluido y MODIFICAR la cláusula segunda y cuarta del contrato 4143.010.26.1.1014.2026"
+  },
+  {
+   "id": "CO1.PCCNTR.9886868",
+   "ref": "4163.001.27.1.5-2026",
+   "ciu": "Cali",
+   "ent": "Gestión del Riesgo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
+   "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
+   "v": 4050000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-02",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Que durante la ejecución del convenio se identificaron necesidades operativas adicionales y complementarias relacionadas con el transporte manejo de ayudas humanitarias procesamiento de información alimentación y saneamiento requeridos para atender la calamidad pública por tal motivo se determinor modificar parcialmente la descripción y alcance de las líneas 1 2 3 y 4 previstas en la cláusula segunda del Convenio de Asociación No. 4163.001.27.1.5-2026"
+  },
+  {
+   "id": "CO1.PCCNTR.9508319",
+   "ref": "4143.010.26.1.1014.2026",
+   "ciu": "Cali",
+   "ent": "Educación",
+   "entf": "SECRETARIA DE EDUCACION DE CALI",
+   "entl": "Secretaría de Educación de Cali",
+   "prov": "CRP",
+   "v": 662995291,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10239163&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-02",
+   "e": "Rechazado por el Proveedor",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Que se requiere ADICIONAR al contrato No.4143.010.26.1.1014.2026 la suma de SESENTA Y CUATRO MILLONES DOSCIENTOS CUARENTA Y SIETE MIL QUINIENTOS CINCUENTA PESOS MDA CTE ($64.247.550) IVA incluido y MODIFICAR la cláusula segunda y cuarta del contrato 4143.010.26.1.1014.2026"
+  },
   {
    "id": "CO1.PCCNTR.9595525",
    "ref": "4135.010.26.1.127-2026",
@@ -42,26 +102,6 @@
    ],
    "d": 28,
    "p": "ADICIONAR Y PRORROGAR"
-  },
-  {
-   "id": "CO1.PCCNTR.9886868",
-   "ref": "4163.001.27.1.5-2026",
-   "ciu": "Cali",
-   "ent": "Gestión del Riesgo",
-   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
-   "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
-   "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
-   "v": 4050000000,
-   "vi": null,
-   "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-10-01",
-   "e": "Aceptado por el Proveedor",
-   "t": [
-    "Adición en valor"
-   ],
-   "d": 0,
-   "p": "Que durante la ejecución del convenio se identificaron necesidades operativas adicionales y complementarias relacionadas con el transporte manejo de ayudas humanitarias procesamiento de información alimentación y saneamiento requeridos para atender la calamidad pública por tal motivo se determinor modificar parcialmente la descripción y alcance de las líneas 1 2 3 y 4 previstas en la cláusula segunda del Convenio de Asociación No. 4163.001.27.1.5-2026"
   },
   {
    "id": "CO1.PCCNTR.9702039",
@@ -157,7 +197,7 @@
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10136849&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-09-29",
-   "e": "Enviado al Proveedor",
+   "e": "Aceptado por el Proveedor",
    "t": [
     "Adición en valor"
    ],
