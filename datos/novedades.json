@@ -1,7 +1,67 @@
 {
- "generado": "2026-10-06T16:33:32Z",
+ "generado": "2026-10-07T01:15:24Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.8779050",
+   "ref": "4131.010.26.1.0144-2026",
+   "ciu": "Cali",
+   "ent": "Hacienda",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA",
+   "entl": "Departamento Administrativo de Hacienda de Cali",
+   "prov": "CELMIRA RUIZ ECHEVERRY",
+   "v": 16752000,
+   "vi": 11168000,
+   "ad": 5584000,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9401049&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-06",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Liquidación o terminación"
+   ],
+   "d": 61,
+   "p": "Se realiza el cierre del contrato ya que este tipo de contrato no requiere acta de liquidación y su fecha de terminación fue el 30 de junio de 2026"
+  },
+  {
+   "id": "CO1.PCCNTR.9428024",
+   "ref": "100.8.4.420-2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "CYC SUPERSERVICIOS INTEGRALES SAS",
+   "v": 403970460,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10136849&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-05",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Adición"
+  },
+  {
+   "id": "CO1.PCCNTR.9686831",
+   "ref": "1.210.19.13-8146",
+   "ciu": "Valle",
+   "ent": "Educación",
+   "entf": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION",
+   "entl": "Secretaría de Educación del Valle del Cauca",
+   "prov": "MARIA ANGELICA CABALLERO QUIÑONEZ",
+   "v": 47631060,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10541007&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-05",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Liquidación o terminación"
+   ],
+   "d": 0,
+   "p": "De conformidad con la Clausula décima sexta del complemento al contrato electrónico establece: DECIMA SEXTA. TERMINACIÓN ANTICIPADA DEL CONTRATO: EL CONTRATANTE podrá disponer la terminación anticipada del contrato en los siguientes eventos: 1) Por mutuo acuerdo de las partes (...). (Subrayado fuera del texto)."
+  },
   {
    "id": "CO1.PCCNTR.8774223",
    "ref": "4131.010.26.1.0032-2026",
@@ -15,7 +75,7 @@
    "ad": 9610000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9394330&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-04",
-   "e": "En Proceso de Aprobación",
+   "e": "Aprobado",
    "t": [
     "Liquidación o terminación"
    ],
@@ -35,7 +95,7 @@
    "ad": 7102000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9388186&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-04",
-   "e": "En Proceso de Aprobación",
+   "e": "Aprobado",
    "t": [
     "Liquidación o terminación"
    ],
@@ -55,7 +115,7 @@
    "ad": 7102000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9398395&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-04",
-   "e": "En Proceso de Aprobación",
+   "e": "Aprobado",
    "t": [
     "Liquidación o terminación"
    ],
@@ -75,7 +135,7 @@
    "ad": 5584000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9401103&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-04",
-   "e": "En Proceso de Aprobación",
+   "e": "Aprobado",
    "t": [
     "Liquidación o terminación"
    ],
@@ -263,26 +323,6 @@
    ],
    "d": 0,
    "p": "En la plataforma SECOP quedó registrado que el contrato iniciaba su liquidación el 24 de junio de 2026 fecha de suscripción. Sin embargo se aclara que la fecha correcta de inicio de liquidación es el 01 de noviembre de 2026 dado que el contrato tiene como fecha de terminación el 31 de octubre de 2026. De igual manera la supervisión contractual fue registrada en SECOP el 29 de septiembre de 2026; no obstante se precisa que la supervisora inició funciones desde el 29 de julio de 2026 fecha en la cual regresó de vacaciones y retomó sus funciones como ordenadora del gasto. Con esta aclaración se ajustan las fechas para efectos de transparencia y precisión administrativa."
-  },
-  {
-   "id": "CO1.PCCNTR.9428024",
-   "ref": "100.8.4.420-2026",
-   "ciu": "Cali",
-   "ent": "Concejo Distrital",
-   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
-   "entl": "Concejo Distrital de Santiago de Cali",
-   "prov": "CYC SUPERSERVICIOS INTEGRALES SAS",
-   "v": 403970460,
-   "vi": null,
-   "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10136849&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-09-29",
-   "e": "Aceptado por el Proveedor",
-   "t": [
-    "Adición en valor"
-   ],
-   "d": 0,
-   "p": "Adición"
   },
   {
    "id": "CO1.PCCNTR.9966501",
