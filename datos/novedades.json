@@ -1,7 +1,67 @@
 {
- "generado": "2026-10-07T17:19:53Z",
+ "generado": "2026-10-08T01:36:34Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9886868",
+   "ref": "4163.001.27.1.5-2026",
+   "ciu": "Cali",
+   "ent": "Gestión del Riesgo",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
+   "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
+   "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
+   "v": 4050000000,
+   "vi": 2050000000,
+   "ad": 2000000000,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-06",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Adicionar al valor del Convenio de Asociación No. 4163.001.27.1.5-2026 la suma de: DOS MIL MILLONES DE PESOS M/CTE ($2.000.000.000). La presente adición será financiada con recursos del Distrito Especial de Santiago de Cali de conformidad con el correspondiente certificado de disponibilidad presupuestal No. 3500278787 y demás documentos presupuestales que soporten la modificación. En consecuencia el valor total del convenio pasa de CUATRO MIL CINCUENTA MILLONES DE PESOS M/CTE ($4.050.000.000) a SEIS MIL CINCUENTA MILLONES DE PESOS M/CTE ($6.050.000.000)"
+  },
+  {
+   "id": "CO1.PCCNTR.9933537",
+   "ref": "4181.010.26.1.805-2026",
+   "ciu": "Cali",
+   "ent": "UAE Bienes y Servicios",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI",
+   "entl": "Unidad Administrativa Especial de Gestión de Bienes y Servicios de Cali",
+   "prov": "2 GROUP SAS",
+   "v": 700000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10878570&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-06",
+   "e": "Cancelado",
+   "t": [
+    "Sin descripción"
+   ],
+   "d": 0,
+   "p": "No definido"
+  },
+  {
+   "id": "CO1.PCCNTR.9686831",
+   "ref": "1.210.19.13-8146",
+   "ciu": "Valle",
+   "ent": "Educación",
+   "entf": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION",
+   "entl": "Secretaría de Educación del Valle del Cauca",
+   "prov": "MARIA ANGELICA CABALLERO QUIÑONEZ",
+   "v": 47631060,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10541007&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-06",
+   "e": "Publicado",
+   "t": [
+    "Liquidación o terminación"
+   ],
+   "d": 0,
+   "p": "De conformidad con la Clausula décima sexta del complemento al contrato electrónico establece: DECIMA SEXTA. TERMINACIÓN ANTICIPADA DEL CONTRATO: EL CONTRATANTE podrá disponer la terminación anticipada del contrato en los siguientes eventos: 1) Por mutuo acuerdo de las partes (...). (Subrayado fuera del texto)."
+  },
   {
    "id": "CO1.PCCNTR.8779050",
    "ref": "4131.010.26.1.0144-2026",
@@ -15,7 +75,7 @@
    "ad": 5584000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9401049&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-06",
-   "e": "En Proceso de Aprobación",
+   "e": "Aprobado",
    "t": [
     "Liquidación o terminación"
    ],
@@ -30,7 +90,7 @@
    "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
    "entl": "Concejo Distrital de Santiago de Cali",
    "prov": "CYC SUPERSERVICIOS INTEGRALES SAS",
-   "v": 403970460,
+   "v": 413609395,
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10136849&isFromPublicArea=True&isModal=true&asPopupView=true",
@@ -41,26 +101,6 @@
    ],
    "d": 0,
    "p": "Adición"
-  },
-  {
-   "id": "CO1.PCCNTR.9686831",
-   "ref": "1.210.19.13-8146",
-   "ciu": "Valle",
-   "ent": "Educación",
-   "entf": "GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION",
-   "entl": "Secretaría de Educación del Valle del Cauca",
-   "prov": "MARIA ANGELICA CABALLERO QUIÑONEZ",
-   "v": 47631060,
-   "vi": null,
-   "ad": null,
-   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10541007&isFromPublicArea=True&isModal=true&asPopupView=true",
-   "f": "2026-10-05",
-   "e": "En Proceso de Aprobación",
-   "t": [
-    "Liquidación o terminación"
-   ],
-   "d": 0,
-   "p": "De conformidad con la Clausula décima sexta del complemento al contrato electrónico establece: DECIMA SEXTA. TERMINACIÓN ANTICIPADA DEL CONTRATO: EL CONTRATANTE podrá disponer la terminación anticipada del contrato en los siguientes eventos: 1) Por mutuo acuerdo de las partes (...). (Subrayado fuera del texto)."
   },
   {
    "id": "CO1.PCCNTR.8774223",
@@ -171,8 +211,8 @@
    "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
    "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
    "v": 4050000000,
-   "vi": null,
-   "ad": null,
+   "vi": 2050000000,
+   "ad": 2000000000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-02",
    "e": "Publicado",
