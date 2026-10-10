@@ -1,7 +1,28 @@
 {
- "generado": "2026-10-09T16:51:37Z",
+ "generado": "2026-10-10T01:33:54Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9493805",
+   "ref": "4146.010.27.1.009.2026",
+   "ciu": "Cali",
+   "ent": "Bienestar Social",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL",
+   "entl": "Secretaría de Bienestar Social de Cali",
+   "prov": "FUNDACIÓN BRIGADA 152",
+   "v": 589668420,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10228323&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-09",
+   "e": "En Proceso de Aprobación",
+   "t": [
+    "Adición en valor",
+    "Prórroga de plazo"
+   ],
+   "d": 31,
+   "p": "Las partes acuerdan prorrogar el Convenio N° 4146.010.27.1.009.2026 de 2026 hasta el 31 DE DICIEMBRE DE 2026 y adicionar al convenio el valor de TREINTA MILLONES DE PESOS M/CTE ($34.000.000) distribuido de la siguiente forma 30.000.000 correspondiente al distrito Santiago de Cali y CUATRO MILLONES DE PESOS M/CTE (4.000.0000) al asociado FUNDACION BRIGADA 152"
+  },
   {
    "id": "CO1.PCCNTR.9886868",
    "ref": "4163.001.27.1.5-2026",
@@ -10,8 +31,8 @@
    "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
    "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
    "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
-   "v": 4050000000,
-   "vi": 2050000000,
+   "v": 6050000000,
+   "vi": 4050000000,
    "ad": 2000000000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-06",
@@ -210,8 +231,8 @@
    "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE",
    "entl": "Secretaría de Gestión del Riesgo de Emergencias y Desastres de Cali",
    "prov": "FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO",
-   "v": 4050000000,
-   "vi": 2050000000,
+   "v": 6050000000,
+   "vi": 4050000000,
    "ad": 2000000000,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10813444&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-02",
