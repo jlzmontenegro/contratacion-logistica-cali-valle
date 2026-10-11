@@ -1,7 +1,27 @@
 {
- "generado": "2026-10-10T15:46:20Z",
+ "generado": "2026-10-11T00:43:12Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9394556",
+   "ref": "4148.010.27.1.0002-2026",
+   "ciu": "Cali",
+   "ent": "Cultura",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE CULTURA",
+   "entl": "Secretaría de Cultura de Cali",
+   "prov": "COTELVALLE",
+   "v": 3296239001,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10078288&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-09",
+   "e": "Publicado",
+   "t": [
+    "Adición en valor"
+   ],
+   "d": 0,
+   "p": "Se adiciona convenio"
+  },
   {
    "id": "CO1.PCCNTR.9493805",
    "ref": "4146.010.27.1.009.2026",
@@ -10,12 +30,12 @@
    "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL",
    "entl": "Secretaría de Bienestar Social de Cali",
    "prov": "FUNDACIÓN BRIGADA 152",
-   "v": 589668420,
+   "v": 623668420,
    "vi": null,
    "ad": null,
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10228323&isFromPublicArea=True&isModal=true&asPopupView=true",
    "f": "2026-10-09",
-   "e": "En Proceso de Aprobación",
+   "e": "Publicado",
    "t": [
     "Adición en valor",
     "Prórroga de plazo"

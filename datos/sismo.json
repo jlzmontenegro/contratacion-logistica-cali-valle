@@ -1,10 +1,10 @@
 {
- "generado": "2026-10-10T15:46:42Z",
+ "generado": "2026-10-11T00:43:34Z",
  "evento": "2026-08-10",
- "cobertura_hasta": "2026-10-08",
+ "cobertura_hasta": "2026-10-09",
  "resumen": {
-  "respuesta": 15,
-  "valor_respuesta": 42858072019,
+  "respuesta": 16,
+  "valor_respuesta": 50858022019,
   "afectados": 30,
   "valor_afectados": 52722954484
  },
@@ -50,6 +50,27 @@
    "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10917528&isFromPublicArea=True&isModal=true&asPopupView=true",
    "motivo": "respuesta",
    "evidencia": "El objeto alude expresamente a los hechos del 10 de agosto"
+  },
+  {
+   "id": "CO1.PCCNTR.10053360",
+   "ref": "4182.010.26.1.762-2026",
+   "ciu": "Cali",
+   "ent": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "entl": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "prov": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA",
+   "td": "NIT",
+   "v": 7999950000,
+   "ff": "2026-10-08",
+   "fi": "",
+   "fn": "2026-12-13",
+   "mod": "Contratación directa",
+   "just": "Urgencia manifiesta",
+   "tc": "Prestación de servicios",
+   "un": "UNSPECIFIED",
+   "obj": "REALIZAR EL CARGUE; TRANSPORTE Y DISPOSICIÓN FINAL DE RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL DISTRITO DE SANTIAGO DE CALI; EN SITIOS APROBADOS POR LA AUTORIDAD COMPETENTE; GENERADOS COMO CONSECUENCIA DE LAS AFECTACIONES OCASIONADAS POR EL EVENTO SÍSMICO",
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.11038749&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "motivo": "mecanismo",
+   "evidencia": "Suscrito por urgencia manifiesta o calamidad pública tras el evento"
   },
   {
    "id": "CO1.PCCNTR.9886868",
@@ -145,7 +166,7 @@
    "td": "NIT",
    "v": 1300000000,
    "ff": "2026-10-08",
-   "fi": "",
+   "fi": "2026-10-08",
    "fn": "2026-12-31",
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
@@ -229,7 +250,7 @@
    "td": "NIT",
    "v": 515216559,
    "ff": "2026-10-05",
-   "fi": "",
+   "fi": "2026-10-08",
    "fn": "2026-11-02",
    "mod": "Contratación directa",
    "just": "Urgencia manifiesta",
@@ -1486,7 +1507,7 @@
   {
    "dia": "2026-07-20",
    "n": 326,
-   "val": 5122736060
+   "val": 5159460060
   },
   {
    "dia": "2026-07-21",
@@ -1496,17 +1517,17 @@
   {
    "dia": "2026-07-22",
    "n": 578,
-   "val": 34225397183
+   "val": 34248085183
   },
   {
    "dia": "2026-07-23",
    "n": 593,
-   "val": 13143064007
+   "val": 13171300007
   },
   {
    "dia": "2026-07-24",
    "n": 508,
-   "val": 19230292944
+   "val": 19261120944
   },
   {
    "dia": "2026-07-25",
@@ -1836,7 +1857,7 @@
   {
    "dia": "2026-09-30",
    "n": 411,
-   "val": 13095880876
+   "val": 13173730876
   },
   {
    "dia": "2026-10-01",
@@ -1875,8 +1896,13 @@
   },
   {
    "dia": "2026-10-08",
-   "n": 97,
-   "val": 3670214413
+   "n": 258,
+   "val": 16212548951
+  },
+  {
+   "dia": "2026-10-09",
+   "n": 87,
+   "val": 1259960015
   }
  ]
 }
