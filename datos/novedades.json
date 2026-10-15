@@ -1,7 +1,27 @@
 {
- "generado": "2026-10-14T14:56:27Z",
+ "generado": "2026-10-15T00:19:55Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.9881213",
+   "ref": "4182.010.26.1.307-2026",
+   "ciu": "Cali",
+   "ent": "UAE Servicios Públicos",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS",
+   "entl": "Unidad Administrativa Especial de Servicios Públicos de Cali",
+   "prov": "CONSORCIO AGUAS DE OCCIDENTE",
+   "v": 270726000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10520344&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-13",
+   "e": "Aprobado",
+   "t": [
+    "Otra"
+   ],
+   "d": 31,
+   "p": "Se realiza la modificación contractual con el fin de asociar la interventoría al contrato de obra correspondiente."
+  },
   {
    "id": "CO1.PCCNTR.9394556",
    "ref": "4148.010.27.1.0002-2026",
