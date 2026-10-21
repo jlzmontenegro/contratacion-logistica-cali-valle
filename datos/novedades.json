@@ -1,7 +1,47 @@
 {
- "generado": "2026-10-20T14:47:21Z",
+ "generado": "2026-10-21T00:24:59Z",
  "corte": "2026-08-10",
  "items": [
+  {
+   "id": "CO1.PCCNTR.10019353",
+   "ref": "4146.010.27.1.019.2026",
+   "ciu": "Cali",
+   "ent": "Bienestar Social",
+   "entf": "SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL",
+   "entl": "Secretaría de Bienestar Social de Cali",
+   "prov": "UNIDAD CENTRAL DEL VALLE DEL CAUCA",
+   "v": 748330497,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10990538&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-19",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Aclaración o corrección"
+   ],
+   "d": 0,
+   "p": "Se requiere realizar documento de aclaracion y modificacion al presente convenio de conformidad con la informacion contenida en los documentos adjuntos."
+  },
+  {
+   "id": "CO1.PCCNTR.9213441",
+   "ref": "100.8.4.387.2026",
+   "ciu": "Cali",
+   "ent": "Concejo Distrital",
+   "entf": "CONCEJO DISTRITAL DE SANTIAGO DE CALI",
+   "entl": "Concejo Distrital de Santiago de Cali",
+   "prov": "GESPRODE",
+   "v": 440000000,
+   "vi": null,
+   "ad": null,
+   "url": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9803010&isFromPublicArea=True&isModal=true&asPopupView=true",
+   "f": "2026-10-19",
+   "e": "Enviado al Proveedor",
+   "t": [
+    "Otra"
+   ],
+   "d": 365,
+   "p": "Modificación (ver documento adjunto)"
+  },
   {
    "id": "CO1.PCCNTR.9375961",
    "ref": "4131.010.26.1.0724-2026",
